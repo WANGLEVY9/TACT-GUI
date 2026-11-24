@@ -1,0 +1,38 @@
+{
+  "schema": 1,
+  "seed": 20261124,
+  "checkpoints": [
+    {
+      "id": "calculator-equals",
+      "app_group": "calculator",
+      "prefix": ["2", "+", "3"],
+      "start": {"resource": "result", "text": "2+3"},
+      "goal": "Finish the current calculation by pressing equals. Leave the numeric answer on the screen.",
+      "oracle": {"resource": "result", "text": "5"}
+    },
+    {
+      "id": "calculator-recover",
+      "app_group": "calculator",
+      "prefix": ["7", "+", "3"],
+      "start": {"resource": "result", "text": "7+3"},
+      "goal": "Recover from the mistaken expression. Clear it and enter the single number 8. Leave 8 on the screen.",
+      "oracle": {"resource": "result", "text": "8"}
+    },
+    {
+      "id": "settings-connections",
+      "app_group": "settings",
+      "prefix": [],
+      "start": {"resource": "homepage_title", "text": "Settings"},
+      "goal": "Open Connected devices. Do not change any settings.",
+      "oracle": {"resource": "collapsing_toolbar", "description": "Connected devices"}
+    },
+    {
+      "id": "settings-network",
+      "app_group": "settings",
+      "prefix": ["Network & internet"],
+      "start": {"resource": "collapsing_toolbar", "description": "Network & internet"},
+      "goal": "Open the Internet page from Network & internet. Do not change any settings.",
+      "oracle": {"resource": "collapsing_toolbar", "description": "Internet"}
+    }
+  ]
+}

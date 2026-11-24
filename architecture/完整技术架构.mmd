@@ -1,0 +1,137 @@
+flowchart TB
+    INPUT([测试目标 / 被测系统 / 总预算 B₀])
+    CATALOG[(Agent、模型、工具与候选协作配置)]
+    TASKS[(测试任务、依赖与环境初始状态)]
+    METRIC[(测试收益与缺陷验证标准)]
+
+    subgraph ONLINE[一、在线运行：预算约束下的动态测试编排]
+        direction TB
+        subgraph OBS[1. 状态构建与候选动作]
+            direction LR
+            TM[任务管理器<br/>任务生成、依赖、就绪状态]
+            EM[环境与证据管理<br/>执行状态、异常、待验证线索]
+            LEDGER[(共享预算账本<br/>已支出 / 已承诺 / 可用额度)]
+            GRAPH[动态异构状态图<br/>任务 · Agent · 环境 · 证据]
+            FEATURES[预算条件状态编码<br/>图编码器 / 历史与预算特征]
+            GEN[可行候选构建<br/>任务 × 配置 × 预算上限]
+            TM --> GRAPH
+            EM --> GRAPH
+            GRAPH --> FEATURES
+            LEDGER --> FEATURES
+            FEATURES --> GEN
+            TM --> GEN
+        end
+
+        subgraph DECIDE[2. 价值估计与联合决策]
+            direction LR
+            COST[成本与不确定性模型<br/>执行成本 / 失败 / 重试]
+            VALUE[协作增量价值估计<br/>当前收益 · 跨任务影响 · 验证需求]
+            WORLD[可选：测试状态转移模型<br/>任务解锁 / 证据 / 后续成本]
+            PLAN[预算条件联合调度<br/>选择任务、配置、模型及额度]
+            SEARCH[候选排序 / 结构化解码<br/>可选有限前瞻与风险调整]
+            GEN --> COST
+            GEN --> VALUE
+            FEATURES --> VALUE
+            FEATURES --> WORLD
+            COST --> SEARCH
+            VALUE --> SEARCH
+            WORLD -. 可选前瞻 .-> SEARCH
+            SEARCH --> PLAN
+        end
+
+        subgraph EXEC[3. 硬约束执行与反馈]
+            direction LR
+            GATE{准入检查<br/>依赖、冲突、可执行成本上界}
+            RESERVE[原子预留预算<br/>执行前锁定额度]
+            RUN[受限测试执行<br/>单 Agent / 多 Agent / 工具]
+            VERIFY[测试结果验证<br/>复现、确认、去重]
+            SETTLE[结算实际成本<br/>释放未用预留]
+            RESULT[(测试结果与执行轨迹)]
+            PLAN --> GATE
+            GATE -- 可行 --> RESERVE --> RUN --> VERIFY --> RESULT
+            RUN --> SETTLE
+            GATE -- 不可行：重新选择或停止 --> GEN
+        end
+        OBS --> DECIDE --> EXEC
+        SETTLE --> LEDGER
+        VERIFY --> EM
+        VERIFY --> TM
+        RUN --> EM
+    end
+
+    subgraph DATA[二、实验数据与模型训练]
+        direction TB
+        subgraph COLLECT[4. 受控数据采集]
+            direction LR
+            SNAP[环境隔离 / 检查点恢复]
+            RANDOM[相同起始状态下<br/>随机分配候选配置与预算]
+            LOG[记录状态、动作、选择概率<br/>成本、轨迹、结果与后续策略]
+            LABEL[复现与去重<br/>构造验证标签和全局收益]
+            DATASET[(训练 / 验证 / 测试数据<br/>按应用或任务划分)]
+            SNAP --> RANDOM --> LOG --> LABEL --> DATASET
+        end
+        subgraph TRAIN[5. 候选训练流程]
+            direction LR
+            REP[状态表示学习<br/>轨迹 / 图表示预训练]
+            EST[收益与成本学习<br/>成本分布、价值排序、增量收益]
+            DYN[可选：转移模型训练<br/>下一状态与证据预测]
+            POLICY[调度策略训练<br/>结构化模仿 / 离线策略学习]
+            ONLINEFT[可选：在线策略优化<br/>真实测试反馈 / 强化学习]
+            REGISTRY[(版本化模型与配置)]
+            REP --> EST
+            REP --> DYN
+            EST --> POLICY
+            DYN -. 候选评估 .-> POLICY
+            POLICY -. 数据充足时 .-> ONLINEFT
+            POLICY --> REGISTRY
+            ONLINEFT --> REGISTRY
+        end
+        DATASET --> REP
+        DATASET --> EST
+        DATASET --> DYN
+        DATASET --> POLICY
+    end
+
+    subgraph EVAL[三、实验评估与研究判断]
+        direction LR
+        BASE[对照组<br/>固定策略、贪心、动态预算、MAS 路由]
+        ABLATE[关键消融<br/>预算 × 协作配置；价值模型 / 验证需求]
+        FAIR[统一实验条件<br/>预算、工具、权限、测试集、验证标准]
+        OUTCOME[结果指标<br/>已确认去重缺陷 / 场景完成 / 实际总成本]
+        RELIABILITY[可靠性与泛化<br/>预算违规、验证完成率、跨应用 / 预算]
+        DECISION{差异是否稳定且值得额外成本？}
+        BASE --> FAIR
+        ABLATE --> FAIR
+        FAIR --> OUTCOME --> DECISION
+        FAIR --> RELIABILITY --> DECISION
+    end
+
+    INPUT --> TM
+    INPUT --> LEDGER
+    TASKS --> TM
+    CATALOG --> GEN
+    METRIC --> VERIFY
+    RESULT --> LOG
+    RESULT --> OUTCOME
+    DATASET --> FAIR
+    REGISTRY -. 部署评估通过的模型 .-> FEATURES
+    REGISTRY -.-> COST
+    REGISTRY -.-> VALUE
+    REGISTRY -.-> WORLD
+    REGISTRY -.-> PLAN
+    DECISION -. 调整假设、采样和模型 .-> SNAP
+
+    classDef input fill:#e8f2ff,stroke:#4a78b5,color:#152e50,stroke-width:1.5px
+    classDef state fill:#edf5ff,stroke:#6f9bce,color:#173754
+    classDef model fill:#f3edff,stroke:#9b80ce,color:#38285d
+    classDef safety fill:#fff4dc,stroke:#cc9740,color:#563a10
+    classDef exec fill:#e8f8ef,stroke:#6caf89,color:#173e2a
+    classDef data fill:#eaf7f7,stroke:#60a5a5,color:#153d3d
+    classDef eval fill:#fff0ee,stroke:#ce8c83,color:#4c2623
+    class INPUT,CATALOG,TASKS,METRIC input
+    class TM,EM,GRAPH,FEATURES,GEN state
+    class COST,VALUE,WORLD,PLAN,SEARCH,REP,EST,DYN,POLICY,ONLINEFT,REGISTRY model
+    class LEDGER,GATE,RESERVE,SETTLE safety
+    class RUN,VERIFY,RESULT exec
+    class SNAP,RANDOM,LOG,LABEL,DATASET data
+    class BASE,ABLATE,FAIR,OUTCOME,RELIABILITY,DECISION eval

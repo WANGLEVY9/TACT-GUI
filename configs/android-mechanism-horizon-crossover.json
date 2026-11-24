@@ -1,0 +1,276 @@
+{
+  "schema": 1,
+  "seed": 20261126,
+  "source_protocol_sha256": "05635eca58638c059cbfe8deec6318d763bc64c9cf9fa04d62367f5f85c57fb8",
+  "scope": "development horizon crossover",
+  "checkpoints": [
+    {
+      "id": "files-menu-h2",
+      "app_group": "files",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "header_title",
+        "text": "Files in Downloads"
+      },
+      "goal": "Open the More options menu in Downloads. Leave the menu open without changing or creating anything.",
+      "oracle": {
+        "text": "New folder"
+      },
+      "base_checkpoint": "files-menu"
+    },
+    {
+      "id": "clock-stopwatch-h2",
+      "app_group": "clock",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Open the stopwatch tab without starting the stopwatch.",
+      "oracle": {
+        "resource": "tab_menu_stopwatch",
+        "selected": true
+      },
+      "base_checkpoint": "clock-stopwatch"
+    },
+    {
+      "id": "settings-internet-from-home-h3",
+      "app_group": "settings",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "From the Settings homepage, open Network & internet and then the Internet page. Do not change any settings.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Internet"
+      },
+      "base_checkpoint": "settings-internet-from-home"
+    },
+    {
+      "id": "clock-stopwatch-h3",
+      "app_group": "clock",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Open the stopwatch tab without starting the stopwatch.",
+      "oracle": {
+        "resource": "tab_menu_stopwatch",
+        "selected": true
+      },
+      "base_checkpoint": "clock-stopwatch"
+    },
+    {
+      "id": "settings-battery-h2",
+      "app_group": "settings",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "Open the Battery settings page. Leave its settings unchanged.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Battery"
+      },
+      "base_checkpoint": "settings-battery"
+    },
+    {
+      "id": "files-search-h2",
+      "app_group": "files",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "header_title",
+        "text": "Files in Downloads"
+      },
+      "goal": "Open the file search input for Downloads. Do not enter any text.",
+      "oracle": {
+        "resource": "search_src_text"
+      },
+      "base_checkpoint": "files-search"
+    },
+    {
+      "id": "calculator-clear-entry-h2",
+      "app_group": "calculator",
+      "slots": 2,
+      "prefix": [
+        "9",
+        "+",
+        "2"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "9+2"
+      },
+      "goal": "Clear the mistaken expression, then enter the single digit 6. Leave exactly 6 visible.",
+      "oracle": {
+        "resource": "result",
+        "text": "6"
+      },
+      "base_checkpoint": "calculator-clear-entry"
+    },
+    {
+      "id": "settings-battery-h3",
+      "app_group": "settings",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "Open the Battery settings page. Leave its settings unchanged.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Battery"
+      },
+      "base_checkpoint": "settings-battery"
+    },
+    {
+      "id": "clock-timer-h3",
+      "app_group": "clock",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Navigate to the countdown timer tab. Do not start a timer.",
+      "oracle": {
+        "resource": "tab_menu_timer",
+        "selected": true
+      },
+      "base_checkpoint": "clock-timer"
+    },
+    {
+      "id": "clock-timer-h2",
+      "app_group": "clock",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Navigate to the countdown timer tab. Do not start a timer.",
+      "oracle": {
+        "resource": "tab_menu_timer",
+        "selected": true
+      },
+      "base_checkpoint": "clock-timer"
+    },
+    {
+      "id": "calculator-multiply-h3",
+      "app_group": "calculator",
+      "slots": 3,
+      "prefix": [
+        "3",
+        "\u00d7",
+        "4"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "3\u00d74"
+      },
+      "goal": "Finish the current calculation by pressing equals. Leave the numeric answer on screen.",
+      "oracle": {
+        "resource": "result",
+        "text": "12"
+      },
+      "base_checkpoint": "calculator-multiply"
+    },
+    {
+      "id": "settings-internet-from-home-h2",
+      "app_group": "settings",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "From the Settings homepage, open Network & internet and then the Internet page. Do not change any settings.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Internet"
+      },
+      "base_checkpoint": "settings-internet-from-home"
+    },
+    {
+      "id": "calculator-clear-entry-h3",
+      "app_group": "calculator",
+      "slots": 3,
+      "prefix": [
+        "9",
+        "+",
+        "2"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "9+2"
+      },
+      "goal": "Clear the mistaken expression, then enter the single digit 6. Leave exactly 6 visible.",
+      "oracle": {
+        "resource": "result",
+        "text": "6"
+      },
+      "base_checkpoint": "calculator-clear-entry"
+    },
+    {
+      "id": "calculator-multiply-h2",
+      "app_group": "calculator",
+      "slots": 2,
+      "prefix": [
+        "3",
+        "\u00d7",
+        "4"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "3\u00d74"
+      },
+      "goal": "Finish the current calculation by pressing equals. Leave the numeric answer on screen.",
+      "oracle": {
+        "resource": "result",
+        "text": "12"
+      },
+      "base_checkpoint": "calculator-multiply"
+    },
+    {
+      "id": "files-search-h3",
+      "app_group": "files",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "header_title",
+        "text": "Files in Downloads"
+      },
+      "goal": "Open the file search input for Downloads. Do not enter any text.",
+      "oracle": {
+        "resource": "search_src_text"
+      },
+      "base_checkpoint": "files-search"
+    },
+    {
+      "id": "files-menu-h3",
+      "app_group": "files",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "header_title",
+        "text": "Files in Downloads"
+      },
+      "goal": "Open the More options menu in Downloads. Leave the menu open without changing or creating anything.",
+      "oracle": {
+        "text": "New folder"
+      },
+      "base_checkpoint": "files-menu"
+    }
+  ]
+}

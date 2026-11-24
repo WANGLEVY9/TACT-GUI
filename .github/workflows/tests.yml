@@ -1,0 +1,23 @@
+name: tests
+on: [push, pull_request]
+jobs:
+  core:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.11', '3.12', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Compile and test (no credentials or devices)
+        env:
+          PYTHONPATH: src
+        run: |
+          python -m compileall -q src
+          python -m unittest discover -s tests -v
+      - name: Execute local integration fixture
+        env:
+          PYTHONPATH: src
+        run: python -m budgetmas.cli team-fixture --out results/ci-fixture
