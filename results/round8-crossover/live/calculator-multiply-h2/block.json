@@ -1,0 +1,396 @@
+{
+  "checkpoint": "calculator-multiply-h2",
+  "order": [
+    "independent_review",
+    "guarded_direct",
+    "self_review",
+    "direct"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "calculator-multiply-h2",
+      "group": "calculator",
+      "arm": "independent_review",
+      "scope_id": "e811ca1bd4a74acc8cecd75a89a69246",
+      "calls": [
+        {
+          "reservation_id": "919a8342bf58443e9a41e82ee624e5a0",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2658,
+            "completion_tokens": 66,
+            "total_tokens": 2724,
+            "completion_tokens_details": {
+              "text_tokens": 66
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 106
+            }
+          },
+          "usage_complete": true,
+          "role": "review",
+          "screen_sha256": "b4b02cbdb33dc65dcc1aabad168916b3f7a589adf87e5928e6de566c2b20aaac"
+        },
+        {
+          "reservation_id": "3f068a0f4f064ad5b5ae23eef8bdef77",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2934,
+            "completion_tokens": 127,
+            "total_tokens": 3061,
+            "completion_tokens_details": {
+              "reasoning_tokens": 63,
+              "text_tokens": 64
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 382
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "b4b02cbdb33dc65dcc1aabad168916b3f7a589adf87e5928e6de566c2b20aaac"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            892,
+            909
+          ]
+        }
+      ],
+      "success": 1,
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 2,
+        "device_steps": 28
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true
+        ],
+        "replay_after_actions": [
+          true
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 2.0,
+        "device_steps": 24.0
+      },
+      "elapsed_seconds": 34.64944170799572
+    },
+    {
+      "checkpoint": "calculator-multiply-h2",
+      "group": "calculator",
+      "arm": "guarded_direct",
+      "scope_id": "9ec0592b76f5478eacda40b93105437f",
+      "calls": [
+        {
+          "reservation_id": "5cbb4369ca41435283eb036d9e2ce4e9",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2914,
+            "completion_tokens": 95,
+            "total_tokens": 3009,
+            "completion_tokens_details": {
+              "reasoning_tokens": 48,
+              "text_tokens": 47
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 362
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "97aa477e87f8d5c026a954b05e72b009692f4b065bd8d34594b7906f5c09f9e2"
+        },
+        {
+          "reservation_id": "ae7006430ba046589220745646c0d5c5",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2934,
+            "completion_tokens": 134,
+            "total_tokens": 3068,
+            "completion_tokens_details": {
+              "reasoning_tokens": 70,
+              "text_tokens": 64
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 382
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "ccf8b2037b09312e64178210a846da7d7feccafe08878c0d453be71d122cb753"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            861,
+            908
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            875,
+            909
+          ]
+        }
+      ],
+      "success": 0,
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 2,
+        "device_steps": 28
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true,
+          false
+        ],
+        "replay_after_actions": [
+          true,
+          false
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": true
+      },
+      "actual": {
+        "model_calls": 2.0,
+        "device_steps": 28.0
+      },
+      "elapsed_seconds": 38.23178454203298
+    },
+    {
+      "checkpoint": "calculator-multiply-h2",
+      "group": "calculator",
+      "arm": "self_review",
+      "scope_id": "c4e23bb2396b48a58137cb1986ccb223",
+      "calls": [
+        {
+          "reservation_id": "f0bb4cd221274465ba6bad1c60d504a3",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2656,
+            "completion_tokens": 81,
+            "total_tokens": 2737,
+            "completion_tokens_details": {
+              "reasoning_tokens": 55,
+              "text_tokens": 26
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 104
+            }
+          },
+          "usage_complete": true,
+          "role": "review",
+          "screen_sha256": "d873e56dc770cb1d0de9fef707dcec999544a002fb249b7eb318193d91e92f9d"
+        },
+        {
+          "reservation_id": "4bcc1a196fe44ef4b52d132f7ed8e12c",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2889,
+            "completion_tokens": 48,
+            "total_tokens": 2937,
+            "completion_tokens_details": {
+              "text_tokens": 48
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 337
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "d873e56dc770cb1d0de9fef707dcec999544a002fb249b7eb318193d91e92f9d"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            875,
+            919
+          ]
+        }
+      ],
+      "success": 1,
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 2,
+        "device_steps": 28
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true
+        ],
+        "replay_after_actions": [
+          true
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 2.0,
+        "device_steps": 24.0
+      },
+      "elapsed_seconds": 32.07058933295775
+    },
+    {
+      "checkpoint": "calculator-multiply-h2",
+      "group": "calculator",
+      "arm": "direct",
+      "scope_id": "cef9203760d84ea69a6b8bc16b72057f",
+      "calls": [
+        {
+          "reservation_id": "05daf378365e46e68099003dc2d7b395",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2856,
+            "completion_tokens": 137,
+            "total_tokens": 2993,
+            "completion_tokens_details": {
+              "reasoning_tokens": 85,
+              "text_tokens": 52
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 304
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "9e75a6fdab14d077461876a3f22ac645e2a9429808d91615750f9edb8d5640c9"
+        },
+        {
+          "reservation_id": "f930e475a9814e6698930ec863eddade",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2876,
+            "completion_tokens": 39,
+            "total_tokens": 2915,
+            "completion_tokens_details": {
+              "text_tokens": 39
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 324
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "f7dda8c3ac2d4b990aacadaa437dccf6a9e5e7e6cbadd3b4a43f9019619f5307"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            867,
+            909
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            878,
+            919
+          ]
+        }
+      ],
+      "success": 0,
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 2,
+        "device_steps": 28
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true,
+          false
+        ],
+        "replay_after_actions": [
+          true,
+          false
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": true
+      },
+      "actual": {
+        "model_calls": 2.0,
+        "device_steps": 28.0
+      },
+      "elapsed_seconds": 36.9334783750237
+    }
+  ],
+  "device": "emulator-5582"
+}

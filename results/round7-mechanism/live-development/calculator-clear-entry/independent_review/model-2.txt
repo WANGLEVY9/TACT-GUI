@@ -1,0 +1,3 @@
+Action: Tap the "C" (clear) button to clear the current expression "9+" from the display.
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [622, 909]}}
+</tool_call>

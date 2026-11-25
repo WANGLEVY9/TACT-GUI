@@ -1,0 +1,3 @@
+Action: Click on "Connected devices" to access the Bluetooth and pairing options.
+<tool_call>{"name":"computer_use","arguments":{"action": "click", "coordinate": [380, 457]}}
+</tool_call>

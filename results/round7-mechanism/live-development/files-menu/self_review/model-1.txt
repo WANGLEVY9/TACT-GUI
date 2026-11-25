@@ -1,0 +1,3 @@
+Action: Tap the three vertical dots (More options menu) icon in the top-right corner of the screen.
+<tool_call>{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [939, 79]}}
+</tool_call>

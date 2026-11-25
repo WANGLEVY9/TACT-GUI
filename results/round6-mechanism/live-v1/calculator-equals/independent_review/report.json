@@ -1,0 +1,70 @@
+{
+  "checkpoint": "calculator-equals",
+  "group": "calculator",
+  "arm": "independent_review",
+  "scope_id": "c2018643a4924015a68aaeb47ccc9968",
+  "calls": [
+    {
+      "reservation_id": "efc0e10c13494d248044f6a823e91aaf",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2654,
+        "completion_tokens": 79,
+        "total_tokens": 2733,
+        "completion_tokens_details": {
+          "text_tokens": 79
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 102
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "76d6d1f4e407b1c8fe4b57dc96163ca7c12b7023bf6659b0f87854d94b870c93"
+    },
+    {
+      "reservation_id": "2d7f086f629344dc8fa09bcb80d3b486",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2940,
+        "completion_tokens": 123,
+        "total_tokens": 3063,
+        "completion_tokens_details": {
+          "reasoning_tokens": 66,
+          "text_tokens": 57
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 388
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "76d6d1f4e407b1c8fe4b57dc96163ca7c12b7023bf6659b0f87854d94b870c93"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        871,
+        909
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 22.0
+  },
+  "elapsed_seconds": 27.65188325001509
+}

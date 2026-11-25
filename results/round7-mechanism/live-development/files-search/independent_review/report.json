@@ -1,0 +1,80 @@
+{
+  "checkpoint": "files-search",
+  "group": "files",
+  "arm": "independent_review",
+  "scope_id": "ad4fb2c8050a41d1bbccd265eb9833e1",
+  "calls": [
+    {
+      "reservation_id": "6fc96d9ad12e4df3bf1abd98b56eaf27",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2645,
+        "completion_tokens": 94,
+        "total_tokens": 2739,
+        "completion_tokens_details": {
+          "text_tokens": 94
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 93
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "c0558b1c594d5cccdd43575cf510d4d51ae0f82e1694aa747a6b92ef5c6be889"
+    },
+    {
+      "reservation_id": "fc502837ada14792af37ab541619cf85",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2946,
+        "completion_tokens": 141,
+        "total_tokens": 3087,
+        "completion_tokens_details": {
+          "reasoning_tokens": 92,
+          "text_tokens": 49
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 394
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "c0558b1c594d5cccdd43575cf510d4d51ae0f82e1694aa747a6b92ef5c6be889"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        824,
+        80
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+  "state": {
+    "nodes": 45,
+    "labelled_nodes": 12,
+    "clickable_nodes": 8,
+    "duplicate_visible_labels": 1
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 12
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 10.0
+  },
+  "elapsed_seconds": 14.553263499983586
+}

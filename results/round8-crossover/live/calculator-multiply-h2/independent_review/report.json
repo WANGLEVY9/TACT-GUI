@@ -1,0 +1,91 @@
+{
+  "checkpoint": "calculator-multiply-h2",
+  "group": "calculator",
+  "arm": "independent_review",
+  "scope_id": "e811ca1bd4a74acc8cecd75a89a69246",
+  "calls": [
+    {
+      "reservation_id": "919a8342bf58443e9a41e82ee624e5a0",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2658,
+        "completion_tokens": 66,
+        "total_tokens": 2724,
+        "completion_tokens_details": {
+          "text_tokens": 66
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 106
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "b4b02cbdb33dc65dcc1aabad168916b3f7a589adf87e5928e6de566c2b20aaac"
+    },
+    {
+      "reservation_id": "3f068a0f4f064ad5b5ae23eef8bdef77",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2934,
+        "completion_tokens": 127,
+        "total_tokens": 3061,
+        "completion_tokens_details": {
+          "reasoning_tokens": 63,
+          "text_tokens": 64
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 382
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "b4b02cbdb33dc65dcc1aabad168916b3f7a589adf87e5928e6de566c2b20aaac"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        892,
+        909
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 28
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true
+    ],
+    "replay_after_actions": [
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 24.0
+  },
+  "elapsed_seconds": 34.64944170799572
+}

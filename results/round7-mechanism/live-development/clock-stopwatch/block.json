@@ -1,0 +1,285 @@
+{
+  "checkpoint": "clock-stopwatch",
+  "order": [
+    "independent_review",
+    "self_review",
+    "direct"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "clock-stopwatch",
+      "group": "clock",
+      "arm": "independent_review",
+      "scope_id": "4bfd2640c47e44e5addef5f698f24f60",
+      "calls": [
+        {
+          "reservation_id": "b68011a45cd64f8d8d4dc911494befc0",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2640,
+            "completion_tokens": 19,
+            "total_tokens": 2659,
+            "completion_tokens_details": {
+              "text_tokens": 19
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 88
+            }
+          },
+          "usage_complete": true,
+          "role": "review",
+          "screen_sha256": "77e05e31052376d12010d4e3661f39851d1c5e477c6981562abb6b82073b993c"
+        },
+        {
+          "reservation_id": "cf77832a07324ede903a75e9c0124629",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2865,
+            "completion_tokens": 125,
+            "total_tokens": 2990,
+            "completion_tokens_details": {
+              "reasoning_tokens": 78,
+              "text_tokens": 47
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 313
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "77e05e31052376d12010d4e3661f39851d1c5e477c6981562abb6b82073b993c"
+        },
+        {
+          "reservation_id": "6ff8a0affceb4ed0affebe9e30abd886",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2885,
+            "completion_tokens": 81,
+            "total_tokens": 2966,
+            "completion_tokens_details": {
+              "reasoning_tokens": 58,
+              "text_tokens": 23
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 333
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "1c573613686f3ff4c41e9f80b49e36d1ecb3138af6a99a10d123a53cb59c80b0"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            700,
+            930
+          ]
+        }
+      ],
+      "success": 1,
+      "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+      "state": {
+        "nodes": 50,
+        "labelled_nodes": 15,
+        "clickable_nodes": 6,
+        "duplicate_visible_labels": 6
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 15
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 11.0
+      },
+      "elapsed_seconds": 16.191271749994485
+    },
+    {
+      "checkpoint": "clock-stopwatch",
+      "group": "clock",
+      "arm": "self_review",
+      "scope_id": "0af69a475f034847ba889ad678d8bdbc",
+      "calls": [
+        {
+          "reservation_id": "f444c9a1a1a4417682544cd35d311058",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2638,
+            "completion_tokens": 97,
+            "total_tokens": 2735,
+            "completion_tokens_details": {
+              "reasoning_tokens": 77,
+              "text_tokens": 20
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 86
+            }
+          },
+          "usage_complete": true,
+          "role": "review",
+          "screen_sha256": "c69832b311f95d4b41bdec396b34ec9ea39e8447356ecea0e98528bbdb653775"
+        },
+        {
+          "reservation_id": "1a0ff02ad06544c1ac60d29d2d8b0527",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2865,
+            "completion_tokens": 125,
+            "total_tokens": 2990,
+            "completion_tokens_details": {
+              "reasoning_tokens": 77,
+              "text_tokens": 48
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 313
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "c69832b311f95d4b41bdec396b34ec9ea39e8447356ecea0e98528bbdb653775"
+        },
+        {
+          "reservation_id": "2b573bcaf7834ff0a617675ec009356b",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2865,
+            "completion_tokens": 125,
+            "total_tokens": 2990,
+            "completion_tokens_details": {
+              "reasoning_tokens": 77,
+              "text_tokens": 48
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 313
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "c69832b311f95d4b41bdec396b34ec9ea39e8447356ecea0e98528bbdb653775"
+        }
+      ],
+      "actions": [],
+      "success": 0,
+      "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+      "state": {
+        "nodes": 50,
+        "labelled_nodes": 15,
+        "clickable_nodes": 6,
+        "duplicate_visible_labels": 6
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 15
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 9.0
+      },
+      "elapsed_seconds": 16.605346959026065
+    },
+    {
+      "checkpoint": "clock-stopwatch",
+      "group": "clock",
+      "arm": "direct",
+      "scope_id": "d83f6f440fe3406eb2e40766f5f6801b",
+      "calls": [
+        {
+          "reservation_id": "18ee676ed50743ac9a6bde357633d4c7",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2838,
+            "completion_tokens": 52,
+            "total_tokens": 2890,
+            "completion_tokens_details": {
+              "text_tokens": 52
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 286
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "637ee048d45418d5185549a912eb9af2b03a24e20f10177532295e59783d4efc"
+        },
+        {
+          "reservation_id": "7afe2afd7799478795a67fd3fb4a19c1",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2858,
+            "completion_tokens": 31,
+            "total_tokens": 2889,
+            "completion_tokens_details": {
+              "text_tokens": 31
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 306
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "d2ac3f213238382a9ec2af990e7f9147917eeea9c93a04d624912d391f668fa7"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            699,
+            951
+          ]
+        }
+      ],
+      "success": 1,
+      "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+      "state": {
+        "nodes": 50,
+        "labelled_nodes": 15,
+        "clickable_nodes": 6,
+        "duplicate_visible_labels": 6
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 15
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+      },
+      "actual": {
+        "model_calls": 2.0,
+        "device_steps": 10.0
+      },
+      "elapsed_seconds": 13.01573120901594
+    }
+  ]
+}

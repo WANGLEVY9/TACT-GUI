@@ -1,0 +1,2 @@
+Action: terminate
+<tool_call>{"name":"computer_use","arguments": {"action": "terminate"}}</tool_call>

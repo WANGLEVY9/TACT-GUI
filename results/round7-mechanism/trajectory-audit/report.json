@@ -1,0 +1,134 @@
+{
+  "scope": "post-hoc audit of multi-tap direct failures and failed arms in review disagreements",
+  "verified_replays": 5,
+  "early_goals_lost": 3,
+  "results": [
+    {
+      "id": "calculator-equals",
+      "arm": "direct",
+      "replays": [
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            true,
+            false
+          ]
+        },
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            true,
+            false
+          ]
+        }
+      ],
+      "verified": true,
+      "early_goal_lost": true
+    },
+    {
+      "id": "calculator-recover",
+      "arm": "direct",
+      "replays": [
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            false,
+            false
+          ]
+        },
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            false,
+            false
+          ]
+        }
+      ],
+      "verified": true,
+      "early_goal_lost": false
+    },
+    {
+      "id": "calculator-multiply",
+      "arm": "direct",
+      "replays": [
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            true,
+            false
+          ]
+        },
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            true,
+            false
+          ]
+        }
+      ],
+      "verified": true,
+      "early_goal_lost": true
+    },
+    {
+      "id": "clock-timer",
+      "arm": "direct",
+      "replays": [
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            true,
+            false
+          ]
+        },
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            true,
+            false
+          ]
+        }
+      ],
+      "verified": true,
+      "early_goal_lost": true
+    },
+    {
+      "id": "calculator-clear-entry",
+      "arm": "direct",
+      "replays": [
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            false,
+            false,
+            false
+          ]
+        },
+        {
+          "initial_matches": true,
+          "after_each_action": [
+            false,
+            false,
+            false
+          ]
+        }
+      ],
+      "verified": true,
+      "early_goal_lost": false
+    }
+  ],
+  "budget": {
+    "limits": {
+      "device_steps": 112.0
+    },
+    "spent": {
+      "device_steps": 112.0
+    },
+    "reserved": {
+      "device_steps": 0.0
+    },
+    "available": {
+      "device_steps": 0.0
+    },
+    "pending_reservations": []
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "schema": 1,
+  "seed": 20261125,
+  "checkpoints": [
+    {
+      "id": "calculator-multiply",
+      "app_group": "calculator",
+      "slots": 2,
+      "prefix": [
+        "3",
+        "\u00d7",
+        "4"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "3\u00d74"
+      },
+      "goal": "Finish the current calculation by pressing equals. Leave the numeric answer on screen.",
+      "oracle": {
+        "resource": "result",
+        "text": "12"
+      }
+    },
+    {
+      "id": "settings-battery",
+      "app_group": "settings",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "Open the Battery settings page. Leave its settings unchanged.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Battery"
+      }
+    },
+    {
+      "id": "clock-timer",
+      "app_group": "clock",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Navigate to the countdown timer tab. Do not start a timer.",
+      "oracle": {
+        "resource": "tab_menu_timer",
+        "selected": true
+      }
+    },
+    {
+      "id": "files-search",
+      "app_group": "files",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "header_title",
+        "text": "Files in Downloads"
+      },
+      "goal": "Open the file search input for Downloads. Do not enter any text.",
+      "oracle": {
+        "resource": "search_src_text"
+      }
+    },
+    {
+      "id": "calculator-clear-entry",
+      "app_group": "calculator",
+      "slots": 3,
+      "prefix": [
+        "9",
+        "+",
+        "2"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "9+2"
+      },
+      "goal": "Clear the mistaken expression, then enter the single digit 6. Leave exactly 6 visible.",
+      "oracle": {
+        "resource": "result",
+        "text": "6"
+      }
+    },
+    {
+      "id": "settings-internet-from-home",
+      "app_group": "settings",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "From the Settings homepage, open Network & internet and then the Internet page. Do not change any settings.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Internet"
+      }
+    },
+    {
+      "id": "clock-stopwatch",
+      "app_group": "clock",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Open the stopwatch tab without starting the stopwatch.",
+      "oracle": {
+        "resource": "tab_menu_stopwatch",
+        "selected": true
+      }
+    },
+    {
+      "id": "files-menu",
+      "app_group": "files",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "header_title",
+        "text": "Files in Downloads"
+      },
+      "goal": "Open the More options menu in Downloads. Leave the menu open without changing or creating anything.",
+      "oracle": {
+        "text": "New folder"
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+Action: Tap the "C" button to clear the current expression.
+<tool_call>{"name":"computer_use","arguments":{"action":"left_click", "coordinate": [627, 912]}}
+</tool_call>

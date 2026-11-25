@@ -1,0 +1,100 @@
+{
+  "checkpoint": "calculator-multiply-h2",
+  "group": "calculator",
+  "arm": "direct",
+  "scope_id": "cef9203760d84ea69a6b8bc16b72057f",
+  "calls": [
+    {
+      "reservation_id": "05daf378365e46e68099003dc2d7b395",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2856,
+        "completion_tokens": 137,
+        "total_tokens": 2993,
+        "completion_tokens_details": {
+          "reasoning_tokens": 85,
+          "text_tokens": 52
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 304
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "9e75a6fdab14d077461876a3f22ac645e2a9429808d91615750f9edb8d5640c9"
+    },
+    {
+      "reservation_id": "f930e475a9814e6698930ec863eddade",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2876,
+        "completion_tokens": 39,
+        "total_tokens": 2915,
+        "completion_tokens_details": {
+          "text_tokens": 39
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 324
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "f7dda8c3ac2d4b990aacadaa437dccf6a9e5e7e6cbadd3b4a43f9019619f5307"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        867,
+        909
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        878,
+        919
+      ]
+    }
+  ],
+  "success": 0,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 28
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true,
+      false
+    ],
+    "replay_after_actions": [
+      true,
+      false
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": true
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 28.0
+  },
+  "elapsed_seconds": 36.9334783750237
+}

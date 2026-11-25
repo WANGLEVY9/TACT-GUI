@@ -1,0 +1,122 @@
+{
+  "checkpoint": "settings-internet-from-home-h3",
+  "group": "settings",
+  "arm": "guarded_direct",
+  "scope_id": "57cb408159534083800cd5cc73e632ac",
+  "calls": [
+    {
+      "reservation_id": "2dc83d5cc195428a872bb0bfddd08a91",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2908,
+        "completion_tokens": 144,
+        "total_tokens": 3052,
+        "completion_tokens_details": {
+          "reasoning_tokens": 94,
+          "text_tokens": 50
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 356
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "59982f71ca6578bd5e08f7a6319f1f4ea5d8ccfae4b1321387867577de2c7ac2"
+    },
+    {
+      "reservation_id": "ef76cc85c990453e99a335e21acd9b54",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2928,
+        "completion_tokens": 98,
+        "total_tokens": 3026,
+        "completion_tokens_details": {
+          "reasoning_tokens": 38,
+          "text_tokens": 60
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 376
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "64dc817578f464836cd62d61638d3c3e96e30699e640d1f8430a938815e8eb2c"
+    },
+    {
+      "reservation_id": "c51b90c62e2e45d0b8af497fcd4ca277",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2948,
+        "completion_tokens": 83,
+        "total_tokens": 3031,
+        "completion_tokens_details": {
+          "reasoning_tokens": 53,
+          "text_tokens": 30
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 396
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "21daf8a05f73dc394aacdd7e2401a33562c86743199e322ee2f36a5a56120d71"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        380,
+        361
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        260,
+        284
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+  "state": {
+    "nodes": 65,
+    "labelled_nodes": 17,
+    "clickable_nodes": 10,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 21
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+  },
+  "progress": {
+    "observed_after_actions": [
+      false,
+      true
+    ],
+    "replay_after_actions": [
+      false,
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 2,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 17.0
+  },
+  "elapsed_seconds": 42.86894483299693
+}

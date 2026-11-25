@@ -1,0 +1,3 @@
+Action: Click on the "Internet" option labeled with "AndroidWifi".
+<tool_call>{"name": "computer_use", "arguments": {"action": "left_click", "coordinate": [260, 284]}}
+</tool_call>

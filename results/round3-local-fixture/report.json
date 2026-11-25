@@ -1,0 +1,18 @@
+{
+  "scope": "local injected-fault integration fixture; not benchmark",
+  "results": [
+    {
+      "status": "confirmed",
+      "reward": 1,
+      "defect_id": "empty-cart-checkout"
+    },
+    {
+      "status": "confirmed",
+      "reward": 0,
+      "defect_id": "empty-cart-checkout"
+    }
+  ],
+  "available": {
+    "operations": 0.0
+  }
+}

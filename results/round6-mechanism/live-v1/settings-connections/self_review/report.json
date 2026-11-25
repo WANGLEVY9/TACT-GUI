@@ -1,0 +1,70 @@
+{
+  "checkpoint": "settings-connections",
+  "group": "settings",
+  "arm": "self_review",
+  "scope_id": "d6cfc790be364052afda454570a4df22",
+  "calls": [
+    {
+      "reservation_id": "a7d8932efce5425da7cdf04ea84a94d5",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2639,
+        "completion_tokens": 83,
+        "total_tokens": 2722,
+        "completion_tokens_details": {
+          "text_tokens": 83
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 87
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "a48e7147a8eeb7d718dbd599503e0d2dd13c6ca71aa1aefbe8ab7d55073141af"
+    },
+    {
+      "reservation_id": "e9b414cefeab4361acb045338af744b1",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2929,
+        "completion_tokens": 128,
+        "total_tokens": 3057,
+        "completion_tokens_details": {
+          "reasoning_tokens": 67,
+          "text_tokens": 61
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 377
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "a48e7147a8eeb7d718dbd599503e0d2dd13c6ca71aa1aefbe8ab7d55073141af"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        386,
+        458
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 10.0
+  },
+  "elapsed_seconds": 14.41849529198953
+}

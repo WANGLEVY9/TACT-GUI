@@ -25,7 +25,7 @@ def branch_traces(root, protocol, report):
         for arm in block['arms']:
             if arm['success']!=0 or len(arm['actions'])<2:
                 continue
-            if arm['arm']!='direct' and not review_disagreement:
+            if arm['arm']!='direct' and not (review_disagreement and arm['arm'] in ('self_review','independent_review')):
                 continue
             screenshots = sorted((root/block['checkpoint']/arm['arm']).glob('screen-*.png'))
             sizes = {png_dimensions(path.read_bytes()) for path in screenshots}

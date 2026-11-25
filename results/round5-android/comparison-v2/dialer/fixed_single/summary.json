@@ -1,0 +1,147 @@
+{
+  "app_group_id": "dialer",
+  "policy": "fixed_single",
+  "task_count": 2,
+  "verified_completions": 1,
+  "verified_incomplete": 1,
+  "unresolved": 0,
+  "not_attempted": 0,
+  "trials": [
+    {
+      "task_id": "dialer/keypad",
+      "app_group_id": "dialer",
+      "split": "test",
+      "configuration": "single",
+      "features": [
+        1.0,
+        0.25,
+        0.0,
+        0.0,
+        0.0,
+        0.175,
+        0.0
+      ],
+      "outcome": "task_completed",
+      "success": 1,
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "initial_matches": true,
+        "initial_positive": false,
+        "initial_hash": "d041768363c79e0a5870acd3a1b13cb88f6ec22b7cd90fb8ec165ca02e971d0e",
+        "decisions": [
+          {
+            "primary": [
+              943,
+              1985
+            ],
+            "chosen": [
+              943,
+              1985
+            ]
+          }
+        ]
+      },
+      "error_type": null,
+      "elapsed_seconds": 16.18011258300976,
+      "actual": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "ledger": {
+        "limits": {
+          "agent_calls": 8.0,
+          "device_steps": 26.0
+        },
+        "spent": {
+          "agent_calls": 1.0,
+          "device_steps": 11.0
+        },
+        "reserved": {
+          "agent_calls": 0.0,
+          "device_steps": 0.0
+        },
+        "available": {
+          "agent_calls": 7.0,
+          "device_steps": 15.0
+        },
+        "pending_reservations": []
+      }
+    },
+    {
+      "task_id": "dialer/recents",
+      "app_group_id": "dialer",
+      "split": "test",
+      "configuration": "single",
+      "features": [
+        1.0,
+        0.25,
+        1.0,
+        0.0,
+        0.0,
+        0.3,
+        0.0
+      ],
+      "outcome": "task_incomplete",
+      "success": 0,
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "initial_matches": true,
+        "initial_positive": false,
+        "initial_hash": "d041768363c79e0a5870acd3a1b13cb88f6ec22b7cd90fb8ec165ca02e971d0e",
+        "decisions": [
+          {
+            "primary": null,
+            "chosen": null
+          }
+        ]
+      },
+      "error_type": null,
+      "elapsed_seconds": 13.078596374980407,
+      "actual": {
+        "agent_calls": 1.0,
+        "device_steps": 8.0
+      },
+      "ledger": {
+        "limits": {
+          "agent_calls": 8.0,
+          "device_steps": 26.0
+        },
+        "spent": {
+          "agent_calls": 2.0,
+          "device_steps": 19.0
+        },
+        "reserved": {
+          "agent_calls": 0.0,
+          "device_steps": 0.0
+        },
+        "available": {
+          "agent_calls": 6.0,
+          "device_steps": 7.0
+        },
+        "pending_reservations": []
+      }
+    }
+  ],
+  "elapsed_seconds": 29.26044854099746,
+  "budget": {
+    "limits": {
+      "agent_calls": 8.0,
+      "device_steps": 26.0
+    },
+    "spent": {
+      "agent_calls": 2.0,
+      "device_steps": 19.0
+    },
+    "reserved": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "agent_calls": 6.0,
+      "device_steps": 7.0
+    },
+    "pending_reservations": []
+  }
+}

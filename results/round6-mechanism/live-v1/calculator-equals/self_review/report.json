@@ -1,0 +1,71 @@
+{
+  "checkpoint": "calculator-equals",
+  "group": "calculator",
+  "arm": "self_review",
+  "scope_id": "cb6cbb4da33144c8b8035cec1c8e60e1",
+  "calls": [
+    {
+      "reservation_id": "b0a02f09f91a4bb68a8621aecd2503b2",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2652,
+        "completion_tokens": 81,
+        "total_tokens": 2733,
+        "completion_tokens_details": {
+          "reasoning_tokens": 61,
+          "text_tokens": 20
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 100
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "3804bf1489849fe9e3d834ed9204c88a6ddbecbb07a1c36f6c303277035aa1ff"
+    },
+    {
+      "reservation_id": "542fd84041064aaaae27c765761d9575",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2877,
+        "completion_tokens": 120,
+        "total_tokens": 2997,
+        "completion_tokens_details": {
+          "reasoning_tokens": 62,
+          "text_tokens": 58
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 325
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "3804bf1489849fe9e3d834ed9204c88a6ddbecbb07a1c36f6c303277035aa1ff"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        861,
+        909
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 22.0
+  },
+  "elapsed_seconds": 28.10394762500073
+}

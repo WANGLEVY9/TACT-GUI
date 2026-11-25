@@ -1,0 +1,11 @@
+{
+  "checkpoint": "clock-timer-h2",
+  "group": "clock",
+  "arm": "direct",
+  "scope_id": "c44d964629fa4be093b61d63eb2922ee",
+  "calls": [],
+  "actions": [],
+  "success": null,
+  "error_type": "TimeoutExpired",
+  "elapsed_seconds": 21.11379891698016
+}

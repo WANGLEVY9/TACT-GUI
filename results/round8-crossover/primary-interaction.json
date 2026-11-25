@@ -1,0 +1,101 @@
+{
+  "registered": 3,
+  "comparable": 1,
+  "outcomes_by_horizon": {
+    "3": {
+      "independent_review": {
+        "terminal_success": 0,
+        "trials": 1,
+        "stable_progress": 1,
+        "first_hit": 1,
+        "lost_goal": 1
+      },
+      "guarded_direct": {
+        "terminal_success": 0,
+        "trials": 1,
+        "stable_progress": 1,
+        "first_hit": 1,
+        "lost_goal": 1
+      },
+      "self_review": {
+        "terminal_success": 0,
+        "trials": 1,
+        "stable_progress": 1,
+        "first_hit": 1,
+        "lost_goal": 1
+      },
+      "direct": {
+        "terminal_success": 0,
+        "trials": 1,
+        "stable_progress": 1,
+        "first_hit": 1,
+        "lost_goal": 1
+      }
+    },
+    "2": {
+      "independent_review": {
+        "terminal_success": 1,
+        "trials": 1,
+        "stable_progress": 1,
+        "first_hit": 1,
+        "lost_goal": 0
+      },
+      "guarded_direct": {
+        "terminal_success": 0,
+        "trials": 1,
+        "stable_progress": 1,
+        "first_hit": 1,
+        "lost_goal": 1
+      },
+      "self_review": {
+        "terminal_success": 1,
+        "trials": 1,
+        "stable_progress": 1,
+        "first_hit": 1,
+        "lost_goal": 0
+      },
+      "direct": {
+        "terminal_success": 0,
+        "trials": 1,
+        "stable_progress": 1,
+        "first_hit": 1,
+        "lost_goal": 1
+      }
+    }
+  },
+  "checkpoint_interactions": [
+    {
+      "base_checkpoint": "clock-timer",
+      "group": "clock",
+      "comparable": false
+    },
+    {
+      "base_checkpoint": "calculator-multiply",
+      "group": "calculator",
+      "comparable": true,
+      "observed": {
+        "2": {
+          "independent_review": 1,
+          "guarded_direct": 0,
+          "self_review": 1,
+          "direct": 0
+        },
+        "3": {
+          "independent_review": 0,
+          "guarded_direct": 0,
+          "self_review": 0,
+          "direct": 0
+        }
+      },
+      "review_by_horizon": -1,
+      "independent_by_horizon": 0,
+      "guard_by_horizon": 0,
+      "independent_vs_guard_by_horizon": -1
+    },
+    {
+      "base_checkpoint": "settings-internet-from-home",
+      "group": "settings",
+      "comparable": false
+    }
+  ]
+}

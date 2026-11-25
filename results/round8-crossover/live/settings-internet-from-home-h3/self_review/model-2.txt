@@ -1,0 +1,3 @@
+Action: Tap on the "Internet" option (displaying "AndroidWifi" as the subtitle) at the top of the Network & internet settings page.
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [260, 284]}}
+</tool_call>

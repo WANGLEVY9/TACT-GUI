@@ -1,0 +1,70 @@
+{
+  "checkpoint": "settings-network",
+  "group": "settings",
+  "arm": "direct",
+  "scope_id": "724d0ae71ba34b9fa3393db25feb0e74",
+  "calls": [
+    {
+      "reservation_id": "fe3f664b5c3f454f97bfb570f7557402",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2848,
+        "completion_tokens": 41,
+        "total_tokens": 2889,
+        "completion_tokens_details": {
+          "text_tokens": 41
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 296
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "7be4618d8a945b7297c2015b70691806a9f4fdb5952a643dfbe3d46ab062ea62"
+    },
+    {
+      "reservation_id": "a4a7a5ae125c432b839261732f90e068",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2848,
+        "completion_tokens": 124,
+        "total_tokens": 2972,
+        "completion_tokens_details": {
+          "reasoning_tokens": 81,
+          "text_tokens": 43
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 296
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "150f0ffcc6a02de757612d473791403a4ea5a376f9e923728df4fa3012769c9a"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        284,
+        295
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "8bf9cf105be5c002ab895a8e5b4c706ab84ad9680d23defb8f15b2385e2654ab",
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "8bf9cf105be5c002ab895a8e5b4c706ab84ad9680d23defb8f15b2385e2654ab"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 14.0
+  },
+  "elapsed_seconds": 20.166384207986994
+}

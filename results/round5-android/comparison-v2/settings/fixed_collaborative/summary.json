@@ -1,0 +1,150 @@
+{
+  "app_group_id": "settings",
+  "policy": "fixed_collaborative",
+  "task_count": 2,
+  "verified_completions": 2,
+  "verified_incomplete": 0,
+  "unresolved": 0,
+  "not_attempted": 0,
+  "trials": [
+    {
+      "task_id": "settings/network",
+      "app_group_id": "settings",
+      "split": "test",
+      "configuration": "collaborative",
+      "features": [
+        1.0,
+        0.25,
+        0.0,
+        1.0,
+        0.0,
+        0.45,
+        0.0
+      ],
+      "outcome": "task_completed",
+      "success": 1,
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "initial_matches": true,
+        "initial_positive": false,
+        "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+        "decisions": [
+          {
+            "primary": [
+              407,
+              859
+            ],
+            "chosen": [
+              407,
+              859
+            ]
+          }
+        ]
+      },
+      "error_type": null,
+      "elapsed_seconds": 11.534859750012401,
+      "actual": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "ledger": {
+        "limits": {
+          "agent_calls": 8.0,
+          "device_steps": 26.0
+        },
+        "spent": {
+          "agent_calls": 2.0,
+          "device_steps": 9.0
+        },
+        "reserved": {
+          "agent_calls": 0.0,
+          "device_steps": 0.0
+        },
+        "available": {
+          "agent_calls": 6.0,
+          "device_steps": 17.0
+        },
+        "pending_reservations": []
+      }
+    },
+    {
+      "task_id": "settings/connections",
+      "app_group_id": "settings",
+      "split": "test",
+      "configuration": "collaborative",
+      "features": [
+        1.0,
+        0.25,
+        1.0,
+        1.0,
+        1.0,
+        0.275,
+        0.0
+      ],
+      "outcome": "task_completed",
+      "success": 1,
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "initial_matches": true,
+        "initial_positive": false,
+        "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+        "decisions": [
+          {
+            "primary": null,
+            "chosen": [
+              412,
+              1090
+            ]
+          }
+        ]
+      },
+      "error_type": null,
+      "elapsed_seconds": 11.37800274998881,
+      "actual": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "ledger": {
+        "limits": {
+          "agent_calls": 8.0,
+          "device_steps": 26.0
+        },
+        "spent": {
+          "agent_calls": 4.0,
+          "device_steps": 18.0
+        },
+        "reserved": {
+          "agent_calls": 0.0,
+          "device_steps": 0.0
+        },
+        "available": {
+          "agent_calls": 4.0,
+          "device_steps": 8.0
+        },
+        "pending_reservations": []
+      }
+    }
+  ],
+  "elapsed_seconds": 22.914161041000625,
+  "budget": {
+    "limits": {
+      "agent_calls": 8.0,
+      "device_steps": 26.0
+    },
+    "spent": {
+      "agent_calls": 4.0,
+      "device_steps": 18.0
+    },
+    "reserved": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "agent_calls": 4.0,
+      "device_steps": 8.0
+    },
+    "pending_reservations": []
+  }
+}

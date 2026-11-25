@@ -1,0 +1,3 @@
+Action: Terminate the process as the task is complete.
+<tool_call>{"name": "computer_use", "arguments": {"action": "terminate"}}
+</tool_call>

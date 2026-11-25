@@ -1,0 +1,45 @@
+{
+  "task_id": "contacts/manage",
+  "app_group_id": "contacts",
+  "split": "train",
+  "configuration": "collaborative",
+  "features": [
+    1.0,
+    0.25,
+    0.0,
+    1.0,
+    0.0,
+    0.3,
+    0.0
+  ],
+  "outcome": "unresolved",
+  "success": null,
+  "verification": null,
+  "error_type": "RuntimeError",
+  "elapsed_seconds": 2.303854333003983,
+  "actual": {
+    "agent_calls": 0.0,
+    "device_steps": 0.0
+  },
+  "ledger": {
+    "limits": {
+      "agent_calls": 2.0,
+      "device_steps": 9.0
+    },
+    "spent": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "reserved": {
+      "agent_calls": 2.0,
+      "device_steps": 9.0
+    },
+    "available": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "pending_reservations": [
+      "0805a0d1e5034964b7658981a7de9ac1"
+    ]
+  }
+}

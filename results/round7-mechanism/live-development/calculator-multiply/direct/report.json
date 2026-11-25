@@ -1,0 +1,88 @@
+{
+  "checkpoint": "calculator-multiply",
+  "group": "calculator",
+  "arm": "direct",
+  "scope_id": "5b87de72040d44d6bc48193c80c7f001",
+  "calls": [
+    {
+      "reservation_id": "9943cb244a004f93b293d33a243eebf1",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2856,
+        "completion_tokens": 138,
+        "total_tokens": 2994,
+        "completion_tokens_details": {
+          "reasoning_tokens": 78,
+          "text_tokens": 60
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 304
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "6335544f47a262f971b62203c8c73df3a72a9212c0b4eb91a93c1d48d13ebd9a"
+    },
+    {
+      "reservation_id": "ca11fb8372154a559290f88145e2d7af",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2876,
+        "completion_tokens": 117,
+        "total_tokens": 2993,
+        "completion_tokens_details": {
+          "reasoning_tokens": 61,
+          "text_tokens": 56
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 324
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "819048dd5fbad16befecbdda042cefb59a4bc590fa436c9ef1d18a6ebbd99e67"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        879,
+        909
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        879,
+        909
+      ]
+    }
+  ],
+  "success": 0,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 24
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 24.0
+  },
+  "elapsed_seconds": 29.075863125006435
+}

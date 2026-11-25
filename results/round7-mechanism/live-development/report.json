@@ -1,0 +1,2329 @@
+{
+  "scope": "live functional-checkpoint development experiment",
+  "protocol_sha256": "05635eca58638c059cbfe8deec6318d763bc64c9cf9fa04d62367f5f85c57fb8",
+  "blocks": [
+    {
+      "checkpoint": "calculator-multiply",
+      "order": [
+        "independent_review",
+        "self_review",
+        "direct"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "calculator-multiply",
+          "group": "calculator",
+          "arm": "independent_review",
+          "scope_id": "81ad49415fc44b398bc97baa499f4aa7",
+          "calls": [
+            {
+              "reservation_id": "c3127460c1704a1486fb35080880c62d",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2658,
+                "completion_tokens": 50,
+                "total_tokens": 2708,
+                "completion_tokens_details": {
+                  "text_tokens": 50
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 106
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "6335544f47a262f971b62203c8c73df3a72a9212c0b4eb91a93c1d48d13ebd9a"
+            },
+            {
+              "reservation_id": "8195326798654d5a94fb14539ac42461",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2922,
+                "completion_tokens": 115,
+                "total_tokens": 3037,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 58,
+                  "text_tokens": 57
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 370
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "6335544f47a262f971b62203c8c73df3a72a9212c0b4eb91a93c1d48d13ebd9a"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                878,
+                909
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 24
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 22.0
+          },
+          "elapsed_seconds": 27.213820500008296
+        },
+        {
+          "checkpoint": "calculator-multiply",
+          "group": "calculator",
+          "arm": "self_review",
+          "scope_id": "3d9bd845f85d43f69e87d7f9834b25d5",
+          "calls": [
+            {
+              "reservation_id": "ce75f64ad70d4f67823b6cda365cc14d",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2656,
+                "completion_tokens": 84,
+                "total_tokens": 2740,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 55,
+                  "text_tokens": 29
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 104
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "509fcf2bc20dc2ad39b4734a33621d27cea7fb6af827d4f8d9a67e528069180c"
+            },
+            {
+              "reservation_id": "0186b55abd0d4da993296dc27099eb76",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2892,
+                "completion_tokens": 141,
+                "total_tokens": 3033,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 89,
+                  "text_tokens": 52
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 340
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "509fcf2bc20dc2ad39b4734a33621d27cea7fb6af827d4f8d9a67e528069180c"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                875,
+                909
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 24
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 22.0
+          },
+          "elapsed_seconds": 28.136751375015592
+        },
+        {
+          "checkpoint": "calculator-multiply",
+          "group": "calculator",
+          "arm": "direct",
+          "scope_id": "5b87de72040d44d6bc48193c80c7f001",
+          "calls": [
+            {
+              "reservation_id": "9943cb244a004f93b293d33a243eebf1",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2856,
+                "completion_tokens": 138,
+                "total_tokens": 2994,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 78,
+                  "text_tokens": 60
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 304
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "6335544f47a262f971b62203c8c73df3a72a9212c0b4eb91a93c1d48d13ebd9a"
+            },
+            {
+              "reservation_id": "ca11fb8372154a559290f88145e2d7af",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2876,
+                "completion_tokens": 117,
+                "total_tokens": 2993,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 61,
+                  "text_tokens": 56
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 324
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "819048dd5fbad16befecbdda042cefb59a4bc590fa436c9ef1d18a6ebbd99e67"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                879,
+                909
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                879,
+                909
+              ]
+            }
+          ],
+          "success": 0,
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 24
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 24.0
+          },
+          "elapsed_seconds": 29.075863125006435
+        }
+      ]
+    },
+    {
+      "checkpoint": "settings-battery",
+      "order": [
+        "independent_review",
+        "direct",
+        "self_review"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "settings-battery",
+          "group": "settings",
+          "arm": "independent_review",
+          "scope_id": "47e38bfc45bb4993b8c83a00c92de08f",
+          "calls": [
+            {
+              "reservation_id": "1652ad653032481d95b2b7d102fe27f7",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2642,
+                "completion_tokens": 60,
+                "total_tokens": 2702,
+                "completion_tokens_details": {
+                  "text_tokens": 60
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 90
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "a6cb2e1c1ec8667d49a2ba7299fa942ef77916c0bac2b6a09317ebe3fdfebfad"
+            },
+            {
+              "reservation_id": "6ec10fd5317d450e9e4042ef444c0b8b",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2908,
+                "completion_tokens": 129,
+                "total_tokens": 3037,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 76,
+                  "text_tokens": 53
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 356
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "a6cb2e1c1ec8667d49a2ba7299fa942ef77916c0bac2b6a09317ebe3fdfebfad"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                254,
+                744
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+          "state": {
+            "nodes": 65,
+            "labelled_nodes": 17,
+            "clickable_nodes": 10,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 14.633479167008772
+        },
+        {
+          "checkpoint": "settings-battery",
+          "group": "settings",
+          "arm": "direct",
+          "scope_id": "76b677399a4c476ebdf8405e4b60b8cf",
+          "calls": [
+            {
+              "reservation_id": "ffa8f5b69ec8466c84b22a2f230742d9",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2840,
+                "completion_tokens": 114,
+                "total_tokens": 2954,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 71,
+                  "text_tokens": 43
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 288
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "a6cb2e1c1ec8667d49a2ba7299fa942ef77916c0bac2b6a09317ebe3fdfebfad"
+            },
+            {
+              "reservation_id": "bde2723bd1754d068b4860266ea7e15b",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2860,
+                "completion_tokens": 31,
+                "total_tokens": 2891,
+                "completion_tokens_details": {
+                  "text_tokens": 31
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 308
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "fb2df1172c177e6111fe9867f99a46f6391c314417afc3361df999c5ce3a25b5"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                250,
+                742
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+          "state": {
+            "nodes": 65,
+            "labelled_nodes": 17,
+            "clickable_nodes": 10,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 13.900727208005264
+        },
+        {
+          "checkpoint": "settings-battery",
+          "group": "settings",
+          "arm": "self_review",
+          "scope_id": "6a55872f4a6d4842830d4f56dcd45f6a",
+          "calls": [
+            {
+              "reservation_id": "06b593bbb7bb41febde04c522b4813c3",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2640,
+                "completion_tokens": 80,
+                "total_tokens": 2720,
+                "completion_tokens_details": {
+                  "text_tokens": 80
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 88
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "a6cb2e1c1ec8667d49a2ba7299fa942ef77916c0bac2b6a09317ebe3fdfebfad"
+            },
+            {
+              "reservation_id": "11c9df5d510c4771be23db6df38ea028",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2927,
+                "completion_tokens": 121,
+                "total_tokens": 3048,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 67,
+                  "text_tokens": 54
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 375
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "a6cb2e1c1ec8667d49a2ba7299fa942ef77916c0bac2b6a09317ebe3fdfebfad"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                254,
+                748
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+          "state": {
+            "nodes": 65,
+            "labelled_nodes": 17,
+            "clickable_nodes": 10,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 14.360892333002994
+        }
+      ]
+    },
+    {
+      "checkpoint": "clock-timer",
+      "order": [
+        "independent_review",
+        "self_review",
+        "direct"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "clock-timer",
+          "group": "clock",
+          "arm": "independent_review",
+          "scope_id": "40cb9f2c10724b79ba5b91b7c3b04913",
+          "calls": [
+            {
+              "reservation_id": "716128a8f5054a9792f9033ebd0cc91b",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2644,
+                "completion_tokens": 92,
+                "total_tokens": 2736,
+                "completion_tokens_details": {
+                  "text_tokens": 92
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 92
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "1a0d1962304e96f7f23ce377f58d59594116f23a3fda337ea8b2a14b4022e43a"
+            },
+            {
+              "reservation_id": "a88481cd87fd476f9070c5a9b624032f",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2944,
+                "completion_tokens": 119,
+                "total_tokens": 3063,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 73,
+                  "text_tokens": 46
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 392
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "1a0d1962304e96f7f23ce377f58d59594116f23a3fda337ea8b2a14b4022e43a"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                500,
+                930
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+          "state": {
+            "nodes": 50,
+            "labelled_nodes": 15,
+            "clickable_nodes": 6,
+            "duplicate_visible_labels": 6
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 14.59007045798353
+        },
+        {
+          "checkpoint": "clock-timer",
+          "group": "clock",
+          "arm": "self_review",
+          "scope_id": "261377874a8e464da5b4d62cb4cc37af",
+          "calls": [
+            {
+              "reservation_id": "d6b954d96e9a41d686ff68ef70109eb3",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2642,
+                "completion_tokens": 59,
+                "total_tokens": 2701,
+                "completion_tokens_details": {
+                  "text_tokens": 59
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 90
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "276a4308f9d06a398c2bcdaad044f050c7d34f31dcb7fb19655a1eaab6095a56"
+            },
+            {
+              "reservation_id": "09ebdabeb18247caad0ca03f1c1009a9",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2909,
+                "completion_tokens": 120,
+                "total_tokens": 3029,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 75,
+                  "text_tokens": 45
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 357
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "276a4308f9d06a398c2bcdaad044f050c7d34f31dcb7fb19655a1eaab6095a56"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                500,
+                930
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+          "state": {
+            "nodes": 50,
+            "labelled_nodes": 15,
+            "clickable_nodes": 6,
+            "duplicate_visible_labels": 6
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 14.374658540997189
+        },
+        {
+          "checkpoint": "clock-timer",
+          "group": "clock",
+          "arm": "direct",
+          "scope_id": "ddadb76b881d485bb6c55abf872d2c1d",
+          "calls": [
+            {
+              "reservation_id": "87d5ffd8af0e494cbc1a25d46e6e652c",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2842,
+                "completion_tokens": 126,
+                "total_tokens": 2968,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 76,
+                  "text_tokens": 50
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 290
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "1a0d1962304e96f7f23ce377f58d59594116f23a3fda337ea8b2a14b4022e43a"
+            },
+            {
+              "reservation_id": "8feeee72fed24674b0ce1b2b3a84162d",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2862,
+                "completion_tokens": 48,
+                "total_tokens": 2910,
+                "completion_tokens_details": {
+                  "text_tokens": 48
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 310
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "9ab695240c124ff78d1e6f5119a26804d123a4181f959f0ca36668acec51cba6"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                505,
+                930
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                100,
+                930
+              ]
+            }
+          ],
+          "success": 0,
+          "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+          "state": {
+            "nodes": 50,
+            "labelled_nodes": 15,
+            "clickable_nodes": 6,
+            "duplicate_visible_labels": 6
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 12.0
+          },
+          "elapsed_seconds": 14.828190041997004
+        }
+      ]
+    },
+    {
+      "checkpoint": "files-search",
+      "order": [
+        "independent_review",
+        "self_review",
+        "direct"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "files-search",
+          "group": "files",
+          "arm": "independent_review",
+          "scope_id": "ad4fb2c8050a41d1bbccd265eb9833e1",
+          "calls": [
+            {
+              "reservation_id": "6fc96d9ad12e4df3bf1abd98b56eaf27",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2645,
+                "completion_tokens": 94,
+                "total_tokens": 2739,
+                "completion_tokens_details": {
+                  "text_tokens": 94
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 93
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "c0558b1c594d5cccdd43575cf510d4d51ae0f82e1694aa747a6b92ef5c6be889"
+            },
+            {
+              "reservation_id": "fc502837ada14792af37ab541619cf85",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2946,
+                "completion_tokens": 141,
+                "total_tokens": 3087,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 92,
+                  "text_tokens": 49
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 394
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "c0558b1c594d5cccdd43575cf510d4d51ae0f82e1694aa747a6b92ef5c6be889"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                824,
+                80
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+          "state": {
+            "nodes": 45,
+            "labelled_nodes": 12,
+            "clickable_nodes": 8,
+            "duplicate_visible_labels": 1
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 14.553263499983586
+        },
+        {
+          "checkpoint": "files-search",
+          "group": "files",
+          "arm": "self_review",
+          "scope_id": "a4096638bd3446faaa2cecfa8969ab57",
+          "calls": [
+            {
+              "reservation_id": "9f5452a02a6544fd8bcfa63c0a96716d",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2643,
+                "completion_tokens": 100,
+                "total_tokens": 2743,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 84,
+                  "text_tokens": 16
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 91
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "78a7df8b1d67cde9e7dcbec84fbcc843c984b560ecd87e95f1d9156e8b80f23a"
+            },
+            {
+              "reservation_id": "71b62369f36541ef953e69daf184e6f0",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2865,
+                "completion_tokens": 128,
+                "total_tokens": 2993,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 82,
+                  "text_tokens": 46
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 313
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "78a7df8b1d67cde9e7dcbec84fbcc843c984b560ecd87e95f1d9156e8b80f23a"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                824,
+                80
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+          "state": {
+            "nodes": 45,
+            "labelled_nodes": 12,
+            "clickable_nodes": 8,
+            "duplicate_visible_labels": 1
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 14.848545542015927
+        },
+        {
+          "checkpoint": "files-search",
+          "group": "files",
+          "arm": "direct",
+          "scope_id": "1c6431a107554013baccc618e048f3fa",
+          "calls": [
+            {
+              "reservation_id": "c8d8eb68197048dca34346c46be199a4",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2843,
+                "completion_tokens": 127,
+                "total_tokens": 2970,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 82,
+                  "text_tokens": 45
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 291
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "894ece440e25074ced87667f9f3d52b46772af9a67b86dd95d605cd3f1c76e4d"
+            },
+            {
+              "reservation_id": "d9b31582b9cc4db89e6731d57c24d2df",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2862,
+                "completion_tokens": 31,
+                "total_tokens": 2893,
+                "completion_tokens_details": {
+                  "text_tokens": 31
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 310
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "5f1bcbfb27fa6a7eeaf67b6b4697978a245c3fa7ac5403caa6a0372be33ffc4d"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                824,
+                80
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+          "state": {
+            "nodes": 45,
+            "labelled_nodes": 12,
+            "clickable_nodes": 8,
+            "duplicate_visible_labels": 1
+          },
+          "upper": {
+            "model_calls": 2,
+            "device_steps": 12
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 13.739036334009143
+        }
+      ]
+    },
+    {
+      "checkpoint": "calculator-clear-entry",
+      "order": [
+        "independent_review",
+        "self_review",
+        "direct"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "calculator-clear-entry",
+          "group": "calculator",
+          "arm": "independent_review",
+          "scope_id": "f09381bffa654085b744edca6bfb9229",
+          "calls": [
+            {
+              "reservation_id": "b4082bfab37548eaa1d4b00ecd77b3c9",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2657,
+                "completion_tokens": 81,
+                "total_tokens": 2738,
+                "completion_tokens_details": {
+                  "text_tokens": 81
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 105
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "ae63a5c9078141fad04f5cd7c655bd5b160f686f7d8079687921a056ac83be6a"
+            },
+            {
+              "reservation_id": "85d80ca16413475ea8dc0e2c2752d329",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2944,
+                "completion_tokens": 133,
+                "total_tokens": 3077,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 82,
+                  "text_tokens": 51
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 392
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "ae63a5c9078141fad04f5cd7c655bd5b160f686f7d8079687921a056ac83be6a"
+            },
+            {
+              "reservation_id": "718e073fea76404db975d437046deac6",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2964,
+                "completion_tokens": 149,
+                "total_tokens": 3113,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 92,
+                  "text_tokens": 57
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 412
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "fccb8ac1dca68a26a7991fbdba38afe40203a6a1695a6648091fa6916d511aec"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                627,
+                911
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                622,
+                909
+              ]
+            }
+          ],
+          "success": 0,
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 27
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 25.0
+          },
+          "elapsed_seconds": 31.59150954100187
+        },
+        {
+          "checkpoint": "calculator-clear-entry",
+          "group": "calculator",
+          "arm": "self_review",
+          "scope_id": "eca6c17858f949de91035be3d8027f1f",
+          "calls": [
+            {
+              "reservation_id": "daf9c2edf1e04a06914395815fdf55b4",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2655,
+                "completion_tokens": 98,
+                "total_tokens": 2753,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 80,
+                  "text_tokens": 18
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 103
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "1bb570eaf8e5c160c06f11cc9c12964a8eaa06c2f62cc65bd6f60f96bc167ce7"
+            },
+            {
+              "reservation_id": "0d142c5d2c2549b4bb181498e06091aa",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2879,
+                "completion_tokens": 110,
+                "total_tokens": 2989,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 60,
+                  "text_tokens": 50
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 327
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "1bb570eaf8e5c160c06f11cc9c12964a8eaa06c2f62cc65bd6f60f96bc167ce7"
+            },
+            {
+              "reservation_id": "ff8d1d761b5b422c8868a326f3a145d3",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2899,
+                "completion_tokens": 127,
+                "total_tokens": 3026,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 74,
+                  "text_tokens": 53
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 347
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "47a5360ccd15a4214066507ded44b8f0594500744c68d06eb6d4a4fe47256782"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                630,
+                911
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                630,
+                911
+              ]
+            }
+          ],
+          "success": 0,
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 27
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 25.0
+          },
+          "elapsed_seconds": 31.18848137499299
+        },
+        {
+          "checkpoint": "calculator-clear-entry",
+          "group": "calculator",
+          "arm": "direct",
+          "scope_id": "b4a3db4bd435441d994dffdebd6382c7",
+          "calls": [
+            {
+              "reservation_id": "8669589c0abb427d93ae8a096c6ca40a",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2855,
+                "completion_tokens": 46,
+                "total_tokens": 2901,
+                "completion_tokens_details": {
+                  "text_tokens": 46
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 303
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "1bb570eaf8e5c160c06f11cc9c12964a8eaa06c2f62cc65bd6f60f96bc167ce7"
+            },
+            {
+              "reservation_id": "0978cb9a03354ae6b1694856a78a58d5",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2875,
+                "completion_tokens": 46,
+                "total_tokens": 2921,
+                "completion_tokens_details": {
+                  "text_tokens": 46
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 323
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "47a5360ccd15a4214066507ded44b8f0594500744c68d06eb6d4a4fe47256782"
+            },
+            {
+              "reservation_id": "4946245eb6524ca79eb429cccd73480b",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2895,
+                "completion_tokens": 122,
+                "total_tokens": 3017,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 74,
+                  "text_tokens": 48
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 343
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "76112357fb202f1e00cabccb4f57c129bb4478a9280fe8e6b7e84b6171b34486"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                627,
+                918
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                627,
+                918
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                627,
+                918
+              ]
+            }
+          ],
+          "success": 0,
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 27
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 27.0
+          },
+          "elapsed_seconds": 30.304718916973798
+        }
+      ]
+    },
+    {
+      "checkpoint": "settings-internet-from-home",
+      "order": [
+        "direct",
+        "self_review",
+        "independent_review"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "settings-internet-from-home",
+          "group": "settings",
+          "arm": "direct",
+          "scope_id": "a58d20b3df9a4431912dcbfa90f37106",
+          "calls": [
+            {
+              "reservation_id": "42e2d62dd21e4aba82ba5428bd2db46b",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2850,
+                "completion_tokens": 126,
+                "total_tokens": 2976,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 76,
+                  "text_tokens": 50
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 298
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "82d47d7afb9c55bb30502eb44ca273112d5473adc77a0dae77b10683fc29fafe"
+            },
+            {
+              "reservation_id": "61c286981087485089e15d7319e3fa37",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2870,
+                "completion_tokens": 148,
+                "total_tokens": 3018,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 97,
+                  "text_tokens": 51
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 318
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "be7fb3b8c9da936a69eb768c8a65d39c78bb38926e45d01b78ba961105db8dff"
+            },
+            {
+              "reservation_id": "754b85e87e6a41758489eb3338ee7a4e",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2890,
+                "completion_tokens": 111,
+                "total_tokens": 3001,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 67,
+                  "text_tokens": 44
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 338
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "9c79d93309f3c90c4e4d138df13b919fcebab872dc0a33e02436796190f9c2b5"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                380,
+                360
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                260,
+                284
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+          "state": {
+            "nodes": 65,
+            "labelled_nodes": 17,
+            "clickable_nodes": 10,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 13.0
+          },
+          "elapsed_seconds": 19.378149541007588
+        },
+        {
+          "checkpoint": "settings-internet-from-home",
+          "group": "settings",
+          "arm": "self_review",
+          "scope_id": "1235e98061b84ceead34c1266b63a994",
+          "calls": [
+            {
+              "reservation_id": "ca073aabf61f4df6b4200712f5f91f61",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2650,
+                "completion_tokens": 17,
+                "total_tokens": 2667,
+                "completion_tokens_details": {
+                  "text_tokens": 17
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 98
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "877fbdf20d0db2be96cdfafab94e0ba2a6aa3efc23dd045f847775e575da463f"
+            },
+            {
+              "reservation_id": "b006d36e7d28445eaeed33f65c16b0ff",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2875,
+                "completion_tokens": 128,
+                "total_tokens": 3003,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 82,
+                  "text_tokens": 46
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 323
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "877fbdf20d0db2be96cdfafab94e0ba2a6aa3efc23dd045f847775e575da463f"
+            },
+            {
+              "reservation_id": "09c5846c0f5d4edc8172608b77e15084",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2895,
+                "completion_tokens": 42,
+                "total_tokens": 2937,
+                "completion_tokens_details": {
+                  "text_tokens": 42
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 343
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "b0efd88397eff413f24a8d1f060f7f9393ef63312a51ece1da96fe40f8fc2c93"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                380,
+                361
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                272,
+                287
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+          "state": {
+            "nodes": 65,
+            "labelled_nodes": 17,
+            "clickable_nodes": 10,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 13.0
+          },
+          "elapsed_seconds": 17.735359209007584
+        },
+        {
+          "checkpoint": "settings-internet-from-home",
+          "group": "settings",
+          "arm": "independent_review",
+          "scope_id": "58dbc61945e94a7d8c9fc34a2961f076",
+          "calls": [
+            {
+              "reservation_id": "09eaf47da4764f759f720e75c12b7178",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2652,
+                "completion_tokens": 17,
+                "total_tokens": 2669,
+                "completion_tokens_details": {
+                  "text_tokens": 17
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 100
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "877fbdf20d0db2be96cdfafab94e0ba2a6aa3efc23dd045f847775e575da463f"
+            },
+            {
+              "reservation_id": "2d23af5939f7447c8132903c15ae3dc5",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2875,
+                "completion_tokens": 128,
+                "total_tokens": 3003,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 82,
+                  "text_tokens": 46
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 323
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "877fbdf20d0db2be96cdfafab94e0ba2a6aa3efc23dd045f847775e575da463f"
+            },
+            {
+              "reservation_id": "184717967f7c41d5a421a2fc188dc954",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2895,
+                "completion_tokens": 146,
+                "total_tokens": 3041,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 97,
+                  "text_tokens": 49
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 343
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "b0efd88397eff413f24a8d1f060f7f9393ef63312a51ece1da96fe40f8fc2c93"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                380,
+                361
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                326,
+                291
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+          "state": {
+            "nodes": 65,
+            "labelled_nodes": 17,
+            "clickable_nodes": 10,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 13.0
+          },
+          "elapsed_seconds": 19.604085833998397
+        }
+      ]
+    },
+    {
+      "checkpoint": "clock-stopwatch",
+      "order": [
+        "independent_review",
+        "self_review",
+        "direct"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "clock-stopwatch",
+          "group": "clock",
+          "arm": "independent_review",
+          "scope_id": "4bfd2640c47e44e5addef5f698f24f60",
+          "calls": [
+            {
+              "reservation_id": "b68011a45cd64f8d8d4dc911494befc0",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2640,
+                "completion_tokens": 19,
+                "total_tokens": 2659,
+                "completion_tokens_details": {
+                  "text_tokens": 19
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 88
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "77e05e31052376d12010d4e3661f39851d1c5e477c6981562abb6b82073b993c"
+            },
+            {
+              "reservation_id": "cf77832a07324ede903a75e9c0124629",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2865,
+                "completion_tokens": 125,
+                "total_tokens": 2990,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 78,
+                  "text_tokens": 47
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 313
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "77e05e31052376d12010d4e3661f39851d1c5e477c6981562abb6b82073b993c"
+            },
+            {
+              "reservation_id": "6ff8a0affceb4ed0affebe9e30abd886",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2885,
+                "completion_tokens": 81,
+                "total_tokens": 2966,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 58,
+                  "text_tokens": 23
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 333
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "1c573613686f3ff4c41e9f80b49e36d1ecb3138af6a99a10d123a53cb59c80b0"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                700,
+                930
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+          "state": {
+            "nodes": 50,
+            "labelled_nodes": 15,
+            "clickable_nodes": 6,
+            "duplicate_visible_labels": 6
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 11.0
+          },
+          "elapsed_seconds": 16.191271749994485
+        },
+        {
+          "checkpoint": "clock-stopwatch",
+          "group": "clock",
+          "arm": "self_review",
+          "scope_id": "0af69a475f034847ba889ad678d8bdbc",
+          "calls": [
+            {
+              "reservation_id": "f444c9a1a1a4417682544cd35d311058",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2638,
+                "completion_tokens": 97,
+                "total_tokens": 2735,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 77,
+                  "text_tokens": 20
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 86
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "c69832b311f95d4b41bdec396b34ec9ea39e8447356ecea0e98528bbdb653775"
+            },
+            {
+              "reservation_id": "1a0ff02ad06544c1ac60d29d2d8b0527",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2865,
+                "completion_tokens": 125,
+                "total_tokens": 2990,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 77,
+                  "text_tokens": 48
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 313
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "c69832b311f95d4b41bdec396b34ec9ea39e8447356ecea0e98528bbdb653775"
+            },
+            {
+              "reservation_id": "2b573bcaf7834ff0a617675ec009356b",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2865,
+                "completion_tokens": 125,
+                "total_tokens": 2990,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 77,
+                  "text_tokens": 48
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 313
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "c69832b311f95d4b41bdec396b34ec9ea39e8447356ecea0e98528bbdb653775"
+            }
+          ],
+          "actions": [],
+          "success": 0,
+          "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+          "state": {
+            "nodes": 50,
+            "labelled_nodes": 15,
+            "clickable_nodes": 6,
+            "duplicate_visible_labels": 6
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 9.0
+          },
+          "elapsed_seconds": 16.605346959026065
+        },
+        {
+          "checkpoint": "clock-stopwatch",
+          "group": "clock",
+          "arm": "direct",
+          "scope_id": "d83f6f440fe3406eb2e40766f5f6801b",
+          "calls": [
+            {
+              "reservation_id": "18ee676ed50743ac9a6bde357633d4c7",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2838,
+                "completion_tokens": 52,
+                "total_tokens": 2890,
+                "completion_tokens_details": {
+                  "text_tokens": 52
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 286
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "637ee048d45418d5185549a912eb9af2b03a24e20f10177532295e59783d4efc"
+            },
+            {
+              "reservation_id": "7afe2afd7799478795a67fd3fb4a19c1",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2858,
+                "completion_tokens": 31,
+                "total_tokens": 2889,
+                "completion_tokens_details": {
+                  "text_tokens": 31
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 306
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "d2ac3f213238382a9ec2af990e7f9147917eeea9c93a04d624912d391f668fa7"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                699,
+                951
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+          "state": {
+            "nodes": 50,
+            "labelled_nodes": 15,
+            "clickable_nodes": 6,
+            "duplicate_visible_labels": 6
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 13.01573120901594
+        }
+      ]
+    },
+    {
+      "checkpoint": "files-menu",
+      "order": [
+        "self_review",
+        "direct",
+        "independent_review"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "files-menu",
+          "group": "files",
+          "arm": "self_review",
+          "scope_id": "ca936eed33ed443b99a0838a642177a7",
+          "calls": [
+            {
+              "reservation_id": "118baf753fcc426da9de09116bc007aa",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2647,
+                "completion_tokens": 46,
+                "total_tokens": 2693,
+                "completion_tokens_details": {
+                  "text_tokens": 46
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 95
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "623980ccca1ade053c7998e9bfcacee18d1712f925516f7c5b0793bcdb07b848"
+            },
+            {
+              "reservation_id": "75624d2114954d70987cedc8e06c30b2",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2901,
+                "completion_tokens": 119,
+                "total_tokens": 3020,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 64,
+                  "text_tokens": 55
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 349
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "623980ccca1ade053c7998e9bfcacee18d1712f925516f7c5b0793bcdb07b848"
+            },
+            {
+              "reservation_id": "87145fa9a8e04fc580161992b1451e86",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2920,
+                "completion_tokens": 117,
+                "total_tokens": 3037,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 73,
+                  "text_tokens": 44
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 368
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "5a905f32f2aa0c11cb06353c9ab1990adde2f48c7b6823d66ca1afc92f4a7b46"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                939,
+                79
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+          "state": {
+            "nodes": 45,
+            "labelled_nodes": 12,
+            "clickable_nodes": 8,
+            "duplicate_visible_labels": 1
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 11.0
+          },
+          "elapsed_seconds": 17.45874216701486
+        },
+        {
+          "checkpoint": "files-menu",
+          "group": "files",
+          "arm": "direct",
+          "scope_id": "55237fb396a747a9a9df13deeee03012",
+          "calls": [
+            {
+              "reservation_id": "768c43d573d74ea98bb7e7369fc37db8",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2847,
+                "completion_tokens": 159,
+                "total_tokens": 3006,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 104,
+                  "text_tokens": 55
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 295
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "22837b08159ed55da8202ce0b502a4e3d0a9b517fdd1389f00a5a57fae4a850f"
+            },
+            {
+              "reservation_id": "510026594dd641a09690220e06974ba6",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2866,
+                "completion_tokens": 118,
+                "total_tokens": 2984,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 76,
+                  "text_tokens": 42
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 314
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "ac9536985dc2bdd0f8a1820e9d9d957ab9c427d4b87f0bb1c217ea75b769a59d"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                938,
+                78
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+          "state": {
+            "nodes": 45,
+            "labelled_nodes": 12,
+            "clickable_nodes": 8,
+            "duplicate_visible_labels": 1
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+          },
+          "actual": {
+            "model_calls": 2.0,
+            "device_steps": 10.0
+          },
+          "elapsed_seconds": 15.494671874999767
+        },
+        {
+          "checkpoint": "files-menu",
+          "group": "files",
+          "arm": "independent_review",
+          "scope_id": "f08b54c0d31447758dc28e8955d28810",
+          "calls": [
+            {
+              "reservation_id": "0b31920b78794304983e166c841c28d6",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2649,
+                "completion_tokens": 46,
+                "total_tokens": 2695,
+                "completion_tokens_details": {
+                  "text_tokens": 46
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 97
+                }
+              },
+              "usage_complete": true,
+              "role": "review",
+              "screen_sha256": "22837b08159ed55da8202ce0b502a4e3d0a9b517fdd1389f00a5a57fae4a850f"
+            },
+            {
+              "reservation_id": "448d931092bc4f5baea484c3e01d6fb2",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2901,
+                "completion_tokens": 129,
+                "total_tokens": 3030,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 74,
+                  "text_tokens": 55
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 349
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "22837b08159ed55da8202ce0b502a4e3d0a9b517fdd1389f00a5a57fae4a850f"
+            },
+            {
+              "reservation_id": "8e0a0aa96d344421ab6890c2aae7d926",
+              "requested_model": "gui-plus-2026-02-26",
+              "returned_model": "gui-plus-2026-02-26",
+              "usage": {
+                "prompt_tokens": 2920,
+                "completion_tokens": 108,
+                "total_tokens": 3028,
+                "completion_tokens_details": {
+                  "reasoning_tokens": 69,
+                  "text_tokens": 39
+                },
+                "prompt_tokens_details": {
+                  "image_tokens": 2552,
+                  "text_tokens": 368
+                }
+              },
+              "usage_complete": true,
+              "role": "execute",
+              "screen_sha256": "ac9536985dc2bdd0f8a1820e9d9d957ab9c427d4b87f0bb1c217ea75b769a59d"
+            }
+          ],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                940,
+                78
+              ]
+            }
+          ],
+          "success": 1,
+          "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+          "state": {
+            "nodes": 45,
+            "labelled_nodes": 12,
+            "clickable_nodes": 8,
+            "duplicate_visible_labels": 1
+          },
+          "upper": {
+            "model_calls": 3,
+            "device_steps": 15
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+          },
+          "actual": {
+            "model_calls": 3.0,
+            "device_steps": 11.0
+          },
+          "elapsed_seconds": 16.764598540990846
+        }
+      ]
+    }
+  ],
+  "paired_summary": {
+    "registered": 8,
+    "comparable": 8,
+    "comparisons": {
+      "direct": {
+        "independent_only": 2,
+        "baseline_only": 0,
+        "both_success": 5,
+        "both_incomplete": 1,
+        "independent_win_families": [
+          "calculator",
+          "clock"
+        ],
+        "net_wins": 2
+      },
+      "self_review": {
+        "independent_only": 1,
+        "baseline_only": 0,
+        "both_success": 6,
+        "both_incomplete": 1,
+        "independent_win_families": [
+          "clock"
+        ],
+        "net_wins": 1
+      }
+    }
+  },
+  "budget": {
+    "limits": {
+      "model_calls": 60.0,
+      "device_steps": 396.0
+    },
+    "spent": {
+      "model_calls": 58.0,
+      "device_steps": 338.0
+    },
+    "reserved": {
+      "model_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "model_calls": 2.0,
+      "device_steps": 58.0
+    },
+    "pending_reservations": []
+  }
+}

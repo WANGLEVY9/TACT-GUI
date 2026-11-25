@@ -1,0 +1,1 @@
+Click the "Stopwatch" icon in the bottom navigation bar to open the stopwatch tab.

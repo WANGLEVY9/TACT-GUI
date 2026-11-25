@@ -1,0 +1,1 @@
+The calculator displays "2+3", the calculation is ready but not yet completed. To finish the task, the next step is to press the equals button to compute the result and leave the numeric answer on the screen. The equals button is located at the bottom right of the keypad, marked with an "=" symbol. Pressing it will display the result "5" and complete the calculation.

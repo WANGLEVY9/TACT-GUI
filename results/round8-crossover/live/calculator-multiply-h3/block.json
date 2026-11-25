@@ -1,0 +1,515 @@
+{
+  "checkpoint": "calculator-multiply-h3",
+  "order": [
+    "independent_review",
+    "guarded_direct",
+    "self_review",
+    "direct"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "calculator-multiply-h3",
+      "group": "calculator",
+      "arm": "independent_review",
+      "scope_id": "c37fc60868e941dcb4396e14f1d6e45f",
+      "calls": [
+        {
+          "reservation_id": "f9a25357bdb146bead67ceae0db621cf",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2658,
+            "completion_tokens": 35,
+            "total_tokens": 2693,
+            "completion_tokens_details": {
+              "text_tokens": 35
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 106
+            }
+          },
+          "usage_complete": true,
+          "role": "review",
+          "screen_sha256": "e5ac87c23b0e9ebe29ad44c51f38417a12cc712223788c308c26b5533148a219"
+        },
+        {
+          "reservation_id": "899c2dbbb04841d48a096939310c0825",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2905,
+            "completion_tokens": 137,
+            "total_tokens": 3042,
+            "completion_tokens_details": {
+              "reasoning_tokens": 79,
+              "text_tokens": 58
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 353
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "e5ac87c23b0e9ebe29ad44c51f38417a12cc712223788c308c26b5533148a219"
+        },
+        {
+          "reservation_id": "56268eeab39d4122b930002404ae4a1a",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2925,
+            "completion_tokens": 39,
+            "total_tokens": 2964,
+            "completion_tokens_details": {
+              "text_tokens": 39
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 373
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "1c53d8beb8a9b204e6209eac4ef93a0e4f8ab5244fa4498c175f1a9a8f9c109c"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            867,
+            909
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            875,
+            918
+          ]
+        }
+      ],
+      "success": 0,
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 33
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true,
+          false
+        ],
+        "replay_after_actions": [
+          true,
+          false
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": true
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 29.0
+      },
+      "elapsed_seconds": 64.80538537498796
+    },
+    {
+      "checkpoint": "calculator-multiply-h3",
+      "group": "calculator",
+      "arm": "guarded_direct",
+      "scope_id": "eee2a989885940c99e62905344c8e536",
+      "calls": [
+        {
+          "reservation_id": "6c6bbe979914475ea7d07f5aa9c40350",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2914,
+            "completion_tokens": 95,
+            "total_tokens": 3009,
+            "completion_tokens_details": {
+              "reasoning_tokens": 48,
+              "text_tokens": 47
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 362
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "f14c05ae72261e8fe76f211be979b6f6fb051a42d70d5bbd13bdad6c2188dfed"
+        },
+        {
+          "reservation_id": "9b2a1090f1c94ba1b2264c7cdce4aed2",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2934,
+            "completion_tokens": 148,
+            "total_tokens": 3082,
+            "completion_tokens_details": {
+              "reasoning_tokens": 86,
+              "text_tokens": 62
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 382
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "0a21e57e090a30c22ed17ec842c7a55a74e11386e552d950fef4ccbc1ccfbab8"
+        },
+        {
+          "reservation_id": "b116896538794ad4a1a00aa716e3b5ed",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2954,
+            "completion_tokens": 116,
+            "total_tokens": 3070,
+            "completion_tokens_details": {
+              "reasoning_tokens": 66,
+              "text_tokens": 50
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 402
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "2eabd43b8a553b6c415362bdefe097512c3ef438f2a9df1fc2f009af317029ee"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            861,
+            909
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            861,
+            909
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            861,
+            909
+          ]
+        }
+      ],
+      "success": 0,
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 33
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true,
+          false,
+          false
+        ],
+        "replay_after_actions": [
+          true,
+          false,
+          false
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": true
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 33.0
+      },
+      "elapsed_seconds": 54.652778875024524
+    },
+    {
+      "checkpoint": "calculator-multiply-h3",
+      "group": "calculator",
+      "arm": "self_review",
+      "scope_id": "c326edca96514d74abf766a6ba67bfb3",
+      "calls": [
+        {
+          "reservation_id": "baf3a81bff7c450aabdde4039dde82f8",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2656,
+            "completion_tokens": 10,
+            "total_tokens": 2666,
+            "completion_tokens_details": {
+              "text_tokens": 10
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 104
+            }
+          },
+          "usage_complete": true,
+          "role": "review",
+          "screen_sha256": "d60b5117221161fccba2ad901c4b8b78c3debf39ec9413e94476e06f0f2c1415"
+        },
+        {
+          "reservation_id": "637ffe5aa459497b9738062fc49223f6",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2874,
+            "completion_tokens": 39,
+            "total_tokens": 2913,
+            "completion_tokens_details": {
+              "text_tokens": 39
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 322
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "d60b5117221161fccba2ad901c4b8b78c3debf39ec9413e94476e06f0f2c1415"
+        },
+        {
+          "reservation_id": "cb10b6da40574998aaf5e74089833ee6",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2894,
+            "completion_tokens": 105,
+            "total_tokens": 2999,
+            "completion_tokens_details": {
+              "reasoning_tokens": 49,
+              "text_tokens": 56
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 342
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "c2d067e8508bb3a8228fa31beb94864afc2563463f0de1e21343cec5a54cf086"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            878,
+            919
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            878,
+            919
+          ]
+        }
+      ],
+      "success": 0,
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 33
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true,
+          false
+        ],
+        "replay_after_actions": [
+          true,
+          false
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": true
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 29.0
+      },
+      "elapsed_seconds": 46.15618962497683
+    },
+    {
+      "checkpoint": "calculator-multiply-h3",
+      "group": "calculator",
+      "arm": "direct",
+      "scope_id": "9e08e50b9f8b4a01b2ce168edd54aeb5",
+      "calls": [
+        {
+          "reservation_id": "fb39bcc686ef4bd186ac749c323aed0e",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2856,
+            "completion_tokens": 121,
+            "total_tokens": 2977,
+            "completion_tokens_details": {
+              "reasoning_tokens": 61,
+              "text_tokens": 60
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 304
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "d60b5117221161fccba2ad901c4b8b78c3debf39ec9413e94476e06f0f2c1415"
+        },
+        {
+          "reservation_id": "fb5dbb2b109e4796ab2fb6e924c66e7a",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2876,
+            "completion_tokens": 106,
+            "total_tokens": 2982,
+            "completion_tokens_details": {
+              "reasoning_tokens": 49,
+              "text_tokens": 57
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 324
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "8bcd6888fb6e0a0280223a3cceab7441e4ff40ae16eb54344dab2cc6ea9201d4"
+        },
+        {
+          "reservation_id": "327a0f5bf15f42e79690ff26521e67ca",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2896,
+            "completion_tokens": 131,
+            "total_tokens": 3027,
+            "completion_tokens_details": {
+              "reasoning_tokens": 68,
+              "text_tokens": 63
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 344
+            }
+          },
+          "usage_complete": true,
+          "role": "execute",
+          "screen_sha256": "9f01854a13437b7cb60fbde245188839fb65c7625f8a41692ac8c46af7c5359b"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            871,
+            909
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            871,
+            909
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            871,
+            909
+          ]
+        }
+      ],
+      "success": 0,
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 33
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true,
+          false,
+          false
+        ],
+        "replay_after_actions": [
+          true,
+          false,
+          false
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": true
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 33.0
+      },
+      "elapsed_seconds": 48.83836474997224
+    }
+  ],
+  "device": "emulator-5582"
+}

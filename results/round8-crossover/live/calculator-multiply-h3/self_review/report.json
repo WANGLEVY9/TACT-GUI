@@ -1,0 +1,120 @@
+{
+  "checkpoint": "calculator-multiply-h3",
+  "group": "calculator",
+  "arm": "self_review",
+  "scope_id": "c326edca96514d74abf766a6ba67bfb3",
+  "calls": [
+    {
+      "reservation_id": "baf3a81bff7c450aabdde4039dde82f8",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2656,
+        "completion_tokens": 10,
+        "total_tokens": 2666,
+        "completion_tokens_details": {
+          "text_tokens": 10
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 104
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "d60b5117221161fccba2ad901c4b8b78c3debf39ec9413e94476e06f0f2c1415"
+    },
+    {
+      "reservation_id": "637ffe5aa459497b9738062fc49223f6",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2874,
+        "completion_tokens": 39,
+        "total_tokens": 2913,
+        "completion_tokens_details": {
+          "text_tokens": 39
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 322
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "d60b5117221161fccba2ad901c4b8b78c3debf39ec9413e94476e06f0f2c1415"
+    },
+    {
+      "reservation_id": "cb10b6da40574998aaf5e74089833ee6",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2894,
+        "completion_tokens": 105,
+        "total_tokens": 2999,
+        "completion_tokens_details": {
+          "reasoning_tokens": 49,
+          "text_tokens": 56
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 342
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "c2d067e8508bb3a8228fa31beb94864afc2563463f0de1e21343cec5a54cf086"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        878,
+        919
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        878,
+        919
+      ]
+    }
+  ],
+  "success": 0,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 33
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true,
+      false
+    ],
+    "replay_after_actions": [
+      true,
+      false
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": true
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 29.0
+  },
+  "elapsed_seconds": 46.15618962497683
+}

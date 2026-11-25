@@ -1,0 +1,1 @@
+Clear the current expression by clicking the "C" button.</think>C

@@ -1,0 +1,80 @@
+{
+  "checkpoint": "clock-timer",
+  "group": "clock",
+  "arm": "self_review",
+  "scope_id": "261377874a8e464da5b4d62cb4cc37af",
+  "calls": [
+    {
+      "reservation_id": "d6b954d96e9a41d686ff68ef70109eb3",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2642,
+        "completion_tokens": 59,
+        "total_tokens": 2701,
+        "completion_tokens_details": {
+          "text_tokens": 59
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 90
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "276a4308f9d06a398c2bcdaad044f050c7d34f31dcb7fb19655a1eaab6095a56"
+    },
+    {
+      "reservation_id": "09ebdabeb18247caad0ca03f1c1009a9",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2909,
+        "completion_tokens": 120,
+        "total_tokens": 3029,
+        "completion_tokens_details": {
+          "reasoning_tokens": 75,
+          "text_tokens": 45
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 357
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "276a4308f9d06a398c2bcdaad044f050c7d34f31dcb7fb19655a1eaab6095a56"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        500,
+        930
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01",
+  "state": {
+    "nodes": 50,
+    "labelled_nodes": 15,
+    "clickable_nodes": 6,
+    "duplicate_visible_labels": 6
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 12
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "518ca3190a7c0fce160e2c3beb962b3742bac4d0210951f5afd4531a23688e01"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 10.0
+  },
+  "elapsed_seconds": 14.374658540997189
+}

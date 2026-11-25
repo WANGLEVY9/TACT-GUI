@@ -1,0 +1,2 @@
+The answer is 12.
+Action: Click the equals button located at the bottom right of the numeric keypad.

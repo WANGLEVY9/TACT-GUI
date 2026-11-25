@@ -1,0 +1,484 @@
+{
+  "config": {
+    "schema": 1,
+    "seed": 20261123,
+    "avd": "BudgetMASPilot",
+    "limits": {
+      "agent_calls": 8,
+      "device_steps": 26
+    },
+    "apps": [
+      {
+        "group": "calculator",
+        "package": "com.simplemobiletools.calculator",
+        "activity": ".activities.SplashActivity.Orange",
+        "clear_data": true,
+        "source": "https://github.com/SimpleMobileTools/Simple-Calculator/releases/tag/5.12.0",
+        "tasks": [
+          {
+            "id": "digit",
+            "steps": [
+              [
+                "2"
+              ]
+            ],
+            "oracle": {
+              "resource": "result",
+              "text": "2"
+            }
+          },
+          {
+            "id": "sum",
+            "steps": [
+              [
+                "2"
+              ],
+              [
+                "plus",
+                "+"
+              ],
+              [
+                "3"
+              ],
+              [
+                "equals",
+                "="
+              ]
+            ],
+            "oracle": {
+              "resource": "result",
+              "text": "5"
+            }
+          }
+        ]
+      },
+      {
+        "group": "settings",
+        "package": "com.android.settings",
+        "activity": ".Settings",
+        "tasks": [
+          {
+            "id": "network",
+            "steps": [
+              [
+                "Network & internet"
+              ]
+            ],
+            "oracle": {
+              "resource": "collapsing_toolbar",
+              "description": "Network & internet"
+            }
+          },
+          {
+            "id": "connections",
+            "steps": [
+              [
+                "Connections",
+                "Connected devices"
+              ]
+            ],
+            "oracle": {
+              "resource": "collapsing_toolbar",
+              "description": "Connected devices"
+            }
+          }
+        ]
+      },
+      {
+        "group": "clock",
+        "package": "com.google.android.deskclock",
+        "activity": "com.android.deskclock.DeskClock",
+        "tasks": [
+          {
+            "id": "stopwatch",
+            "steps": [
+              [
+                "Stopwatch"
+              ]
+            ],
+            "oracle": {
+              "resource": "tab_menu_stopwatch",
+              "selected": true
+            }
+          },
+          {
+            "id": "timer",
+            "steps": [
+              [
+                "Countdown",
+                "Timer"
+              ]
+            ],
+            "oracle": {
+              "resource": "tab_menu_timer",
+              "selected": true
+            }
+          }
+        ],
+        "clear_data": true
+      },
+      {
+        "group": "contacts",
+        "package": "com.google.android.contacts",
+        "activity": "com.android.contacts.activities.PeopleActivity",
+        "setup": [
+          [
+            "Skip"
+          ]
+        ],
+        "tasks": [
+          {
+            "id": "manage",
+            "steps": [
+              [
+                "Fix & manage"
+              ]
+            ],
+            "oracle": {
+              "resource": "nav_manage",
+              "selected": true
+            }
+          },
+          {
+            "id": "highlights",
+            "steps": [
+              [
+                "Featured contacts",
+                "Highlights"
+              ]
+            ],
+            "oracle": {
+              "resource": "highlights",
+              "selected": true
+            }
+          }
+        ]
+      },
+      {
+        "group": "files",
+        "package": "com.google.android.documentsui",
+        "activity": "com.android.documentsui.LauncherActivity",
+        "tasks": [
+          {
+            "id": "options",
+            "steps": [
+              [
+                "More options"
+              ]
+            ],
+            "oracle": {
+              "text": "New folder"
+            }
+          },
+          {
+            "id": "search",
+            "steps": [
+              [
+                "Find files",
+                "Search"
+              ]
+            ],
+            "oracle": {
+              "resource": "search_src_text"
+            }
+          }
+        ]
+      },
+      {
+        "group": "dialer",
+        "package": "com.google.android.dialer",
+        "activity": "com.google.android.dialer.extensions.GoogleDialtactsActivity",
+        "tasks": [
+          {
+            "id": "keypad",
+            "steps": [
+              [
+                "key pad"
+              ]
+            ],
+            "oracle": {
+              "resource": "dialpad_key_number",
+              "text": "1"
+            }
+          },
+          {
+            "id": "recents",
+            "steps": [
+              [
+                "Call history",
+                "Recents"
+              ]
+            ],
+            "oracle": {
+              "resource": "tab_call_history",
+              "selected": true
+            }
+          }
+        ],
+        "canonical_tab": "Favorites"
+      }
+    ]
+  },
+  "split": {
+    "seed": 20261123,
+    "sha256": "3efea58237e54e4aa0fbf92b8555a37bcde96efd5929610071ca2a84f8ecb493",
+    "rows": [
+      {
+        "id": "calculator/digit",
+        "app_group_id": "calculator",
+        "package": "com.simplemobiletools.calculator",
+        "version_code": "61",
+        "task": {
+          "id": "digit",
+          "steps": [
+            [
+              "2"
+            ]
+          ],
+          "oracle": {
+            "resource": "result",
+            "text": "2"
+          }
+        },
+        "canonical_tab": false,
+        "split": "validation"
+      },
+      {
+        "id": "calculator/sum",
+        "app_group_id": "calculator",
+        "package": "com.simplemobiletools.calculator",
+        "version_code": "61",
+        "task": {
+          "id": "sum",
+          "steps": [
+            [
+              "2"
+            ],
+            [
+              "plus",
+              "+"
+            ],
+            [
+              "3"
+            ],
+            [
+              "equals",
+              "="
+            ]
+          ],
+          "oracle": {
+            "resource": "result",
+            "text": "5"
+          }
+        },
+        "canonical_tab": false,
+        "split": "validation"
+      },
+      {
+        "id": "settings/network",
+        "app_group_id": "settings",
+        "package": "com.android.settings",
+        "version_code": "34",
+        "task": {
+          "id": "network",
+          "steps": [
+            [
+              "Network & internet"
+            ]
+          ],
+          "oracle": {
+            "resource": "collapsing_toolbar",
+            "description": "Network & internet"
+          }
+        },
+        "canonical_tab": false,
+        "split": "test"
+      },
+      {
+        "id": "settings/connections",
+        "app_group_id": "settings",
+        "package": "com.android.settings",
+        "version_code": "34",
+        "task": {
+          "id": "connections",
+          "steps": [
+            [
+              "Connections",
+              "Connected devices"
+            ]
+          ],
+          "oracle": {
+            "resource": "collapsing_toolbar",
+            "description": "Connected devices"
+          }
+        },
+        "canonical_tab": false,
+        "split": "test"
+      },
+      {
+        "id": "clock/stopwatch",
+        "app_group_id": "clock",
+        "package": "com.google.android.deskclock",
+        "version_code": "74001498",
+        "task": {
+          "id": "stopwatch",
+          "steps": [
+            [
+              "Stopwatch"
+            ]
+          ],
+          "oracle": {
+            "resource": "tab_menu_stopwatch",
+            "selected": true
+          }
+        },
+        "canonical_tab": false,
+        "split": "train"
+      },
+      {
+        "id": "clock/timer",
+        "app_group_id": "clock",
+        "package": "com.google.android.deskclock",
+        "version_code": "74001498",
+        "task": {
+          "id": "timer",
+          "steps": [
+            [
+              "Countdown",
+              "Timer"
+            ]
+          ],
+          "oracle": {
+            "resource": "tab_menu_timer",
+            "selected": true
+          }
+        },
+        "canonical_tab": false,
+        "split": "train"
+      },
+      {
+        "id": "contacts/manage",
+        "app_group_id": "contacts",
+        "package": "com.google.android.contacts",
+        "version_code": "3016392",
+        "task": {
+          "id": "manage",
+          "steps": [
+            [
+              "Fix & manage"
+            ]
+          ],
+          "oracle": {
+            "resource": "nav_manage",
+            "selected": true
+          }
+        },
+        "canonical_tab": false,
+        "split": "train"
+      },
+      {
+        "id": "contacts/highlights",
+        "app_group_id": "contacts",
+        "package": "com.google.android.contacts",
+        "version_code": "3016392",
+        "task": {
+          "id": "highlights",
+          "steps": [
+            [
+              "Featured contacts",
+              "Highlights"
+            ]
+          ],
+          "oracle": {
+            "resource": "highlights",
+            "selected": true
+          }
+        },
+        "canonical_tab": false,
+        "split": "train"
+      },
+      {
+        "id": "files/options",
+        "app_group_id": "files",
+        "package": "com.google.android.documentsui",
+        "version_code": "340818080",
+        "task": {
+          "id": "options",
+          "steps": [
+            [
+              "More options"
+            ]
+          ],
+          "oracle": {
+            "text": "New folder"
+          }
+        },
+        "canonical_tab": false,
+        "split": "train"
+      },
+      {
+        "id": "files/search",
+        "app_group_id": "files",
+        "package": "com.google.android.documentsui",
+        "version_code": "340818080",
+        "task": {
+          "id": "search",
+          "steps": [
+            [
+              "Find files",
+              "Search"
+            ]
+          ],
+          "oracle": {
+            "resource": "search_src_text"
+          }
+        },
+        "canonical_tab": false,
+        "split": "train"
+      },
+      {
+        "id": "dialer/keypad",
+        "app_group_id": "dialer",
+        "package": "com.google.android.dialer",
+        "version_code": "11348628",
+        "task": {
+          "id": "keypad",
+          "steps": [
+            [
+              "key pad"
+            ]
+          ],
+          "oracle": {
+            "resource": "dialpad_key_number",
+            "text": "1"
+          }
+        },
+        "canonical_tab": true,
+        "split": "test"
+      },
+      {
+        "id": "dialer/recents",
+        "app_group_id": "dialer",
+        "package": "com.google.android.dialer",
+        "version_code": "11348628",
+        "task": {
+          "id": "recents",
+          "steps": [
+            [
+              "Call history",
+              "Recents"
+            ]
+          ],
+          "oracle": {
+            "resource": "tab_call_history",
+            "selected": true
+          }
+        },
+        "canonical_tab": true,
+        "split": "test"
+      }
+    ]
+  },
+  "fingerprint": "google/sdk_gphone64_arm64/emu64a:14/UE1A.230829.050/12077443:userdebug/dev-keys",
+  "sha256": "7f1341db96b1b26b9797f60cfa8d93ad030a443d138a200375e9551427f97097"
+}

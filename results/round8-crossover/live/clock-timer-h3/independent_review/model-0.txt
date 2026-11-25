@@ -1,0 +1,2 @@
+The global task objective is to navigate to the countdown timer tab without starting a timer. Currently, the screen shows the Clock app with the main clock interface active. The bottom navigation bar includes multiple tabs: Alarm, Clock, Timer, Stopwatch, and Bedtime. To achieve the goal, the next logical step is to select the Timer tab from the bottom navigation bar. This action will navigate to the timer section as required, without initiating any timer.
+</think>Action: Click the "Timer" tab in the bottom navigation bar.

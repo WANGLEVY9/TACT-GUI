@@ -1,0 +1,2 @@
+The global task objective is to navigate from the Settings homepage to the Network & internet section and then to the Internet page without making any changes. Currently, we are on the Settings homepage, which displays various options including "Network & internet." Given the task's progression, the next logical step is to select the "Network & internet" option to move closer to the Internet page. This action aligns with the task's requirement to access the specified settings.
+</think>Action: Click on the "Network & internet" option.

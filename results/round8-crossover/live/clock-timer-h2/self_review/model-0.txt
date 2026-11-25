@@ -1,0 +1,1 @@
+To navigate to the countdown timer tab, tap the 'Timer' icon in the bottom navigation bar. This is the correct tab to access timer functionality, and it is the third icon from the left. Selecting it will display the timer interface without starting a timer.

@@ -1,0 +1,114 @@
+{
+  "checkpoint": "calculator-clear-entry",
+  "group": "calculator",
+  "arm": "direct",
+  "scope_id": "b4a3db4bd435441d994dffdebd6382c7",
+  "calls": [
+    {
+      "reservation_id": "8669589c0abb427d93ae8a096c6ca40a",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2855,
+        "completion_tokens": 46,
+        "total_tokens": 2901,
+        "completion_tokens_details": {
+          "text_tokens": 46
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 303
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "1bb570eaf8e5c160c06f11cc9c12964a8eaa06c2f62cc65bd6f60f96bc167ce7"
+    },
+    {
+      "reservation_id": "0978cb9a03354ae6b1694856a78a58d5",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2875,
+        "completion_tokens": 46,
+        "total_tokens": 2921,
+        "completion_tokens_details": {
+          "text_tokens": 46
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 323
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "47a5360ccd15a4214066507ded44b8f0594500744c68d06eb6d4a4fe47256782"
+    },
+    {
+      "reservation_id": "4946245eb6524ca79eb429cccd73480b",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2895,
+        "completion_tokens": 122,
+        "total_tokens": 3017,
+        "completion_tokens_details": {
+          "reasoning_tokens": 74,
+          "text_tokens": 48
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 343
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "76112357fb202f1e00cabccb4f57c129bb4478a9280fe8e6b7e84b6171b34486"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        627,
+        918
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        627,
+        918
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        627,
+        918
+      ]
+    }
+  ],
+  "success": 0,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 27
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 27.0
+  },
+  "elapsed_seconds": 30.304718916973798
+}

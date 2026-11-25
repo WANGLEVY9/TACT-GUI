@@ -1,0 +1,77 @@
+{
+  "checkpoint": "calculator-equals",
+  "group": "calculator",
+  "arm": "direct",
+  "scope_id": "70d89675b59542128cc937277ed68715",
+  "calls": [
+    {
+      "reservation_id": "fb570333dc434bb7b14f636842d3fdc0",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2852,
+        "completion_tokens": 106,
+        "total_tokens": 2958,
+        "completion_tokens_details": {
+          "reasoning_tokens": 55,
+          "text_tokens": 51
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 300
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "25712997cea343d306142bc69d1dfef093d228ea86338179c12a582be8d6cbbe"
+    },
+    {
+      "reservation_id": "c183a9e470384dfe88c46f79dc426a62",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2872,
+        "completion_tokens": 39,
+        "total_tokens": 2911,
+        "completion_tokens_details": {
+          "text_tokens": 39
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 320
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "a3dffb69b5fb931cf802b2a039e7cebb3734fdafc87f24643efc377359dabebc"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        875,
+        909
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        875,
+        919
+      ]
+    }
+  ],
+  "success": 0,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 24.0
+  },
+  "elapsed_seconds": 27.581199542008108
+}

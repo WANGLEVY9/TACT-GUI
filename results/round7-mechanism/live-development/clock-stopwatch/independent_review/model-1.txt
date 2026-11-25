@@ -1,0 +1,3 @@
+Action: Click the "Stopwatch" icon in the bottom navigation bar.
+<tool_call>{"name":"computer_use","arguments":{"action":"left_click","coordinate": [700, 930]}}
+</tool_call>

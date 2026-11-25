@@ -1,0 +1,101 @@
+{
+  "checkpoint": "files-menu",
+  "group": "files",
+  "arm": "self_review",
+  "scope_id": "ca936eed33ed443b99a0838a642177a7",
+  "calls": [
+    {
+      "reservation_id": "118baf753fcc426da9de09116bc007aa",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2647,
+        "completion_tokens": 46,
+        "total_tokens": 2693,
+        "completion_tokens_details": {
+          "text_tokens": 46
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 95
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "623980ccca1ade053c7998e9bfcacee18d1712f925516f7c5b0793bcdb07b848"
+    },
+    {
+      "reservation_id": "75624d2114954d70987cedc8e06c30b2",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2901,
+        "completion_tokens": 119,
+        "total_tokens": 3020,
+        "completion_tokens_details": {
+          "reasoning_tokens": 64,
+          "text_tokens": 55
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 349
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "623980ccca1ade053c7998e9bfcacee18d1712f925516f7c5b0793bcdb07b848"
+    },
+    {
+      "reservation_id": "87145fa9a8e04fc580161992b1451e86",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2920,
+        "completion_tokens": 117,
+        "total_tokens": 3037,
+        "completion_tokens_details": {
+          "reasoning_tokens": 73,
+          "text_tokens": 44
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 368
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "5a905f32f2aa0c11cb06353c9ab1990adde2f48c7b6823d66ca1afc92f4a7b46"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        939,
+        79
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+  "state": {
+    "nodes": 45,
+    "labelled_nodes": 12,
+    "clickable_nodes": 8,
+    "duplicate_visible_labels": 1
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 15
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 11.0
+  },
+  "elapsed_seconds": 17.45874216701486
+}

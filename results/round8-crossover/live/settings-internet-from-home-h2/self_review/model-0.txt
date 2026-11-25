@@ -1,0 +1,2 @@
+The global task objective is to navigate from the Settings homepage to the Network & internet section and then to the Internet page without making any changes. Currently, we are on the Settings homepage, which displays various options including "Network & internet." To progress towards the goal, the next logical step is to select the "Network & internet" option, as it is the first item in the list and directly relevant to our task.
+</think>Action: Click on "Network & internet".

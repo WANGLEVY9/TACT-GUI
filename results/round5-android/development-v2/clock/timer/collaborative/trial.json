@@ -1,0 +1,58 @@
+{
+  "task_id": "clock/timer",
+  "app_group_id": "clock",
+  "split": "train",
+  "configuration": "collaborative",
+  "features": [
+    1.0,
+    0.25,
+    1.0,
+    1.0,
+    1.0,
+    0.225,
+    0.0
+  ],
+  "outcome": "task_completed",
+  "success": 1,
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "initial_matches": true,
+    "initial_positive": false,
+    "initial_hash": "ce17c0124287849891bd82842255bb6ba0e217fe6da7b62b7059adf635503a9b",
+    "decisions": [
+      {
+        "primary": null,
+        "chosen": [
+          540,
+          2232
+        ]
+      }
+    ]
+  },
+  "error_type": null,
+  "elapsed_seconds": 12.108149832987692,
+  "actual": {
+    "agent_calls": 2.0,
+    "device_steps": 9.0
+  },
+  "ledger": {
+    "limits": {
+      "agent_calls": 2.0,
+      "device_steps": 9.0
+    },
+    "spent": {
+      "agent_calls": 2.0,
+      "device_steps": 9.0
+    },
+    "reserved": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "pending_reservations": []
+  }
+}

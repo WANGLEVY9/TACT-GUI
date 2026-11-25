@@ -1,0 +1,65 @@
+{
+  "task_id": "calculator/sum",
+  "app_group_id": "calculator",
+  "split": "validation",
+  "configuration": "single",
+  "features": [
+    1.0,
+    1.0,
+    0.5,
+    0.0,
+    0.0,
+    0.075,
+    0.5
+  ],
+  "outcome": "task_incomplete",
+  "success": 0,
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "initial_matches": true,
+    "initial_positive": false,
+    "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+    "decisions": [
+      {
+        "primary": [
+          405,
+          1919
+        ],
+        "chosen": [
+          405,
+          1919
+        ]
+      },
+      {
+        "primary": null,
+        "chosen": null
+      }
+    ]
+  },
+  "error_type": null,
+  "elapsed_seconds": 11.481864791974658,
+  "actual": {
+    "agent_calls": 2.0,
+    "device_steps": 9.0
+  },
+  "ledger": {
+    "limits": {
+      "agent_calls": 4.0,
+      "device_steps": 18.0
+    },
+    "spent": {
+      "agent_calls": 2.0,
+      "device_steps": 9.0
+    },
+    "reserved": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "agent_calls": 2.0,
+      "device_steps": 9.0
+    },
+    "pending_reservations": []
+  }
+}

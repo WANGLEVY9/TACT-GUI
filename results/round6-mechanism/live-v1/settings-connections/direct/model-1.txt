@@ -1,0 +1,3 @@
+Action: Click on "Connected devices".
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [380, 458]}}
+</tool_call>

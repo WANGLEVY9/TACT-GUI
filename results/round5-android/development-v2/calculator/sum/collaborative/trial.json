@@ -1,0 +1,85 @@
+{
+  "task_id": "calculator/sum",
+  "app_group_id": "calculator",
+  "split": "validation",
+  "configuration": "collaborative",
+  "features": [
+    1.0,
+    1.0,
+    0.5,
+    1.0,
+    0.5,
+    0.075,
+    0.5
+  ],
+  "outcome": "task_completed",
+  "success": 1,
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "initial_matches": true,
+    "initial_positive": false,
+    "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+    "decisions": [
+      {
+        "primary": [
+          405,
+          1919
+        ],
+        "chosen": [
+          405,
+          1919
+        ]
+      },
+      {
+        "primary": null,
+        "chosen": [
+          945,
+          1919
+        ]
+      },
+      {
+        "primary": [
+          675,
+          1919
+        ],
+        "chosen": [
+          675,
+          1919
+        ]
+      },
+      {
+        "primary": null,
+        "chosen": [
+          945,
+          2198
+        ]
+      }
+    ]
+  },
+  "error_type": null,
+  "elapsed_seconds": 18.800729041016893,
+  "actual": {
+    "agent_calls": 8.0,
+    "device_steps": 18.0
+  },
+  "ledger": {
+    "limits": {
+      "agent_calls": 8.0,
+      "device_steps": 18.0
+    },
+    "spent": {
+      "agent_calls": 8.0,
+      "device_steps": 18.0
+    },
+    "reserved": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "pending_reservations": []
+  }
+}

@@ -1,0 +1,2 @@
+Action: Terminate the task because the More options menu in Downloads is already open and no changes or creations are being made.
+<tool_call>{"name":"computer_use","arguments": {"action": "terminate"}}</tool_call>

@@ -1,0 +1,1 @@
+To access the 'Connected devices' section, click on the 'Connected devices' option. This will open the relevant settings page without modifying any configurations.

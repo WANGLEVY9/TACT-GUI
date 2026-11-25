@@ -1,0 +1,3 @@
+Action: Tap the Timer icon in the bottom navigation bar, which is the third tab from the left and represented by a sandglass symbol.
+<tool_call>{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [500, 930]}}
+</tool_call>

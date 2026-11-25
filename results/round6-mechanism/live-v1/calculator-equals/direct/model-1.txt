@@ -1,0 +1,3 @@
+Action: Click the equals button.
+<tool_call>{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [875, 919]}}
+</tool_call>

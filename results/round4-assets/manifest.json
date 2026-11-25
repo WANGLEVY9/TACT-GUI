@@ -1,0 +1,9 @@
+{
+  "source": "https://github.com/SimpleMobileTools/Simple-Calculator/releases/tag/5.12.0",
+  "download": "https://github.com/SimpleMobileTools/Simple-Calculator/releases/download/5.12.0/calculator-fdroid-release.apk",
+  "source_license": "GPL-3.0",
+  "version": "5.12.0",
+  "apk_sha256": "092629deaeaaea824dbf0cd824989e80b498b1fa07ad5b4c3e744fc64ce5ab2f",
+  "package": "com.simplemobiletools.calculator",
+  "scope": "engineering acceptance only, no known defect annotation"
+}

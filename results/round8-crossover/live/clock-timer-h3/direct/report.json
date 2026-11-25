@@ -1,0 +1,92 @@
+{
+  "checkpoint": "clock-timer-h3",
+  "group": "clock",
+  "arm": "direct",
+  "scope_id": "6e6188310d444305a5994eb6b5ab0d41",
+  "calls": [
+    {
+      "reservation_id": "deba3efde4d843139ba3083b206cbb7a",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2842,
+        "completion_tokens": 142,
+        "total_tokens": 2984,
+        "completion_tokens_details": {
+          "reasoning_tokens": 95,
+          "text_tokens": 47
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 290
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "0019506b182f03d83333f14a3f3480e446e60995b8e2780fce97fd3e1de4b827"
+    },
+    {
+      "reservation_id": "d0fb89722b8a4c6194ca2c50e7cc6994",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2862,
+        "completion_tokens": 154,
+        "total_tokens": 3016,
+        "completion_tokens_details": {
+          "reasoning_tokens": 126,
+          "text_tokens": 28
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 310
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "bc00671ab5fe68fb66e0d9140ec8b96300d7b658125ce4df36d35ba6a0831c5a"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        505,
+        930
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "c53c9a23098193d6e79138dc11e1e57b0d69b8691c4b61ad9d16facff89ebaa6",
+  "state": {
+    "nodes": 50,
+    "labelled_nodes": 15,
+    "clickable_nodes": 6,
+    "duplicate_visible_labels": 6
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 21
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "c53c9a23098193d6e79138dc11e1e57b0d69b8691c4b61ad9d16facff89ebaa6"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true
+    ],
+    "replay_after_actions": [
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 12.0
+  },
+  "elapsed_seconds": 27.112549459037837
+}

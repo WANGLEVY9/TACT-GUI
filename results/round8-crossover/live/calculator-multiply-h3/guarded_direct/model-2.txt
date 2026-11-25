@@ -1,0 +1,3 @@
+Action: Tap the equals button located at the bottom right of the numeric keypad.
+<tool_call>{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [861, 909]}}
+</tool_call>

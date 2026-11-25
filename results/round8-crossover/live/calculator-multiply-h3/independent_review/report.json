@@ -1,0 +1,120 @@
+{
+  "checkpoint": "calculator-multiply-h3",
+  "group": "calculator",
+  "arm": "independent_review",
+  "scope_id": "c37fc60868e941dcb4396e14f1d6e45f",
+  "calls": [
+    {
+      "reservation_id": "f9a25357bdb146bead67ceae0db621cf",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2658,
+        "completion_tokens": 35,
+        "total_tokens": 2693,
+        "completion_tokens_details": {
+          "text_tokens": 35
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 106
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "e5ac87c23b0e9ebe29ad44c51f38417a12cc712223788c308c26b5533148a219"
+    },
+    {
+      "reservation_id": "899c2dbbb04841d48a096939310c0825",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2905,
+        "completion_tokens": 137,
+        "total_tokens": 3042,
+        "completion_tokens_details": {
+          "reasoning_tokens": 79,
+          "text_tokens": 58
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 353
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "e5ac87c23b0e9ebe29ad44c51f38417a12cc712223788c308c26b5533148a219"
+    },
+    {
+      "reservation_id": "56268eeab39d4122b930002404ae4a1a",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2925,
+        "completion_tokens": 39,
+        "total_tokens": 2964,
+        "completion_tokens_details": {
+          "text_tokens": 39
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 373
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "1c53d8beb8a9b204e6209eac4ef93a0e4f8ab5244fa4498c175f1a9a8f9c109c"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        867,
+        909
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        875,
+        918
+      ]
+    }
+  ],
+  "success": 0,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 33
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true,
+      false
+    ],
+    "replay_after_actions": [
+      true,
+      false
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": true
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 29.0
+  },
+  "elapsed_seconds": 64.80538537498796
+}

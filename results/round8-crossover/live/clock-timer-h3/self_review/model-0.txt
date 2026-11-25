@@ -1,0 +1,1 @@
+To access the countdown timer tab, I need to tap the Timer icon in the bottom navigation bar. The icon is represented by a sandglass symbol and is the third tab from the left. This will switch the view from the current Clock tab to the Timer tab where countdown functionality is available.

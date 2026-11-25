@@ -1,0 +1,53 @@
+%%{init: {"theme":"base", "flowchart":{"nodeSpacing":150,"rankSpacing":15}, "themeVariables":{"fontFamily":"Arial, PingFang SC","fontSize":"17px","lineColor":"#64748b","primaryTextColor":"#17243d"}}}%%
+flowchart TB
+    INPUT(["测试目标 · 被测系统 · 总预算 B₀"])
+    ENV["环境恢复与隔离<br/>Checkpoint / Reset"]
+    RANDOM["配置随机化<br/>Task × Agent × Budget"]
+    ORACLE["测试验证标准<br/>Oracle / Deduplication"]
+    DATA[("受控轨迹数据 D<br/>State · Action · Cost · Outcome")]
+    ENC["状态编码器<br/>Graph Transformer"]
+    VALUE["反事实价值模型<br/>Incremental Utility / Ranking"]
+    COST["成本分布模型<br/>Distributional Prediction"]
+    WORLD["可选：状态转移模型<br/>Latent World Model"]
+    POLICY["策略训练<br/>Imitation / Offline RL · 可选 Online RL"]
+    STATE["在线状态 sₜ<br/>Task · Agent · Evidence · Budget"]
+    CAND["候选联合动作 aₜ<br/>Task · Coalition · Model · Cap"]
+    PRED["价值与成本评估<br/>Counterfactual Value + Cost"]
+    LOOK["可选有限前瞻<br/>World Model Rollout"]
+    SELECT["预算条件联合调度 π<br/>Structured Decoding / Ranking"]
+    GATE{"可行性检查<br/>预算 · 依赖 · 资源"}
+    LEDGER[("共享预算账本<br/>Reserve → Settle → Release")]
+    EXEC["受限多智能体执行<br/>Agents + Tools + SUT"]
+    VERIFY["复现 · 验证 · 去重<br/>Verified Evidence"]
+    RESULT[("测试结果与轨迹<br/>Outcome · Cost · State")]
+    EVAL["对照与消融<br/>预算分配 × 协作配置"]
+    METRIC["最终指标<br/>Verified Bugs · Cost · Violations"]
+    UPDATE["反馈更新<br/>状态 / 轨迹 / 模型版本"]
+    INPUT --> ENV & RANDOM & ORACLE
+    ENV & RANDOM & ORACLE --> DATA
+    DATA --> ENC & VALUE & COST & WORLD
+    ENC & VALUE & COST --> POLICY
+    WORLD -. "可选" .-> POLICY
+    INPUT --> STATE
+    STATE --> CAND
+    ENC -. "状态编码" .-> STATE
+    CAND --> PRED
+    VALUE & COST -. "预测" .-> PRED
+    WORLD -. "模拟" .-> LOOK
+    POLICY -. "部署" .-> SELECT
+    PRED & LOOK --> SELECT
+    SELECT --> GATE --> LEDGER --> EXEC --> VERIFY --> RESULT
+    ORACLE -. "Oracle" .-> VERIFY
+    RESULT --> EVAL & METRIC & UPDATE
+    classDef data fill:#e4f5f5,stroke:#4fa3a3,color:#173e3e
+    classDef model fill:#f1ebff,stroke:#9476c8,color:#37235c
+    classDef runtime fill:#e9f2ff,stroke:#6898cd,color:#173758
+    classDef budget fill:#fff3dc,stroke:#cb9439,color:#5a3d13
+    classDef test fill:#e7f7ec,stroke:#63a980,color:#193d2b
+    classDef eval fill:#fff0ee,stroke:#ce8c83,color:#512e2b
+    class ENV,RANDOM,ORACLE,DATA data
+    class ENC,VALUE,COST,WORLD,POLICY model
+    class INPUT,STATE,CAND,PRED,LOOK,SELECT runtime
+    class GATE,LEDGER budget
+    class EXEC,VERIFY,RESULT test
+    class EVAL,METRIC,UPDATE eval

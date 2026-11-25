@@ -1,0 +1,6 @@
+flowchart LR
+ A["策略训练<br/>模仿 / 离线学习<br/>可选在线强化学习"] --> B[("模型版本管理<br/>评估后发布")] --> C["对照与消融<br/>动态预算 × 协作配置"] --> D["公平评估<br/>同预算、权限和总成本"] --> E["效果与可靠性<br/>确认缺陷 / 场景完成<br/>预算违规 / 泛化"]
+ classDef c fill:#f2edff,stroke:#977bc6
+ class A,B c
+ classDef d fill:#fff0ed,stroke:#c8877d
+ class C,D,E d

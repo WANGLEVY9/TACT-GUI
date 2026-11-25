@@ -1,0 +1,78 @@
+{
+  "checkpoint": "calculator-recover",
+  "group": "calculator",
+  "arm": "direct",
+  "scope_id": "d0ff87ec85c74080961d2446d28734d7",
+  "calls": [
+    {
+      "reservation_id": "d150e61763844b2098099b8fa8a3f58a",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2859,
+        "completion_tokens": 122,
+        "total_tokens": 2981,
+        "completion_tokens_details": {
+          "reasoning_tokens": 75,
+          "text_tokens": 47
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 307
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "c112fd9c03cdf782c1149931bfc6b6291810464757c683e79fff94afb03c8bb2"
+    },
+    {
+      "reservation_id": "8482634f44f04513ade08edb7c0fc3bb",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2879,
+        "completion_tokens": 108,
+        "total_tokens": 2987,
+        "completion_tokens_details": {
+          "reasoning_tokens": 61,
+          "text_tokens": 47
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 327
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "d31db173b3b68ad30d9c494c804688cb4534003a5f1a7e5727718d2cdf5eedc1"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        622,
+        912
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        627,
+        912
+      ]
+    }
+  ],
+  "success": 0,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 24.0
+  },
+  "elapsed_seconds": 28.718225332995644
+}

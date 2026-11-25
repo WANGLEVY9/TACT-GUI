@@ -1,0 +1,70 @@
+{
+  "checkpoint": "calculator-recover",
+  "group": "calculator",
+  "arm": "independent_review",
+  "scope_id": "905323283100466cba37767efe2076cc",
+  "calls": [
+    {
+      "reservation_id": "e2e9f39aea704e90b8b4f1c1939c72a8",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2661,
+        "completion_tokens": 92,
+        "total_tokens": 2753,
+        "completion_tokens_details": {
+          "text_tokens": 92
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 109
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "57b4b9ab715282013266a5c0de423255a5d5633841b5ef8ce51fc2e048a96bba"
+    },
+    {
+      "reservation_id": "01a150c5a5f847b290364f113e82c675",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2959,
+        "completion_tokens": 128,
+        "total_tokens": 3087,
+        "completion_tokens_details": {
+          "reasoning_tokens": 70,
+          "text_tokens": 58
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 407
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "57b4b9ab715282013266a5c0de423255a5d5633841b5ef8ce51fc2e048a96bba"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        622,
+        909
+      ]
+    }
+  ],
+  "success": 0,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 22.0
+  },
+  "elapsed_seconds": 27.926075374998618
+}

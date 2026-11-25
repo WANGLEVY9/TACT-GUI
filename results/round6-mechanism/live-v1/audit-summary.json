@@ -1,0 +1,49 @@
+{
+  "registered": 4,
+  "comparable": 4,
+  "comparisons": {
+    "direct": {
+      "independent_only": 1,
+      "baseline_only": 0,
+      "both_success": 2,
+      "both_incomplete": 1,
+      "independent_win_families": [
+        "calculator"
+      ],
+      "net_wins": 1
+    },
+    "self_review": {
+      "independent_only": 0,
+      "baseline_only": 0,
+      "both_success": 3,
+      "both_incomplete": 1,
+      "independent_win_families": [],
+      "net_wins": 0
+    }
+  },
+  "tokens_by_arm": {
+    "self_review": 22864,
+    "independent_review": 22901,
+    "direct": 23541
+  },
+  "total_tokens": 69306,
+  "budget": {
+    "limits": {
+      "model_calls": 24.0,
+      "device_steps": 228.0
+    },
+    "spent": {
+      "model_calls": 24.0,
+      "device_steps": 208.0
+    },
+    "reserved": {
+      "model_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "model_calls": 0.0,
+      "device_steps": 20.0
+    },
+    "pending_reservations": []
+  }
+}

@@ -1,0 +1,3 @@
+Action: Tap the equals button located at the bottom right of the calculator keypad to complete the calculation and display the result.
+<tool_call>{"name":"computer_use","arguments":{"action":"left_click", "coordinate": [871, 909]}}
+</tool_call>

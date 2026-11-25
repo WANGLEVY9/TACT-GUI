@@ -1,0 +1,45 @@
+{
+  "task_id": "contacts/highlights",
+  "app_group_id": "contacts",
+  "split": "train",
+  "configuration": "single",
+  "features": [
+    1.0,
+    0.25,
+    1.0,
+    0.0,
+    0.0,
+    0.425,
+    0.0
+  ],
+  "outcome": "unresolved",
+  "success": null,
+  "verification": null,
+  "error_type": "RuntimeError",
+  "elapsed_seconds": 2.295285125001101,
+  "actual": {
+    "agent_calls": 0.0,
+    "device_steps": 0.0
+  },
+  "ledger": {
+    "limits": {
+      "agent_calls": 1.0,
+      "device_steps": 9.0
+    },
+    "spent": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "reserved": {
+      "agent_calls": 1.0,
+      "device_steps": 9.0
+    },
+    "available": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "pending_reservations": [
+      "1fed4482a21046b5bb1392dddfa3207f"
+    ]
+  }
+}

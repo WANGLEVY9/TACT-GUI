@@ -1,0 +1,91 @@
+{
+  "checkpoint": "calculator-multiply-h2",
+  "group": "calculator",
+  "arm": "self_review",
+  "scope_id": "c4e23bb2396b48a58137cb1986ccb223",
+  "calls": [
+    {
+      "reservation_id": "f0bb4cd221274465ba6bad1c60d504a3",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2656,
+        "completion_tokens": 81,
+        "total_tokens": 2737,
+        "completion_tokens_details": {
+          "reasoning_tokens": 55,
+          "text_tokens": 26
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 104
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "d873e56dc770cb1d0de9fef707dcec999544a002fb249b7eb318193d91e92f9d"
+    },
+    {
+      "reservation_id": "4bcc1a196fe44ef4b52d132f7ed8e12c",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2889,
+        "completion_tokens": 48,
+        "total_tokens": 2937,
+        "completion_tokens_details": {
+          "text_tokens": 48
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 337
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "d873e56dc770cb1d0de9fef707dcec999544a002fb249b7eb318193d91e92f9d"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        875,
+        919
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 28
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true
+    ],
+    "replay_after_actions": [
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 24.0
+  },
+  "elapsed_seconds": 32.07058933295775
+}

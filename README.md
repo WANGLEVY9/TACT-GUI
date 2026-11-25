@@ -51,6 +51,18 @@ python -m budgetmas.paired_learning results/mechanism-development/protocol.json 
   results/mechanism-development/report.json results/development-fit.json
 ```
 
-Run `python -m budgetmas.horizon --help` for the within-checkpoint budget crossover. Run `python -m budgetmas.trajectory_audit --help` for step-by-step replay of recorded failures. Experimental output, emulator state, and application binaries are generated or acquired separately.
+Run `python -m budgetmas.horizon --help` for the within-checkpoint budget crossover. Run `python -m budgetmas.trajectory_audit --help` for step-by-step replay of recorded failures. The repository includes [selected experimental artifacts](results/README.md). New runs write separate output, and each live setup acquires its own emulator and app binaries.
+
+## Experiment console
+
+Start the local console from the repository root. A fresh checkout includes three saved mechanism runs in `results/` for browsing without a device or API key.
+
+```sh
+budgetmas-console
+```
+
+Open [TACT-GUI Console](http://127.0.0.1:8765/). The run explorer shows ADB captures taken before each model call, recorded actions, token usage, budget settlement, and independent replay results. The test library browses registered checkpoints by app and protocol. The artifacts view opens or downloads frozen protocols, reports, and available analyses.
+
+To collect data, connect a dedicated `BudgetMASPilot` emulator and configure GUI-Plus as described above. Pass `--manifest results/manifest.json` to use a newly frozen manifest. Select checkpoints, horizon, and verification options in **New run**, then review the call limit and confirm. The console starts the mechanism runner on one emulator and saves its output under `results/console/`. Stopping the runner preserves files already written and keeps any unresolved budget reservations in the ledger.
 
 See the [architecture diagram](architecture/architecture.svg) and [algorithm notes](docs/ALGORITHM.md) for the planning and accounting design.

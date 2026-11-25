@@ -1,0 +1,81 @@
+{
+  "checkpoint": "files-search",
+  "group": "files",
+  "arm": "self_review",
+  "scope_id": "a4096638bd3446faaa2cecfa8969ab57",
+  "calls": [
+    {
+      "reservation_id": "9f5452a02a6544fd8bcfa63c0a96716d",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2643,
+        "completion_tokens": 100,
+        "total_tokens": 2743,
+        "completion_tokens_details": {
+          "reasoning_tokens": 84,
+          "text_tokens": 16
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 91
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "78a7df8b1d67cde9e7dcbec84fbcc843c984b560ecd87e95f1d9156e8b80f23a"
+    },
+    {
+      "reservation_id": "71b62369f36541ef953e69daf184e6f0",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2865,
+        "completion_tokens": 128,
+        "total_tokens": 2993,
+        "completion_tokens_details": {
+          "reasoning_tokens": 82,
+          "text_tokens": 46
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 313
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "78a7df8b1d67cde9e7dcbec84fbcc843c984b560ecd87e95f1d9156e8b80f23a"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        824,
+        80
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+  "state": {
+    "nodes": 45,
+    "labelled_nodes": 12,
+    "clickable_nodes": 8,
+    "duplicate_visible_labels": 1
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 12
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486"
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 10.0
+  },
+  "elapsed_seconds": 14.848545542015927
+}

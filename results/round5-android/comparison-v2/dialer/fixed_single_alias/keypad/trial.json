@@ -1,0 +1,61 @@
+{
+  "task_id": "dialer/keypad",
+  "app_group_id": "dialer",
+  "split": "test",
+  "configuration": "single_alias",
+  "features": [
+    1.0,
+    0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.175,
+    0.0
+  ],
+  "outcome": "task_completed",
+  "success": 1,
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "initial_matches": true,
+    "initial_positive": false,
+    "initial_hash": "d041768363c79e0a5870acd3a1b13cb88f6ec22b7cd90fb8ec165ca02e971d0e",
+    "decisions": [
+      {
+        "primary": [
+          943,
+          1985
+        ],
+        "chosen": [
+          943,
+          1985
+        ]
+      }
+    ]
+  },
+  "error_type": null,
+  "elapsed_seconds": 16.04340616700938,
+  "actual": {
+    "agent_calls": 1.0,
+    "device_steps": 11.0
+  },
+  "ledger": {
+    "limits": {
+      "agent_calls": 8.0,
+      "device_steps": 26.0
+    },
+    "spent": {
+      "agent_calls": 1.0,
+      "device_steps": 11.0
+    },
+    "reserved": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "agent_calls": 7.0,
+      "device_steps": 15.0
+    },
+    "pending_reservations": []
+  }
+}

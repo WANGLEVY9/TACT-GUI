@@ -10,5 +10,9 @@ dependencies = []
 pilot = ["catboost==1.2.10"]
 [project.scripts]
 budgetmas = "budgetmas.cli:main"
+budgetmas-console = "budgetmas.console:main"
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.setuptools.package-data]
+budgetmas = ["console_static/*"]

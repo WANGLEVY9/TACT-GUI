@@ -1,0 +1,16 @@
+{
+  "original_report_sha256": "b7fd72bae44eedcf0b91e5cf1c99a31554b20d207ff1ccaf811c7546ba29423d",
+  "adb_timeout_seconds": 40,
+  "jobs": [
+    {
+      "checkpoint": "clock-timer-h2",
+      "arm": "direct",
+      "device": "emulator-5584"
+    },
+    {
+      "checkpoint": "settings-internet-from-home-h3",
+      "arm": "independent_review",
+      "device": "emulator-5586"
+    }
+  ]
+}

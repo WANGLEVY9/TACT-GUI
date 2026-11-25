@@ -1,0 +1,3 @@
+Action: Click the "0" button on the number pad.
+<tool_call>{"name": "computer_use", "arguments": {"action": "terminate", "status": "success"}}
+</tool_call>

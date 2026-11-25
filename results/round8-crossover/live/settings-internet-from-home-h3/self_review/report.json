@@ -1,0 +1,121 @@
+{
+  "checkpoint": "settings-internet-from-home-h3",
+  "group": "settings",
+  "arm": "self_review",
+  "scope_id": "6e00effe12904db58f9b9042e38b27b9",
+  "calls": [
+    {
+      "reservation_id": "da6564a994c249f49e300a8f73ddf962",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2650,
+        "completion_tokens": 84,
+        "total_tokens": 2734,
+        "completion_tokens_details": {
+          "text_tokens": 84
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 98
+        }
+      },
+      "usage_complete": true,
+      "role": "review",
+      "screen_sha256": "60efaadb8bd99d44d2e51d2417e3c8692ffd0dd8012cac70db79625beb6b1df0"
+    },
+    {
+      "reservation_id": "79d21f58d26147cca140f2e3b39a3f7a",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2941,
+        "completion_tokens": 188,
+        "total_tokens": 3129,
+        "completion_tokens_details": {
+          "reasoning_tokens": 112,
+          "text_tokens": 76
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 389
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "3ff01b14589943635f3cc0b2c99dde8832350cebf91e606cbb6e81254736d76c"
+    },
+    {
+      "reservation_id": "c25f82564c924b369e2799679678be6f",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2961,
+        "completion_tokens": 151,
+        "total_tokens": 3112,
+        "completion_tokens_details": {
+          "reasoning_tokens": 86,
+          "text_tokens": 65
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 409
+        }
+      },
+      "usage_complete": true,
+      "role": "execute",
+      "screen_sha256": "5738963e98881f594ba21e09c04baf642ef9d913c52459945853cc3d94a86ab1"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        378,
+        361
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        260,
+        284
+      ]
+    }
+  ],
+  "success": 1,
+  "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+  "state": {
+    "nodes": 65,
+    "labelled_nodes": 17,
+    "clickable_nodes": 10,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 21
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233"
+  },
+  "progress": {
+    "observed_after_actions": [
+      false,
+      true
+    ],
+    "replay_after_actions": [
+      false,
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 2,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 17.0
+  },
+  "elapsed_seconds": 52.95568783296039
+}

@@ -1,0 +1,176 @@
+{
+  "scope": "single technical retry; original results retained",
+  "original_report_sha256": "b7fd72bae44eedcf0b91e5cf1c99a31554b20d207ff1ccaf811c7546ba29423d",
+  "recoveries": [
+    {
+      "checkpoint": "clock-timer-h2",
+      "role": "direct",
+      "original_error": "TimeoutExpired",
+      "retry_success": 1,
+      "retry_error": null
+    },
+    {
+      "checkpoint": "settings-internet-from-home-h3",
+      "role": "independent_review",
+      "original_error": "RuntimeError",
+      "retry_success": 1,
+      "retry_error": null
+    }
+  ],
+  "retry_budget": {
+    "limits": {
+      "model_calls": 5.0,
+      "device_steps": 37.0
+    },
+    "spent": {
+      "model_calls": 5.0,
+      "device_steps": 29.0
+    },
+    "reserved": {
+      "model_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "model_calls": 0.0,
+      "device_steps": 8.0
+    },
+    "pending_reservations": []
+  },
+  "interaction": {
+    "registered": 3,
+    "comparable": 3,
+    "outcomes_by_horizon": {
+      "2": {
+        "guarded_direct": {
+          "terminal_success": 2,
+          "trials": 3,
+          "stable_progress": 3,
+          "first_hit": 3,
+          "lost_goal": 1
+        },
+        "self_review": {
+          "terminal_success": 2,
+          "trials": 3,
+          "stable_progress": 3,
+          "first_hit": 2,
+          "lost_goal": 0
+        },
+        "direct": {
+          "terminal_success": 2,
+          "trials": 3,
+          "stable_progress": 3,
+          "first_hit": 3,
+          "lost_goal": 1
+        },
+        "independent_review": {
+          "terminal_success": 2,
+          "trials": 3,
+          "stable_progress": 3,
+          "first_hit": 2,
+          "lost_goal": 0
+        }
+      },
+      "3": {
+        "independent_review": {
+          "terminal_success": 2,
+          "trials": 3,
+          "stable_progress": 3,
+          "first_hit": 3,
+          "lost_goal": 1
+        },
+        "guarded_direct": {
+          "terminal_success": 2,
+          "trials": 3,
+          "stable_progress": 3,
+          "first_hit": 3,
+          "lost_goal": 1
+        },
+        "self_review": {
+          "terminal_success": 2,
+          "trials": 3,
+          "stable_progress": 3,
+          "first_hit": 3,
+          "lost_goal": 1
+        },
+        "direct": {
+          "terminal_success": 2,
+          "trials": 3,
+          "stable_progress": 3,
+          "first_hit": 3,
+          "lost_goal": 1
+        }
+      }
+    },
+    "checkpoint_interactions": [
+      {
+        "base_checkpoint": "clock-timer",
+        "group": "clock",
+        "comparable": true,
+        "observed": {
+          "2": {
+            "guarded_direct": 1,
+            "self_review": 1,
+            "direct": 1,
+            "independent_review": 1
+          },
+          "3": {
+            "direct": 1,
+            "self_review": 1,
+            "independent_review": 1,
+            "guarded_direct": 1
+          }
+        },
+        "review_by_horizon": 0,
+        "independent_by_horizon": 0,
+        "guard_by_horizon": 0,
+        "independent_vs_guard_by_horizon": 0
+      },
+      {
+        "base_checkpoint": "calculator-multiply",
+        "group": "calculator",
+        "comparable": true,
+        "observed": {
+          "2": {
+            "independent_review": 1,
+            "guarded_direct": 0,
+            "self_review": 1,
+            "direct": 0
+          },
+          "3": {
+            "independent_review": 0,
+            "guarded_direct": 0,
+            "self_review": 0,
+            "direct": 0
+          }
+        },
+        "review_by_horizon": -1,
+        "independent_by_horizon": 0,
+        "guard_by_horizon": 0,
+        "independent_vs_guard_by_horizon": -1
+      },
+      {
+        "base_checkpoint": "settings-internet-from-home",
+        "group": "settings",
+        "comparable": true,
+        "observed": {
+          "2": {
+            "direct": 1,
+            "independent_review": 0,
+            "self_review": 0,
+            "guarded_direct": 1
+          },
+          "3": {
+            "self_review": 1,
+            "direct": 1,
+            "guarded_direct": 1,
+            "independent_review": 1
+          }
+        },
+        "review_by_horizon": 1,
+        "independent_by_horizon": 0,
+        "guard_by_horizon": 0,
+        "independent_vs_guard_by_horizon": 1
+      }
+    ]
+  }
+}

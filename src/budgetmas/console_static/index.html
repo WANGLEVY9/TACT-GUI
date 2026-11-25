@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101727">
+  <link rel="icon" href="data:,">
+  <title>TACT-GUI · Experiment Console</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <aside class="rail">
+    <a class="brand" href="/" aria-label="TACT-GUI home"><span class="mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>TACT<span class="brand-tail">-GUI</span><small>Research console</small></span></a>
+    <nav class="navigation" aria-label="Workspace">
+      <span class="label">Workspace</span>
+      <button class="nav active" data-view="explorer"><span aria-hidden="true">▣</span> Run explorer</button>
+      <button class="nav" data-view="library"><span aria-hidden="true">☷</span> Test library</button>
+      <button class="nav" data-view="artifacts"><span aria-hidden="true">▤</span> Artifacts</button>
+    </nav>
+    <section class="history" aria-label="Recorded runs">
+      <div class="label">Recorded runs <span id="run-count"></span></div>
+      <div id="run-nav"></div>
+    </section>
+    <div class="rail-bottom"><span class="dot"></span><div>Local workspace<small>127.0.0.1 · ADB</small></div></div>
+  </aside>
+  <main class="shell">
+    <header class="bar">
+      <div class="breadcrumbs"><span>TACT-GUI</span><i>/</i><b id="crumb">Run explorer</b></div>
+      <div class="bar-right">
+        <span class="pill" id="connection"><span class="dot"></span> Local console</span>
+        <button class="button danger" id="stop" hidden>Stop run</button>
+        <button class="button primary" id="launch"><span aria-hidden="true">＋</span> New run</button>
+      </div>
+    </header>
+    <div id="status-banner" class="status-banner" role="status" hidden></div>
+    <div class="workspace">
+      <section id="explorer" class="view">
+        <div class="title-row">
+          <div><div class="label accent-label">Experiment monitoring</div><h1>Run explorer</h1><p id="run-caption">Loading local experiments…</p></div>
+          <label class="control run-control">Recorded run<select id="run-select"></select></label>
+        </div>
+        <div id="empty-run" class="panel empty" hidden><h2>No recorded runs</h2><p>Run a registered Android protocol or open a workspace with existing results.</p><button class="button primary" id="empty-launch">Configure a run</button></div>
+        <div id="run-content" hidden>
+          <div class="metrics" id="metrics"></div>
+          <div class="section-head">
+            <div><h2>Step replay</h2><p>Match each captured screen to its model action.</p></div>
+            <div class="case-selectors">
+              <label class="control">Checkpoint<select id="case-select"></select></label>
+              <label class="control">Strategy<select id="role-select"></select></label>
+            </div>
+          </div>
+          <div class="monitor">
+            <section class="panel player" aria-label="Screen replay">
+              <div class="panel-head"><div><span class="status-icon" aria-hidden="true"></span> Emulator capture</div><a id="frame-full" class="mono" target="_blank" rel="noopener">Open full-size PNG ↗</a></div>
+              <div class="transport">
+                <button class="icon-button play" id="play" aria-label="Play sequence" title="Play sequence">▶</button>
+                <button class="icon-button" id="previous" aria-label="Previous frame" title="Previous frame">‹</button>
+                <button class="icon-button" id="next" aria-label="Next frame" title="Next frame">›</button>
+                <div class="timeline" id="timeline" aria-label="Frame sequence"></div>
+                <span class="mono quiet" id="frame-position"></span>
+              </div>
+              <div class="stage">
+                <div class="stage-left"><div class="label">Checkpoint</div><strong id="stage-case">—</strong><div id="stage-aim"></div></div>
+                <div class="phone" id="phone">
+                  <div class="screen"><img id="frame-img" alt="Screenshot before the selected model call"><div id="target-point" aria-label="Tap target" hidden></div></div>
+                </div>
+                <div class="no-frame" id="no-frame" hidden>No screenshot for this strategy yet.</div>
+                <div class="stage-right"><div class="label">Sequence</div><strong id="stage-index">—</strong><div id="stage-meta"></div></div>
+              </div>
+            </section>
+            <aside class="inspector">
+              <section class="panel action-panel" aria-label="Action details">
+                <div class="panel-head"><div><span class="tiny-icon" aria-hidden="true">⌖</span> Action inspector</div><span id="action-chip" class="pill"></span></div>
+                <div id="action-body"></div>
+              </section>
+              <section class="panel verification" aria-label="Independent verification">
+                <div class="panel-head"><div><span class="tiny-icon" aria-hidden="true">◇</span> Independent verification</div></div>
+                <div id="verification-body"></div>
+              </section>
+            </aside>
+          </div>
+          <section class="panel matrix">
+            <div class="panel-head"><div>Checkpoint matrix</div><span class="mono quiet" id="matrix-total"></span></div>
+            <div class="scroll-table"><table id="matrix"></table></div>
+          </section>
+        </div>
+      </section>
+      <section id="library" class="view" hidden>
+        <div class="title-row"><div><div class="label accent-label">Experiment setup</div><h1>Test library</h1><p>Registered checkpoint definitions for controlled Android experiments.</p></div><button class="button primary" id="library-launch">Configure a run</button></div>
+        <div class="library-controls"><label class="control">Protocol<select id="library-profile"></select></label><label class="control">Search checkpoints<input type="search" id="library-search" placeholder="Filter by task, group or goal"></label></div>
+        <div class="library-grid" id="library-grid"></div>
+      </section>
+      <section id="artifacts" class="view" hidden>
+        <div class="title-row"><div><div class="label accent-label">Experiment evidence</div><h1>Artifacts</h1><p id="artifact-caption">Reports, frozen protocols and analyses for the selected run.</p></div><label class="control run-control">Recorded run<select id="artifact-run"></select></label></div>
+        <div class="panel" id="artifact-list"></div>
+      </section>
+    </div>
+  </main>
+  <dialog id="run-dialog">
+    <form id="run-form">
+      <div class="modal-head"><div><div class="label accent-label">Run configuration</div><h2>New experiment</h2></div><button type="button" data-close="run-dialog" class="icon-button" aria-label="Close">×</button></div>
+      <div class="modal-content">
+        <div class="form-grid">
+          <label class="control">Protocol<select id="form-profile" required></select></label>
+          <label class="control">Dedicated emulator<select id="form-device"></select></label>
+          <label class="control">Continuation horizon<select id="form-slots"><option value="">Keep registered horizons</option><option value="2">2 model calls</option><option value="3">3 model calls</option></select></label>
+          <label class="control">Total model call limit<input id="form-limit" type="number" min="1" max="288" value="24" required></label>
+          <label class="control">Random seed<input id="form-seed" type="number" min="0" max="4294967295" required></label>
+          <label class="control">ADB timeout (seconds)<input id="form-timeout" type="number" min="5" max="90" value="40" required></label>
+        </div>
+        <div class="switches"><label><input id="form-guard" type="checkbox"> Include stop-aware strategy</label><label><input id="form-progress" type="checkbox"> Verify progress after each action</label></div>
+        <div class="form-list-head"><strong>Checkpoints</strong><button type="button" class="link-btn" id="select-all">Select all</button></div>
+        <div id="form-cases" class="form-cases"></div>
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+        <div class="plan" id="plan-preview" hidden></div>
+        <label class="confirm" id="confirm-row" hidden><input id="form-confirm" type="checkbox"> Allow this run to reset the selected test apps and make paid GUI-Plus requests within the call limit.</label>
+      </div>
+      <div class="modal-foot"><button type="button" data-close="run-dialog" class="button">Cancel</button><button type="button" class="button" id="preview">Check plan</button><button type="submit" class="button primary" id="start" disabled>Start run</button></div>
+    </form>
+  </dialog>
+  <dialog id="artifact-dialog"><div class="modal-head"><h2 id="artifact-title"></h2><button class="icon-button" data-close="artifact-dialog" aria-label="Close">×</button></div><pre id="artifact-preview"></pre></dialog>
+  <div id="toast" class="toast" role="status" hidden></div>
+</body>
+</html>

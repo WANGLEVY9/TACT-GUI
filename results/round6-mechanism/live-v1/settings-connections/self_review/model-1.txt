@@ -1,0 +1,3 @@
+Action: Tap on the 'Connected devices' option in the Settings menu, which is labeled with 'Bluetooth, pairing' as its subtitle.
+<tool_call>{"name":"computer_use","arguments":{"action":"left_click", "coordinate": [386, 458]}}
+</tool_call>

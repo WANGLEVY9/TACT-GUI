@@ -1,0 +1,61 @@
+{
+  "task_id": "clock/stopwatch",
+  "app_group_id": "clock",
+  "split": "train",
+  "configuration": "single",
+  "features": [
+    1.0,
+    0.25,
+    0.0,
+    0.0,
+    0.0,
+    0.225,
+    0.0
+  ],
+  "outcome": "task_completed",
+  "success": 1,
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "initial_matches": true,
+    "initial_positive": false,
+    "initial_hash": "ce17c0124287849891bd82842255bb6ba0e217fe6da7b62b7059adf635503a9b",
+    "decisions": [
+      {
+        "primary": [
+          756,
+          2232
+        ],
+        "chosen": [
+          756,
+          2232
+        ]
+      }
+    ]
+  },
+  "error_type": null,
+  "elapsed_seconds": 11.512452291994123,
+  "actual": {
+    "agent_calls": 1.0,
+    "device_steps": 9.0
+  },
+  "ledger": {
+    "limits": {
+      "agent_calls": 1.0,
+      "device_steps": 9.0
+    },
+    "spent": {
+      "agent_calls": 1.0,
+      "device_steps": 9.0
+    },
+    "reserved": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "agent_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "pending_reservations": []
+  }
+}

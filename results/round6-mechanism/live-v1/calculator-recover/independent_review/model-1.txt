@@ -1,0 +1,3 @@
+Action: Click the C button (clear button) located at the bottom-left of the numeric keypad to clear the current expression.
+<tool_call>{"name":"computer_use","arguments":{"action":"left_click", "coordinate": [622, 909]}}
+</tool_call>

@@ -1,0 +1,1207 @@
+{
+  "scope": "offline fixed-prefix replay; no policy rerouting or new executions",
+  "manifest_sha256": "7f1341db96b1b26b9797f60cfa8d93ad030a443d138a200375e9551427f97097",
+  "comparison_file_sha256": "60bfc7a2c1771cb9fe5c7682d64041884785af1d4cfe322e72ebf19c527294c5",
+  "results": [
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 1,
+        "device_steps": 26
+      },
+      "admitted": 0,
+      "completed": 0,
+      "spent": {
+        "agent_calls": 0,
+        "device_steps": 0
+      },
+      "first_rejected": "settings/network"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 2,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 3,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 4,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 9
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 13
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 18
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 22
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 24
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 1,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 2,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 3,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 4,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 9
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 13
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 18
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 22
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 24
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 1,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 2,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 15.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 3,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 15.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 4,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 15.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 9
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 13
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 18
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 15.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 22
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 15.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 24
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 15.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 15.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 1,
+        "device_steps": 26
+      },
+      "admitted": 0,
+      "completed": 0,
+      "spent": {
+        "agent_calls": 0,
+        "device_steps": 0
+      },
+      "first_rejected": "settings/network"
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 2,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 3,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 4,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 9
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 13
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 9.0
+      },
+      "first_rejected": "settings/connections"
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 18
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 22
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 24
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "settings",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 18.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 1,
+        "device_steps": 26
+      },
+      "admitted": 0,
+      "completed": 0,
+      "spent": {
+        "agent_calls": 0,
+        "device_steps": 0
+      },
+      "first_rejected": "dialer/keypad"
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 2,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 3,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 4,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 9
+      },
+      "admitted": 0,
+      "completed": 0,
+      "spent": {
+        "agent_calls": 0,
+        "device_steps": 0
+      },
+      "first_rejected": "dialer/keypad"
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 13
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 18
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 22
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 24
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "learned",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 1,
+        "device_steps": 26
+      },
+      "admitted": 0,
+      "completed": 0,
+      "spent": {
+        "agent_calls": 0,
+        "device_steps": 0
+      },
+      "first_rejected": "dialer/keypad"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 2,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 3,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 4,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 9
+      },
+      "admitted": 0,
+      "completed": 0,
+      "spent": {
+        "agent_calls": 0,
+        "device_steps": 0
+      },
+      "first_rejected": "dialer/keypad"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 13
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 18
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 22
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 24
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_collaborative",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 4.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 1,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 2,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 3,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 4,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 9
+      },
+      "admitted": 0,
+      "completed": 0,
+      "spent": {
+        "agent_calls": 0,
+        "device_steps": 0
+      },
+      "first_rejected": "dialer/keypad"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 13
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 18
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 22
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 24
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single_alias",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 2,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 22.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 1,
+        "device_steps": 26
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 2,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 19.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 3,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 19.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 4,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 19.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 9
+      },
+      "admitted": 0,
+      "completed": 0,
+      "spent": {
+        "agent_calls": 0,
+        "device_steps": 0
+      },
+      "first_rejected": "dialer/keypad"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 13
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 18
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 22
+      },
+      "admitted": 1,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 1.0,
+        "device_steps": 11.0
+      },
+      "first_rejected": "dialer/recents"
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 24
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 19.0
+      },
+      "first_rejected": null
+    },
+    {
+      "app": "dialer",
+      "policy": "fixed_single",
+      "cap": {
+        "agent_calls": 8,
+        "device_steps": 26
+      },
+      "admitted": 2,
+      "completed": 1,
+      "spent": {
+        "agent_calls": 2.0,
+        "device_steps": 19.0
+      },
+      "first_rejected": null
+    }
+  ]
+}

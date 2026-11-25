@@ -1,0 +1,1273 @@
+{
+  "scope": "observed-arm development replay with grouped cross-fitting",
+  "online_efficacy_established": false,
+  "deployment_eligible": false,
+  "protocol_sha256": "05635eca58638c059cbfe8deec6318d763bc64c9cf9fa04d62367f5f85c57fb8",
+  "report_sha256": "c6448b844dee40059f56c721aed70a5d0500bded9bae34c3a222de8fb1a0b2b7",
+  "features": [
+    "bias",
+    "slots",
+    "prefix_steps",
+    "goal_words",
+    "sequential_connectives",
+    "ui_nodes",
+    "label_fraction",
+    "clickable_fraction",
+    "duplicate_label_fraction"
+  ],
+  "comparable_checkpoints": 8,
+  "excluded": [],
+  "mechanism_screen": {
+    "registered": 8,
+    "comparable": 8,
+    "comparisons": {
+      "direct": {
+        "independent_only": 2,
+        "baseline_only": 0,
+        "both_success": 5,
+        "both_incomplete": 1,
+        "independent_win_families": [
+          "calculator",
+          "clock"
+        ],
+        "net_wins": 2
+      },
+      "self_review": {
+        "independent_only": 1,
+        "baseline_only": 0,
+        "both_success": 6,
+        "both_incomplete": 1,
+        "independent_win_families": [
+          "clock"
+        ],
+        "net_wins": 1
+      }
+    }
+  },
+  "replay_budgets": {
+    "tight": {
+      "model_calls": 3,
+      "device_steps": 30
+    },
+    "loose": {
+      "model_calls": 6,
+      "device_steps": 60
+    }
+  },
+  "folds": [
+    {
+      "held_group": "calculator",
+      "train_groups": [
+        "clock",
+        "files",
+        "settings"
+      ],
+      "train_checkpoint_ids": [
+        "settings-battery",
+        "clock-timer",
+        "files-search",
+        "settings-internet-from-home",
+        "clock-stopwatch",
+        "files-menu"
+      ],
+      "predictions": {
+        "calculator-multiply": {
+          "reward": {
+            "direct": 0.8050376216035516,
+            "self_review": 0.8395546241339383,
+            "independent_review": 0.9719481089983806
+          },
+          "delta_independent_vs_self": 0.1323934848644422,
+          "cost": {
+            "direct": {
+              "model_calls": 2.1025603679327522,
+              "device_steps": 11.226337454897806
+            },
+            "self_review": {
+              "model_calls": 2.237441976437703,
+              "device_steps": 10.999569253237567
+            },
+            "independent_review": {
+              "model_calls": 2.237441976437703,
+              "device_steps": 10.933231083251265
+            }
+          }
+        },
+        "calculator-clear-entry": {
+          "reward": {
+            "direct": 1.0,
+            "self_review": 1.0,
+            "independent_review": 1.0
+          },
+          "delta_independent_vs_self": 0.16952145022063103,
+          "cost": {
+            "direct": {
+              "model_calls": 2.5992306449144897,
+              "device_steps": 13.187254466406007
+            },
+            "self_review": {
+              "model_calls": 3.0433181671664196,
+              "device_steps": 13.25485744579561
+            },
+            "independent_review": {
+              "model_calls": 3.0433181671664196,
+              "device_steps": 13.622690982720409
+            }
+          }
+        }
+      },
+      "outcome_brier": {
+        "direct": 0.8240427860985515,
+        "self_review": 0.5128713593184009,
+        "independent_review": 0.5003934542943834
+      },
+      "resource_mae": {
+        "direct": {
+          "model_calls": 0.25166486150913125,
+          "device_steps": 13.293204039348094
+        },
+        "self_review": {
+          "model_calls": 0.14038007180206136,
+          "device_steps": 11.372786650483413
+        },
+        "independent_review": {
+          "model_calls": 0.14038007180206136,
+          "device_steps": 11.222038967014164
+        }
+      },
+      "policy_replay": {
+        "tight": {
+          "direct": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "direct",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 24.0
+            }
+          },
+          "self_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "self_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 22.0
+            }
+          },
+          "independent_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 22.0
+            }
+          },
+          "execution_slot_rule": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "direct",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 24.0
+            }
+          },
+          "learned": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 22.0
+            }
+          }
+        },
+        "loose": {
+          "direct": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "direct",
+                "verified": 0
+              },
+              {
+                "id": "calculator-clear-entry",
+                "arm": "direct",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 51.0
+            }
+          },
+          "self_review": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "self_review",
+                "verified": 1
+              },
+              {
+                "id": "calculator-clear-entry",
+                "arm": "self_review",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 47.0
+            }
+          },
+          "independent_review": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "independent_review",
+                "verified": 1
+              },
+              {
+                "id": "calculator-clear-entry",
+                "arm": "independent_review",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 47.0
+            }
+          },
+          "execution_slot_rule": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "direct",
+                "verified": 0
+              },
+              {
+                "id": "calculator-clear-entry",
+                "arm": "direct",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 51.0
+            }
+          },
+          "learned": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "calculator-multiply",
+                "arm": "independent_review",
+                "verified": 1
+              },
+              {
+                "id": "calculator-clear-entry",
+                "arm": "direct",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 49.0
+            }
+          }
+        }
+      },
+      "zero_increment_mae": 0.0,
+      "paired_independent_mae": 0.1509574675425366
+    },
+    {
+      "held_group": "clock",
+      "train_groups": [
+        "calculator",
+        "files",
+        "settings"
+      ],
+      "train_checkpoint_ids": [
+        "calculator-multiply",
+        "settings-battery",
+        "files-search",
+        "calculator-clear-entry",
+        "settings-internet-from-home",
+        "files-menu"
+      ],
+      "predictions": {
+        "clock-timer": {
+          "reward": {
+            "direct": 0.9358156976985273,
+            "self_review": 1.0,
+            "independent_review": 1.0
+          },
+          "delta_independent_vs_self": 0.0,
+          "cost": {
+            "direct": {
+              "model_calls": 1.870848923651993,
+              "device_steps": 9.274584944289343
+            },
+            "self_review": {
+              "model_calls": 2.031212940212955,
+              "device_steps": 9.417108223174829
+            },
+            "independent_review": {
+              "model_calls": 2.031212940212955,
+              "device_steps": 9.417108223174829
+            }
+          }
+        },
+        "clock-stopwatch": {
+          "reward": {
+            "direct": 0.9917046064728801,
+            "self_review": 1.0,
+            "independent_review": 1.0
+          },
+          "delta_independent_vs_self": 0.0,
+          "cost": {
+            "direct": {
+              "model_calls": 2.1910375668708646,
+              "device_steps": 10.73382051923288
+            },
+            "self_review": {
+              "model_calls": 2.6291818678905203,
+              "device_steps": 11.194432512498393
+            },
+            "independent_review": {
+              "model_calls": 2.6291818678905203,
+              "device_steps": 11.194432512498393
+            }
+          }
+        }
+      },
+      "outcome_brier": {
+        "direct": 0.43790991680637564,
+        "self_review": 0.5,
+        "independent_review": 0.0
+      },
+      "resource_mae": {
+        "direct": {
+          "model_calls": 0.16009432160943582,
+          "device_steps": 1.7296177874717689
+        },
+        "self_review": {
+          "model_calls": 0.20101553616121737,
+          "device_steps": 1.3886621446617822
+        },
+        "independent_review": {
+          "model_calls": 0.20101553616121737,
+          "device_steps": 0.38866214466178217
+        }
+      },
+      "policy_replay": {
+        "tight": {
+          "direct": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "direct",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 12.0
+            }
+          },
+          "self_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "self_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "independent_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "execution_slot_rule": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "direct",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 12.0
+            }
+          },
+          "learned": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "self_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          }
+        },
+        "loose": {
+          "direct": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "direct",
+                "verified": 0
+              },
+              {
+                "id": "clock-stopwatch",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 4.0,
+              "device_steps": 22.0
+            }
+          },
+          "self_review": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "self_review",
+                "verified": 1
+              },
+              {
+                "id": "clock-stopwatch",
+                "arm": "self_review",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 19.0
+            }
+          },
+          "independent_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "independent_review",
+                "verified": 1
+              },
+              {
+                "id": "clock-stopwatch",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 21.0
+            }
+          },
+          "execution_slot_rule": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "direct",
+                "verified": 0
+              },
+              {
+                "id": "clock-stopwatch",
+                "arm": "self_review",
+                "verified": 0
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 21.0
+            }
+          },
+          "learned": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "clock-timer",
+                "arm": "self_review",
+                "verified": 1
+              },
+              {
+                "id": "clock-stopwatch",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 4.0,
+              "device_steps": 20.0
+            }
+          }
+        }
+      },
+      "zero_increment_mae": 0.5,
+      "paired_independent_mae": 0.5
+    },
+    {
+      "held_group": "files",
+      "train_groups": [
+        "calculator",
+        "clock",
+        "settings"
+      ],
+      "train_checkpoint_ids": [
+        "calculator-multiply",
+        "settings-battery",
+        "clock-timer",
+        "calculator-clear-entry",
+        "settings-internet-from-home",
+        "clock-stopwatch"
+      ],
+      "predictions": {
+        "files-search": {
+          "reward": {
+            "direct": 0.5973827737746455,
+            "self_review": 0.7067246704199867,
+            "independent_review": 0.8795705512320431
+          },
+          "delta_independent_vs_self": 0.17284588081205646,
+          "cost": {
+            "direct": {
+              "model_calls": 1.8806395755765943,
+              "device_steps": 9.980494091564138
+            },
+            "self_review": {
+              "model_calls": 2.010744784191463,
+              "device_steps": 9.237858589590312
+            },
+            "independent_review": {
+              "model_calls": 2.010744784191463,
+              "device_steps": 9.528532347194721
+            }
+          }
+        },
+        "files-menu": {
+          "reward": {
+            "direct": 0.7811503747723486,
+            "self_review": 0.7963274129841307,
+            "independent_review": 1.0
+          },
+          "delta_independent_vs_self": 0.23117062791144763,
+          "cost": {
+            "direct": {
+              "model_calls": 2.305029887690508,
+              "device_steps": 12.168195714712045
+            },
+            "self_review": {
+              "model_calls": 2.721979016174376,
+              "device_steps": 11.22439122813442
+            },
+            "independent_review": {
+              "model_calls": 2.721979016174376,
+              "device_steps": 12.1803928313916
+            }
+          }
+        }
+      },
+      "outcome_brier": {
+        "direct": 0.10499789465784085,
+        "self_review": 0.06374647082100116,
+        "independent_review": 0.00725162606527698
+      },
+      "resource_mae": {
+        "direct": {
+          "model_calls": 0.21219515605695682,
+          "device_steps": 1.0938508115739536
+        },
+        "self_review": {
+          "model_calls": 0.1443828840085435,
+          "device_steps": 0.49326631927205433
+        },
+        "independent_review": {
+          "model_calls": 0.1443828840085435,
+          "device_steps": 0.8259302420984396
+        }
+      },
+      "policy_replay": {
+        "tight": {
+          "direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "files-search",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "self_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "files-search",
+                "arm": "self_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "independent_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "files-search",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "execution_slot_rule": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "files-search",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "learned": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "files-menu",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 3.0,
+              "device_steps": 11.0
+            }
+          }
+        },
+        "loose": {
+          "direct": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "files-search",
+                "arm": "direct",
+                "verified": 1
+              },
+              {
+                "id": "files-menu",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 4.0,
+              "device_steps": 20.0
+            }
+          },
+          "self_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "files-search",
+                "arm": "self_review",
+                "verified": 1
+              },
+              {
+                "id": "files-menu",
+                "arm": "self_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 21.0
+            }
+          },
+          "independent_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "files-search",
+                "arm": "independent_review",
+                "verified": 1
+              },
+              {
+                "id": "files-menu",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 21.0
+            }
+          },
+          "execution_slot_rule": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "files-search",
+                "arm": "direct",
+                "verified": 1
+              },
+              {
+                "id": "files-menu",
+                "arm": "self_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 21.0
+            }
+          },
+          "learned": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "files-menu",
+                "arm": "independent_review",
+                "verified": 1
+              },
+              {
+                "id": "files-search",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 21.0
+            }
+          }
+        }
+      },
+      "zero_increment_mae": 0.0,
+      "paired_independent_mae": 0.20200825436175204
+    },
+    {
+      "held_group": "settings",
+      "train_groups": [
+        "calculator",
+        "clock",
+        "files"
+      ],
+      "train_checkpoint_ids": [
+        "calculator-multiply",
+        "clock-timer",
+        "files-search",
+        "calculator-clear-entry",
+        "clock-stopwatch",
+        "files-menu"
+      ],
+      "predictions": {
+        "settings-battery": {
+          "reward": {
+            "direct": 0.6324211553598499,
+            "self_review": 0.7309600397100295,
+            "independent_review": 0.9072819859748312
+          },
+          "delta_independent_vs_self": 0.17632194626480172,
+          "cost": {
+            "direct": {
+              "model_calls": 1.8529295054457584,
+              "device_steps": 9.983347281557144
+            },
+            "self_review": {
+              "model_calls": 2.095238379956633,
+              "device_steps": 9.340069583660485
+            },
+            "independent_review": {
+              "model_calls": 2.095238379956633,
+              "device_steps": 9.660003253630327
+            }
+          }
+        },
+        "settings-internet-from-home": {
+          "reward": {
+            "direct": 0.7321789775772982,
+            "self_review": 0.7117092329108555,
+            "independent_review": 0.9187376809163508
+          },
+          "delta_independent_vs_self": 0.20702844800549525,
+          "cost": {
+            "direct": {
+              "model_calls": 2.5414810183147623,
+              "device_steps": 12.420366849138409
+            },
+            "self_review": {
+              "model_calls": 3.051234135868615,
+              "device_steps": 12.168300482957466
+            },
+            "independent_review": {
+              "model_calls": 3.051234135868615,
+              "device_steps": 12.47739284660616
+            }
+          }
+        }
+      },
+      "outcome_brier": {
+        "direct": 0.10342115353926448,
+        "self_review": 0.07774703331083811,
+        "independent_review": 0.0076000973138121075
+      },
+      "resource_mae": {
+        "direct": {
+          "model_calls": 0.30279473811973967,
+          "device_steps": 0.2981429346522235
+        },
+        "self_review": {
+          "model_calls": 0.073236257912624,
+          "device_steps": 0.7458149666910243
+        },
+        "independent_review": {
+          "model_calls": 0.073236257912624,
+          "device_steps": 0.43130194988175674
+        }
+      },
+      "policy_replay": {
+        "tight": {
+          "direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "self_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "self_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "independent_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "execution_slot_rule": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          },
+          "learned": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 2.0,
+              "device_steps": 10.0
+            }
+          }
+        },
+        "loose": {
+          "direct": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "direct",
+                "verified": 1
+              },
+              {
+                "id": "settings-internet-from-home",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 23.0
+            }
+          },
+          "self_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "self_review",
+                "verified": 1
+              },
+              {
+                "id": "settings-internet-from-home",
+                "arm": "self_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 23.0
+            }
+          },
+          "independent_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "independent_review",
+                "verified": 1
+              },
+              {
+                "id": "settings-internet-from-home",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 23.0
+            }
+          },
+          "execution_slot_rule": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "direct",
+                "verified": 1
+              },
+              {
+                "id": "settings-internet-from-home",
+                "arm": "direct",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 23.0
+            }
+          },
+          "learned": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "decisions": [
+              {
+                "id": "settings-battery",
+                "arm": "independent_review",
+                "verified": 1
+              },
+              {
+                "id": "settings-internet-from-home",
+                "arm": "independent_review",
+                "verified": 1
+              }
+            ],
+            "spent": {
+              "model_calls": 5.0,
+              "device_steps": 23.0
+            }
+          }
+        }
+      },
+      "zero_increment_mae": 0.0,
+      "paired_independent_mae": 0.19167519713514847
+    }
+  ],
+  "group_mean_brier": {
+    "direct": 0.3675929377755081,
+    "self_review": 0.28859121586256004,
+    "independent_review": 0.12881129441836814
+  },
+  "group_mean_paired_independent_mae": 0.2611602297598593,
+  "group_mean_zero_increment_mae": 0.125,
+  "full_development_fit": {
+    "reward": {
+      "direct": [
+        0.24176392040669983,
+        0.5973819376058117,
+        -0.7801649492822125,
+        0.015649183833916367,
+        -0.05062499794626697,
+        0.3033820449376216,
+        -0.454700998951526,
+        -0.11941630329210765,
+        -0.5557707081119616
+      ],
+      "review_increment": [
+        0.1312757001424245,
+        -0.31810762999209224,
+        0.2541711727910369,
+        0.12474573389099874,
+        -0.05602486153593137,
+        0.09194349103399839,
+        0.14011783050742516,
+        0.15693102592605954,
+        -0.008718674554810787
+      ],
+      "independent_increment": [
+        0.03044889279902104,
+        0.16848902313118852,
+        -0.07569927306279403,
+        -0.09477841479648533,
+        -0.07952946924598495,
+        0.01975837446331928,
+        -7.4870824044090695e-06,
+        -0.06564023601136099,
+        0.07407922696462645
+      ]
+    },
+    "log_cost": {
+      "direct": {
+        "model_calls": [
+          0.46787443830264913,
+          0.27569531461829794,
+          0.030911032777921562,
+          0.14647580761609855,
+          0.31956196074065724,
+          0.40312969384783287,
+          0.13416519126039186,
+          0.08438945456455071,
+          -0.0055176550192908265
+        ],
+        "device_steps": [
+          1.1487601500911198,
+          0.3046834670208913,
+          0.5905796609569856,
+          0.3061572994204553,
+          0.1282969396588293,
+          0.9030833577956165,
+          0.589090487843586,
+          0.43935786284626516,
+          0.10963450618075372
+        ]
+      },
+      "self_review": {
+        "model_calls": [
+          0.38265537351151335,
+          0.6591674512778269,
+          -0.03660204124124579,
+          0.12475517561024127,
+          0.04863570247536275,
+          0.2840011242029784,
+          0.09959957092182,
+          0.03466789912669303,
+          0.04914116749153663
+        ],
+        "device_steps": [
+          1.0945276899188285,
+          0.36712981841921993,
+          0.5297684280173455,
+          0.4220497835988466,
+          0.1165768793916491,
+          0.8606171002830033,
+          0.4937654293380063,
+          0.4806100282679647,
+          -0.055217725987686074
+        ]
+      },
+      "independent_review": {
+        "model_calls": [
+          0.38265537351151335,
+          0.6591674512778269,
+          -0.03660204124124579,
+          0.12475517561024127,
+          0.04863570247536275,
+          0.2840011242029784,
+          0.09959957092182,
+          0.03466789912669303,
+          0.04914116749153663
+        ],
+        "device_steps": [
+          1.0751658272982436,
+          0.49770913020836594,
+          0.5212299256920868,
+          0.28333204170007065,
+          0.05639917916850878,
+          0.8435128594265466,
+          0.5119799866844709,
+          0.4344094117415985,
+          0.02550649046871898
+        ]
+      }
+    }
+  }
+}

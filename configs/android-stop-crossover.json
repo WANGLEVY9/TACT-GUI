@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "seed": 20261128,
+  "source_protocol_sha256": "a9542b5024183a4ca3ab53f710c1d0ddd9cc8360aa5995f711c5e6228ff5ef3f",
+  "scope": "development horizon crossover",
+  "arms": [
+    "direct",
+    "guarded_direct",
+    "self_review",
+    "independent_review"
+  ],
+  "checkpoints": [
+    {
+      "id": "clock-timer-h2",
+      "app_group": "clock",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Navigate to the countdown timer tab. Do not start a timer.",
+      "oracle": {
+        "resource": "tab_menu_timer",
+        "selected": true
+      },
+      "measure_progress": true,
+      "base_checkpoint": "clock-timer"
+    },
+    {
+      "id": "calculator-multiply-h3",
+      "app_group": "calculator",
+      "slots": 3,
+      "prefix": [
+        "3",
+        "\u00d7",
+        "4"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "3\u00d74"
+      },
+      "goal": "Finish the current calculation by pressing equals. Leave the numeric answer on screen.",
+      "oracle": {
+        "resource": "result",
+        "text": "12"
+      },
+      "measure_progress": true,
+      "base_checkpoint": "calculator-multiply"
+    },
+    {
+      "id": "settings-internet-from-home-h3",
+      "app_group": "settings",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "From the Settings homepage, open Network & internet and then the Internet page. Do not change any settings.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Internet"
+      },
+      "measure_progress": true,
+      "base_checkpoint": "settings-internet-from-home"
+    },
+    {
+      "id": "settings-internet-from-home-h2",
+      "app_group": "settings",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "From the Settings homepage, open Network & internet and then the Internet page. Do not change any settings.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Internet"
+      },
+      "measure_progress": true,
+      "base_checkpoint": "settings-internet-from-home"
+    },
+    {
+      "id": "calculator-multiply-h2",
+      "app_group": "calculator",
+      "slots": 2,
+      "prefix": [
+        "3",
+        "\u00d7",
+        "4"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "3\u00d74"
+      },
+      "goal": "Finish the current calculation by pressing equals. Leave the numeric answer on screen.",
+      "oracle": {
+        "resource": "result",
+        "text": "12"
+      },
+      "measure_progress": true,
+      "base_checkpoint": "calculator-multiply"
+    },
+    {
+      "id": "clock-timer-h3",
+      "app_group": "clock",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Navigate to the countdown timer tab. Do not start a timer.",
+      "oracle": {
+        "resource": "tab_menu_timer",
+        "selected": true
+      },
+      "measure_progress": true,
+      "base_checkpoint": "clock-timer"
+    }
+  ],
+  "order_design": "balanced at registration across three checkpoints"
+}

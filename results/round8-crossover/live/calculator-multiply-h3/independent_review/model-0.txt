@@ -1,0 +1,2 @@
+Click the equals button.
+Reason: The task requires completing the calculation "3 × 4" by pressing the equals button, which will display the result on the screen.
