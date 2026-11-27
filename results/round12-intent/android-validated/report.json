@@ -1,0 +1,324 @@
+{
+  "scope": "android functional-checkpoint development experiment",
+  "platform": "android",
+  "protocol_sha256": "fe7bd3ae6a6ded02d678fc46ccc04b8eaca0d8cb68a54c381f96d9638048b718",
+  "blocks": [
+    {
+      "checkpoint": "calculator-intent-equals",
+      "order": [
+        "intent_gate"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "calculator-intent-equals",
+          "group": "calculator",
+          "arm": "intent_gate",
+          "scope_id": "26a4c0f9fbdf47c5b82fedd0feb32403",
+          "calls": [],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                875.4629629629629,
+                916.0416666666666
+              ]
+            }
+          ],
+          "success": 1,
+          "variant": {
+            "mode": "intent",
+            "intent_model": null,
+            "max_tokens": 256
+          },
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 0,
+            "device_steps": 30
+          },
+          "intent": {
+            "contract": {
+              "steps": [
+                {
+                  "target": "=",
+                  "role": null
+                }
+              ],
+              "forbidden": [
+                "C"
+              ]
+            },
+            "decision": "verify",
+            "reason": "ordered_steps_exhausted"
+          },
+          "verification": {
+            "observed": true,
+            "replay": true,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "progress": {
+            "observed_after_actions": [
+              true
+            ],
+            "replay_after_actions": [
+              true
+            ],
+            "stable": true,
+            "first_confirmed_action": 1,
+            "lost_goal": false
+          },
+          "actual": {
+            "model_calls": 0.0,
+            "device_steps": 24.0
+          },
+          "elapsed_seconds": 28.88616904099763
+        }
+      ]
+    },
+    {
+      "checkpoint": "calculator-intent-recover-zh",
+      "order": [
+        "intent_gate"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "calculator-intent-recover-zh",
+          "group": "calculator",
+          "arm": "intent_gate",
+          "scope_id": "d6ff2514071d424bb52b2e41e1c9b38b",
+          "calls": [],
+          "actions": [
+            {
+              "action": "left_click",
+              "coordinate": [
+                625.4629629629629,
+                916.0416666666666
+              ]
+            },
+            {
+              "action": "left_click",
+              "coordinate": [
+                375.462962962963,
+                567.2916666666666
+              ]
+            }
+          ],
+          "success": 0,
+          "variant": {
+            "mode": "intent",
+            "intent_model": null,
+            "max_tokens": 256
+          },
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 0,
+            "device_steps": 30
+          },
+          "intent": {
+            "contract": {
+              "steps": [
+                {
+                  "target": "C",
+                  "role": null
+                },
+                {
+                  "target": "8",
+                  "role": null
+                }
+              ],
+              "forbidden": [
+                "="
+              ]
+            },
+            "decision": "verify",
+            "reason": "ordered_steps_exhausted"
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "progress": {
+            "observed_after_actions": [
+              false,
+              false
+            ],
+            "replay_after_actions": [
+              false,
+              false
+            ],
+            "stable": true,
+            "first_confirmed_action": null,
+            "lost_goal": false
+          },
+          "actual": {
+            "model_calls": 0.0,
+            "device_steps": 30.0
+          },
+          "elapsed_seconds": 35.56349620799301
+        }
+      ]
+    },
+    {
+      "checkpoint": "calculator-intent-conflict",
+      "order": [
+        "intent_gate"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "calculator-intent-conflict",
+          "group": "calculator",
+          "arm": "intent_gate",
+          "scope_id": "86b062f3816f4d17937e8d20e143e2a2",
+          "calls": [],
+          "actions": [],
+          "success": 0,
+          "variant": {
+            "mode": "intent",
+            "intent_model": null,
+            "max_tokens": 256
+          },
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 0,
+            "device_steps": 30
+          },
+          "intent": {
+            "contract": null,
+            "decision": "clarify",
+            "reason": "unsupported_or_conflicting_instruction",
+            "question": "Which controls should be clicked, in what order, and which actions are disallowed?"
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "progress": {
+            "observed_after_actions": [],
+            "replay_after_actions": [],
+            "stable": true,
+            "first_confirmed_action": null,
+            "lost_goal": false
+          },
+          "actual": {
+            "model_calls": 0.0,
+            "device_steps": 18.0
+          },
+          "elapsed_seconds": 22.25260595799773
+        }
+      ]
+    },
+    {
+      "checkpoint": "calculator-intent-defer",
+      "order": [
+        "intent_gate"
+      ],
+      "valid_pair": true,
+      "arms": [
+        {
+          "checkpoint": "calculator-intent-defer",
+          "group": "calculator",
+          "arm": "intent_gate",
+          "scope_id": "2e6952ef699a42928c011b904296d973",
+          "calls": [],
+          "actions": [],
+          "success": 0,
+          "variant": {
+            "mode": "intent",
+            "intent_model": null,
+            "max_tokens": 256
+          },
+          "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+          "state": {
+            "nodes": 43,
+            "labelled_nodes": 25,
+            "clickable_nodes": 24,
+            "duplicate_visible_labels": 0
+          },
+          "upper": {
+            "model_calls": 0,
+            "device_steps": 30
+          },
+          "intent": {
+            "contract": {
+              "steps": [
+                {
+                  "target": "2",
+                  "role": null
+                },
+                {
+                  "target": "+",
+                  "role": null
+                },
+                {
+                  "target": "=",
+                  "role": null
+                }
+              ],
+              "forbidden": []
+            },
+            "decision": "defer",
+            "reason": "insufficient_action_slots"
+          },
+          "verification": {
+            "observed": false,
+            "replay": false,
+            "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+          },
+          "progress": {
+            "observed_after_actions": [],
+            "replay_after_actions": [],
+            "stable": true,
+            "first_confirmed_action": null,
+            "lost_goal": false
+          },
+          "actual": {
+            "model_calls": 0.0,
+            "device_steps": 18.0
+          },
+          "elapsed_seconds": 22.248407624996617
+        }
+      ]
+    }
+  ],
+  "budget": {
+    "limits": {
+      "model_calls": 0.0,
+      "device_steps": 120.0
+    },
+    "spent": {
+      "model_calls": 0.0,
+      "device_steps": 90.0
+    },
+    "reserved": {
+      "model_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "model_calls": 0.0,
+      "device_steps": 30.0
+    },
+    "pending_reservations": []
+  }
+}

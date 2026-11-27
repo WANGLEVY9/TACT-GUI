@@ -1,0 +1,72 @@
+{
+  "checkpoint": "calculator-intent-defer",
+  "order": [
+    "intent_gate"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "calculator-intent-defer",
+      "group": "calculator",
+      "arm": "intent_gate",
+      "scope_id": "2e6952ef699a42928c011b904296d973",
+      "calls": [],
+      "actions": [],
+      "success": 0,
+      "variant": {
+        "mode": "intent",
+        "intent_model": null,
+        "max_tokens": 256
+      },
+      "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+      "state": {
+        "nodes": 43,
+        "labelled_nodes": 25,
+        "clickable_nodes": 24,
+        "duplicate_visible_labels": 0
+      },
+      "upper": {
+        "model_calls": 0,
+        "device_steps": 30
+      },
+      "intent": {
+        "contract": {
+          "steps": [
+            {
+              "target": "2",
+              "role": null
+            },
+            {
+              "target": "+",
+              "role": null
+            },
+            {
+              "target": "=",
+              "role": null
+            }
+          ],
+          "forbidden": []
+        },
+        "decision": "defer",
+        "reason": "insufficient_action_slots"
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+      },
+      "progress": {
+        "observed_after_actions": [],
+        "replay_after_actions": [],
+        "stable": true,
+        "first_confirmed_action": null,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 0.0,
+        "device_steps": 18.0
+      },
+      "elapsed_seconds": 22.248407624996617
+    }
+  ]
+}

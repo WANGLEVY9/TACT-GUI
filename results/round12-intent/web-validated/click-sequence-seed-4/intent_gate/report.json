@@ -1,0 +1,80 @@
+{
+  "checkpoint": "click-sequence-seed-4",
+  "group": "miniwob-sequence",
+  "arm": "intent_gate",
+  "scope_id": "65f9a7760fc94e7baef52e5726abfdb0",
+  "calls": [],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        201.5625,
+        573.4375
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        373.4375,
+        567.1875
+      ]
+    }
+  ],
+  "success": 1,
+  "variant": {
+    "mode": "intent",
+    "intent_model": null,
+    "max_tokens": 256
+  },
+  "initial_hash": "4e415331c2ba7b027f70cab91d9f9a9d1f3cf1f9ffaa741cd0542be74fca40a9",
+  "state": {
+    "nodes": 19,
+    "labelled_nodes": 18,
+    "clickable_nodes": 2,
+    "duplicate_visible_labels": 4
+  },
+  "upper": {
+    "model_calls": 0,
+    "device_steps": 24
+  },
+  "intent": {
+    "contract": {
+      "steps": [
+        {
+          "target": "ONE",
+          "role": "button"
+        },
+        {
+          "target": "TWO",
+          "role": "button"
+        }
+      ],
+      "forbidden": []
+    },
+    "decision": "verify",
+    "reason": "ordered_steps_exhausted"
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "4e415331c2ba7b027f70cab91d9f9a9d1f3cf1f9ffaa741cd0542be74fca40a9"
+  },
+  "progress": {
+    "observed_after_actions": [
+      false,
+      true
+    ],
+    "replay_after_actions": [
+      false,
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 2,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 0.0,
+    "device_steps": 18.0
+  },
+  "elapsed_seconds": 1.4557887499977369
+}

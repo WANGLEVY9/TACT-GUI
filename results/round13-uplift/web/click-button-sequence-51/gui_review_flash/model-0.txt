@@ -1,0 +1,1 @@
+Click button ONE. The task requires clicking button ONE first, then button TWO, and button ONE is currently visible and accessible on the screen.

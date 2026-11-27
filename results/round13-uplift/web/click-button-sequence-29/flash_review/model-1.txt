@@ -1,0 +1,4 @@
+Action: Click the "ONE" button as specified in the task.
+
+<tool_call>{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [115, 385]}}
+</tool_call>

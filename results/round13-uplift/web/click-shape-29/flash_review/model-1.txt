@@ -1,0 +1,4 @@
+Action: Click on the letter 'b' located in the central area of the screen.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [280, 453]}}
+</tool_call>

@@ -1,0 +1,1 @@
+Click the "x" button in the dialog box to close the message. The instruction requires clicking the button labeled "x", which is visible in the dialog box.

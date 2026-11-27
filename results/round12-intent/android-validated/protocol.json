@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "seed": 20261127,
+  "scope": "intent-routing engineering probe on a frozen Android calculator",
+  "max_model_calls": 0,
+  "variants": {
+    "intent_gate": {
+      "mode": "intent",
+      "intent_model": null,
+      "max_tokens": 256
+    }
+  },
+  "checkpoints": [
+    {
+      "id": "calculator-intent-equals",
+      "app_group": "calculator",
+      "slots": 2,
+      "measure_progress": true,
+      "prefix": [
+        "2",
+        "+",
+        "3"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "2+3"
+      },
+      "goal": "Click \"=\". Do not click \"C\".",
+      "oracle": {
+        "resource": "result",
+        "text": "5"
+      }
+    },
+    {
+      "id": "calculator-intent-recover-zh",
+      "app_group": "calculator",
+      "slots": 2,
+      "measure_progress": true,
+      "prefix": [
+        "7",
+        "+",
+        "3"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "7+3"
+      },
+      "goal": "\u70b9\u51fb\u201cC\u201d\uff0c\u7136\u540e\u70b9\u51fb\u201c8\u201d\u3002\u4e0d\u8981\u70b9\u51fb\u201c=\u201d\u3002",
+      "oracle": {
+        "resource": "result",
+        "text": "8"
+      }
+    },
+    {
+      "id": "calculator-intent-conflict",
+      "app_group": "calculator",
+      "slots": 2,
+      "measure_progress": true,
+      "prefix": [
+        "2",
+        "+",
+        "3"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "2+3"
+      },
+      "goal": "Click \"=\". Do not click \"=\".",
+      "oracle": {
+        "resource": "result",
+        "text": "5"
+      }
+    },
+    {
+      "id": "calculator-intent-defer",
+      "app_group": "calculator",
+      "slots": 2,
+      "measure_progress": true,
+      "prefix": [
+        "2",
+        "+",
+        "3"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "2+3"
+      },
+      "goal": "Click \"2\", then click \"+\", then click \"=\".",
+      "oracle": {
+        "resource": "result",
+        "text": "5"
+      }
+    }
+  ]
+}

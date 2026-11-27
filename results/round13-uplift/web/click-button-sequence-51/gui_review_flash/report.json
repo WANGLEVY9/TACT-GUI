@@ -1,0 +1,148 @@
+{
+  "checkpoint": "click-button-sequence-51",
+  "group": "click-button-sequence-51",
+  "arm": "gui_review_flash",
+  "scope_id": "af54b3da79934028a1ceb214a9949899",
+  "calls": [
+    {
+      "reservation_id": "0d2b2553486e4318ba2f695956ac1673",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 190,
+        "completion_tokens": 29,
+        "total_tokens": 219,
+        "completion_tokens_details": {
+          "text_tokens": 29
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 102,
+          "text_tokens": 88
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.0626924160023918,
+      "estimated_list_cny": 0.0004155,
+      "role": "review",
+      "frame": 0,
+      "screen_sha256": "9385df8c3a1c2dc27d984d6087121fa8f421fe5d74b0828f8e4d7c753f6c4b59"
+    },
+    {
+      "reservation_id": "79a0cb027a9343b5be1dc0060187ed70",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 442,
+        "total_tokens": 491,
+        "completion_tokens": 49,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 102,
+          "text_tokens": 340
+        },
+        "completion_tokens_details": {
+          "text_tokens": 49
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.0767399999895133,
+      "estimated_list_cny": 0.0001276,
+      "role": "execute",
+      "frame": 1,
+      "screen_sha256": "b0f11f476c3b3e5912235a667dd1feb4007f27e8b99fca7d1e07ab0de22dcaab"
+    },
+    {
+      "reservation_id": "f317e81af489454294c003d6422664a4",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 462,
+        "total_tokens": 500,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 102,
+          "text_tokens": 360
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 0.9744235410034889,
+      "estimated_list_cny": 0.0001228,
+      "role": "execute",
+      "frame": 2,
+      "screen_sha256": "8356464fe4b72ca8553cb862626b804f4ebd19dabf8e2f642048fd94f0b07b80"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        273,
+        548
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        273,
+        548
+      ]
+    }
+  ],
+  "success": 0,
+  "variant": {
+    "mode": "independent_review",
+    "execute_model": "qwen3.7-flash-2026-07-15",
+    "review_model": "gui-plus-2026-02-26",
+    "review_view": "screen",
+    "max_tokens": 512
+  },
+  "initial_hash": "856bf1f0759cdbd544d689173a8957fb5174c0467c183230440d347ecb4021d1",
+  "state": {
+    "nodes": 19,
+    "labelled_nodes": 18,
+    "clickable_nodes": 2,
+    "duplicate_visible_labels": 4,
+    "decision_observation_sha256": "856bf1f0759cdbd544d689173a8957fb5174c0467c183230440d347ecb4021d1"
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 21
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "856bf1f0759cdbd544d689173a8957fb5174c0467c183230440d347ecb4021d1",
+    "replay_observation_sha256": "856bf1f0759cdbd544d689173a8957fb5174c0467c183230440d347ecb4021d1"
+  },
+  "progress": {
+    "observed_after_actions": [
+      false,
+      false
+    ],
+    "replay_after_actions": [
+      false,
+      false
+    ],
+    "stable": true,
+    "first_confirmed_action": null,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 17.0
+  },
+  "elapsed_seconds": 4.543180958004086
+}

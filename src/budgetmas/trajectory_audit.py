@@ -4,11 +4,12 @@ import json
 from pathlib import Path
 
 from .android import Android, png_dimensions
+from .legacy import LegacyCheckpoint
 from .gui_team import device_call
 from .ledger import Ledger
 from .mechanism import checkpoint
 from .pilot import digest, read_frozen, write
-from .pilot_device import Device, matches
+from .pilot_device import Device
 from .scopes import Scope
 
 
@@ -35,17 +36,17 @@ def branch_traces(root, protocol, report):
 
 
 def audit(device, app, case, arm, size, ledger):
+    env = LegacyCheckpoint(device, app)
     results = []
     for _ in range(2):
-        initial,_ = checkpoint(device,ledger,app,case)
+        initial,_ = checkpoint(env,ledger,app,case)
         steps = []
         for action in arm['actions']:
             if action['action']!='left_click':
                 raise ValueError('unexpected recorded action type')
             raw = '<tool_call>'+json.dumps({'name':'computer_use','arguments':action})+'</tool_call>'
-            device_call(ledger,lambda:device.android.execute(raw,*size))
-            nodes = device_call(ledger,device.nodes)
-            steps.append(matches([node for node in nodes if node.get('package')==app['package']],case['oracle']))
+            device_call(ledger,lambda:env.execute(raw,*size))
+            steps.append(device_call(ledger,lambda:env.oracle(case['oracle'])))
         results.append({'initial_matches':initial==arm['initial_hash'],'after_each_action':steps})
     verified = (all(r['initial_matches'] and not r['after_each_action'][-1] for r in results)
                 and results[0]['after_each_action']==results[1]['after_each_action'])

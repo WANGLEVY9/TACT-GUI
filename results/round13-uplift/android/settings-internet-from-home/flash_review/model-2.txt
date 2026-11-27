@@ -1,0 +1,7 @@
+Action: Click on the "Internet" option to access the Internet settings page.
+
+</thinking>
+
+<tool_call>
+{"name": "computer_use", "arguments": {"action": "left_click", "coordinate": [276, 294]}}
+</tool_call>

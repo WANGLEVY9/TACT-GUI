@@ -1,0 +1,7 @@
+Action: Click the search icon at the top right corner.
+
+</thinking>
+
+<tool_call>
+<name":"computer_use", "arguments": {"action": "left_click", "coordinate": [827, 80]}}
+</tool_call>

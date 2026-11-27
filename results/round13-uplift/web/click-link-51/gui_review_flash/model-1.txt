@@ -1,0 +1,4 @@
+Action: Click on the word "donec" in the text "Lacus vulputate urna donec sodales."
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [359, 183]}}
+</tool_call>

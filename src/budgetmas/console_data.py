@@ -12,7 +12,8 @@ from .android import parse_action
 from .mechanism import call_schedule, registered_arms
 
 ARTIFACTS = {'report.json': 'Run report', 'protocol.json': 'Frozen protocol',
-             'audit-summary.json': 'Audit summary', 'console.log': 'Process output'}
+             'audit-summary.json': 'Audit summary', 'routing-summary.json': 'Routing contrasts',
+             'console.log': 'Process output'}
 RELATED = {'primary-interaction.json': 'Budget interaction analysis',
            'recovery/sensitivity.json': 'Recovery sensitivity',
            'development-fit-audited.json': 'Cross-fitted model and replay',
@@ -128,7 +129,7 @@ def telemetry(root, folder):
             row=json.loads(line)
             event=row['event']
             payload=row['data']
-            if event in ('model_response','action_applied','progress_measured'):
+            if event in ('model_response','action_applied','progress_measured','intent_decision'):
                 records.setdefault(payload['index'],{})[event]=payload
         except (ValueError,KeyError,TypeError):
             continue  # A live writer can leave a partial trailing line.
@@ -152,6 +153,9 @@ def run_detail(root, run_id, active=False):
             state=('verified' if arm['success']==1 else 'incomplete' if arm['success']==0 else 'unresolved') if arm else (
                 ('running' if arm_folder.is_dir() else 'queued') if active else
                 ('interrupted' if arm_folder.is_dir() else 'unrecorded'))
+            if state=='incomplete':
+                decision=arm.get('intent',{}).get('decision')
+                state={'clarify':'clarification','defer':'deferred'}.get(decision,state)
             frames=count_frames(arm_folder)
             calls['frames']+=frames
             totals[state]+=1
@@ -194,9 +198,9 @@ def trace(root, run_id, case_id, role, active=False):
     report=json_file(confined(root,arm_folder/'report.json'))
     data=report or {}
     actions=data.get('actions',[])
-    calls=data.get('calls',[])
+    calls={call.get('frame',i):call for i,call in enumerate(data.get('calls',[]))}
     events=telemetry(root,arm_folder)
-    schedule=call_schedule(role,case.get('slots',2))
+    schedule=call_schedule(role,case.get('slots',2),protocol.get('variants'))
     planned=[]
     action_index=0
     for i,step_role in enumerate(schedule):
@@ -205,30 +209,38 @@ def trace(root, run_id, case_id, role, active=False):
             continue
         output=arm_folder/f'model-{i}.txt'
         text=confined(root,output).read_text(errors='replace')[:12000] if output.is_file() else ''
-        action=proposed(text) if step_role=='execute' and text else None
-        executed=bool(action and action_index<len(actions) and actions[action_index]==action)
-        after=None
-        if executed:
-            progress=data.get('progress',{})
-            values=progress.get('observed_after_actions',[])
-            if progress.get('stable') and action_index<len(values):
-                after=values[action_index]
-            action_index+=1
         event=events.get(i,{})
         live_action=event.get('action_applied',{})
         live_response=event.get('model_response',{})
-        call=calls[i] if i<len(calls) else {}
+        call=calls.get(i,{})
+        step_role=call.get('role',live_response.get('role',step_role))
+        finish=call.get('finish_reason',live_response.get('finish_reason'))
+        action=proposed(text) if step_role=='execute' and text and finish!='length' else None
+        executed=bool(live_action or (action and action_index<len(actions) and actions[action_index]==action))
+        after=None
+        if executed:
+            action_index=live_action.get('action_index',action_index+1)
+            progress=data.get('progress',{})
+            values=progress.get('observed_after_actions',[])
+            if progress.get('stable') and 0<action_index<=len(values):
+                after=values[action_index-1]
         planned.append({'index':i,'role':step_role,'action':live_action.get('action',action),
                         'executed':executed or bool(live_action),
                         'action_index':live_action.get('action_index',action_index if executed else None),
                         'goal_after':after,'live_goal':event.get('progress_measured',{}).get('goal_after'),
                         'text':text,'tokens':(call.get('usage') or {}).get('total_tokens',live_response.get('tokens')),
-                        'model':call.get('returned_model',live_response.get('model')),'image':'/api/image?'+urlencode({
+                        'model':call.get('returned_model',live_response.get('model')),
+                        'finish_reason':finish,
+                        'max_tokens':call.get('max_tokens',live_response.get('max_tokens')),
+                        'input_view':call.get('input_view',live_response.get('input_view')),
+                        'estimated_list_cny':call.get('estimated_list_cny',live_response.get('estimated_list_cny')),
+                        'intent_decision':event.get('intent_decision'),
+                        'image':'/api/image?'+urlencode({
                             'run':run_id,'case':case_id,'role':role,'frame':i})})
     return {'case':case_id,'group':case['app_group'],'goal':case['goal'],'role':role,
             'slots':case.get('slots',2),'frames':planned,'complete':report is not None,'active':active and report is None,
             'success':data.get('success'),'verification':data.get('verification'),
-            'progress':data.get('progress'),'elapsed_seconds':data.get('elapsed_seconds'),
+            'progress':data.get('progress'),'intent':data.get('intent'),'elapsed_seconds':data.get('elapsed_seconds'),
             'actual':data.get('actual'),'error':data.get('error_type'),'error_phase':data.get('error_phase')}
 
 
@@ -238,7 +250,7 @@ def image_path(root, run_id, case_id, role, frame):
     case=next((c for c in proto['checkpoints'] if c['id']==case_id),None)
     if case is None or role not in registered_arms(proto):
         raise FileNotFoundError('unknown frame')
-    schedule=call_schedule(role,case.get('slots',2))
+    schedule=call_schedule(role,case.get('slots',2),proto.get('variants'))
     if frame not in {str(i) for i in range(len(schedule))}:
         raise FileNotFoundError('unknown frame')
     return confined(root,folder/case_id/role/f'screen-{frame}.png')

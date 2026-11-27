@@ -1,0 +1,3 @@
+Action: Click on the link "donec" located in the text block.
+
+</tool_call>

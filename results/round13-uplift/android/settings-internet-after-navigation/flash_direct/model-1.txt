@@ -1,0 +1,3 @@
+Action: Tap on the 'Internet' option to access Wi-Fi settings.
+
+</tool_call>

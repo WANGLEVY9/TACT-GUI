@@ -1,0 +1,435 @@
+{
+  "checkpoint": "settings-internet-from-home",
+  "order": [
+    "gui_review_flash",
+    "flash_review",
+    "flash_direct"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "settings-internet-from-home",
+      "group": "settings",
+      "arm": "gui_review_flash",
+      "scope_id": "6fd7e7d970034490b1103c1101e69cd7",
+      "calls": [
+        {
+          "reservation_id": "991d2d5964f1436aa30fe4625e7b23ff",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 2652,
+            "completion_tokens": 104,
+            "total_tokens": 2756,
+            "completion_tokens_details": {
+              "text_tokens": 104
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 2552,
+              "text_tokens": 100
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 2.5436993750045076,
+          "estimated_list_cny": 0.004446,
+          "role": "review",
+          "frame": 0,
+          "screen_sha256": "9d3b2176a4c829392bc6464317d5ad172663d648338614248732f3afa7c8ece9"
+        },
+        {
+          "reservation_id": "e87844aa6c94494cb37848531c82ffd5",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 2985,
+            "total_tokens": 3041,
+            "completion_tokens": 56,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 2552,
+              "text_tokens": 433
+            },
+            "completion_tokens_details": {
+              "text_tokens": 56
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.558685832991614,
+          "estimated_list_cny": 0.0006418,
+          "role": "execute",
+          "frame": 1,
+          "screen_sha256": "9d3b2176a4c829392bc6464317d5ad172663d648338614248732f3afa7c8ece9"
+        },
+        {
+          "reservation_id": "225e23a753de4e8b86a984b9f8bc989a",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 3005,
+            "total_tokens": 3059,
+            "completion_tokens": 54,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 2552,
+              "text_tokens": 453
+            },
+            "completion_tokens_details": {
+              "text_tokens": 54
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.4511243329907302,
+          "estimated_list_cny": 0.0006442,
+          "role": "execute",
+          "frame": 2,
+          "screen_sha256": "9293868ea61d220addb615f0699d1522eea02332788e858674393ac4e4e9f989"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            366,
+            365
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            275,
+            298
+          ]
+        }
+      ],
+      "success": 1,
+      "variant": {
+        "mode": "independent_review",
+        "execute_model": "qwen3.7-flash-2026-07-15",
+        "review_model": "gui-plus-2026-02-26",
+        "review_view": "screen",
+        "max_tokens": 512
+      },
+      "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+      "state": {
+        "nodes": 65,
+        "labelled_nodes": 17,
+        "clickable_nodes": 10,
+        "duplicate_visible_labels": 0,
+        "decision_observation_sha256": "266995c52462494cd8bb0f08e335b146db2009488388c2d54433e942a67d7a7c"
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 21
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+        "replay_observation_sha256": "266995c52462494cd8bb0f08e335b146db2009488388c2d54433e942a67d7a7c"
+      },
+      "progress": {
+        "observed_after_actions": [
+          false,
+          true
+        ],
+        "replay_after_actions": [
+          false,
+          true
+        ],
+        "stable": true,
+        "first_confirmed_action": 2,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 17.0
+      },
+      "elapsed_seconds": 26.528187792006065
+    },
+    {
+      "checkpoint": "settings-internet-from-home",
+      "group": "settings",
+      "arm": "flash_review",
+      "scope_id": "90d6caa224c8419aa718ff42c9299e27",
+      "calls": [
+        {
+          "reservation_id": "cbda31c8f79940a7bcb748cb4317b905",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 2659,
+            "total_tokens": 2674,
+            "completion_tokens": 15,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 2552,
+              "text_tokens": 107
+            },
+            "completion_tokens_details": {
+              "text_tokens": 15
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.4523475419991883,
+          "estimated_list_cny": 0.0005438,
+          "role": "review",
+          "frame": 0,
+          "screen_sha256": "ace7d382db66580dc01c736b4b35bee8d1735b9a9348f3b0134e57c5ec7a7855"
+        },
+        {
+          "reservation_id": "5d6671f2b50c45f487dc906a10fc1791",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 2890,
+            "total_tokens": 2937,
+            "completion_tokens": 47,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 2552,
+              "text_tokens": 338
+            },
+            "completion_tokens_details": {
+              "text_tokens": 47
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.7946494589996291,
+          "estimated_list_cny": 0.0006156,
+          "role": "execute",
+          "frame": 1,
+          "screen_sha256": "ace7d382db66580dc01c736b4b35bee8d1735b9a9348f3b0134e57c5ec7a7855"
+        },
+        {
+          "reservation_id": "d09aa2161afe4155be166dcaf8337fef",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 2910,
+            "total_tokens": 2970,
+            "completion_tokens": 60,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 2552,
+              "text_tokens": 358
+            },
+            "completion_tokens_details": {
+              "text_tokens": 60
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.9752143749938114,
+          "estimated_list_cny": 0.00063,
+          "role": "execute",
+          "frame": 2,
+          "screen_sha256": "8b3d7b922034a1f3bfcd72acc27f92fd9398f50accd562414164b5e9c102d278"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            370,
+            364
+          ]
+        },
+        {
+          "action": "left_click",
+          "coordinate": [
+            276,
+            294
+          ]
+        }
+      ],
+      "success": 1,
+      "variant": {
+        "mode": "independent_review",
+        "execute_model": "qwen3.7-flash-2026-07-15",
+        "review_model": "qwen3.7-flash-2026-07-15",
+        "review_view": "screen",
+        "max_tokens": 512
+      },
+      "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+      "state": {
+        "nodes": 65,
+        "labelled_nodes": 17,
+        "clickable_nodes": 10,
+        "duplicate_visible_labels": 0,
+        "decision_observation_sha256": "266995c52462494cd8bb0f08e335b146db2009488388c2d54433e942a67d7a7c"
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 21
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+        "replay_observation_sha256": "266995c52462494cd8bb0f08e335b146db2009488388c2d54433e942a67d7a7c"
+      },
+      "progress": {
+        "observed_after_actions": [
+          false,
+          true
+        ],
+        "replay_after_actions": [
+          false,
+          true
+        ],
+        "stable": true,
+        "first_confirmed_action": 2,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 17.0
+      },
+      "elapsed_seconds": 29.596489666990237
+    },
+    {
+      "checkpoint": "settings-internet-from-home",
+      "group": "settings",
+      "arm": "flash_direct",
+      "scope_id": "16776020254843e9963c4b18baba9f02",
+      "calls": [
+        {
+          "reservation_id": "81a42f19af75489f87a8d12984838343",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 2866,
+            "total_tokens": 2882,
+            "completion_tokens": 16,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 2552,
+              "text_tokens": 314
+            },
+            "completion_tokens_details": {
+              "text_tokens": 16
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.123504959003185,
+          "estimated_list_cny": 0.000586,
+          "role": "execute",
+          "frame": 0,
+          "screen_sha256": "ace7d382db66580dc01c736b4b35bee8d1735b9a9348f3b0134e57c5ec7a7855"
+        },
+        {
+          "reservation_id": "ec68a73cd5294a5c83e84775a655e7ad",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 2866,
+            "total_tokens": 2919,
+            "completion_tokens": 53,
+            "prompt_tokens_details": {
+              "cached_tokens": 1152,
+              "image_tokens": 2552,
+              "text_tokens": 314
+            },
+            "completion_tokens_details": {
+              "text_tokens": 53
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.149736709005083,
+          "estimated_list_cny": 0.0006156,
+          "role": "execute",
+          "frame": 1,
+          "screen_sha256": "ace7d382db66580dc01c736b4b35bee8d1735b9a9348f3b0134e57c5ec7a7855"
+        },
+        {
+          "reservation_id": "ccd9b4f4d6a345b69d54b3051658bd52",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 2866,
+            "total_tokens": 2881,
+            "completion_tokens": 15,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 2552,
+              "text_tokens": 314
+            },
+            "completion_tokens_details": {
+              "text_tokens": 15
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.0939502499968512,
+          "estimated_list_cny": 0.0005852,
+          "role": "execute",
+          "frame": 2,
+          "screen_sha256": "ace7d382db66580dc01c736b4b35bee8d1735b9a9348f3b0134e57c5ec7a7855"
+        }
+      ],
+      "actions": [],
+      "success": 0,
+      "variant": {
+        "mode": "direct",
+        "execute_model": "qwen3.7-flash-2026-07-15",
+        "max_tokens": 512
+      },
+      "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+      "state": {
+        "nodes": 65,
+        "labelled_nodes": 17,
+        "clickable_nodes": 10,
+        "duplicate_visible_labels": 0,
+        "decision_observation_sha256": "266995c52462494cd8bb0f08e335b146db2009488388c2d54433e942a67d7a7c"
+      },
+      "upper": {
+        "model_calls": 3,
+        "device_steps": 21
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+        "replay_observation_sha256": "266995c52462494cd8bb0f08e335b146db2009488388c2d54433e942a67d7a7c"
+      },
+      "progress": {
+        "observed_after_actions": [],
+        "replay_after_actions": [],
+        "stable": true,
+        "first_confirmed_action": null,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 3.0,
+        "device_steps": 9.0
+      },
+      "elapsed_seconds": 12.989535874992725
+    }
+  ],
+  "device": "emulator-5586"
+}

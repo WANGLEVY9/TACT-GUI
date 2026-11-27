@@ -1,0 +1,66 @@
+{
+  "checkpoint": "click-button-seed-0",
+  "order": [
+    "intent_gate"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "click-button-seed-0",
+      "group": "miniwob-duplicate",
+      "arm": "intent_gate",
+      "scope_id": "e2e87b359cfa46e59643eab14101978b",
+      "calls": [],
+      "actions": [],
+      "success": 0,
+      "variant": {
+        "mode": "intent",
+        "intent_model": null,
+        "max_tokens": 256
+      },
+      "initial_hash": "8595661d8437345922054994125bb432453b0adf3147545591eb1d7cc31a4b96",
+      "state": {
+        "nodes": 23,
+        "labelled_nodes": 21,
+        "clickable_nodes": 4,
+        "duplicate_visible_labels": 5
+      },
+      "upper": {
+        "model_calls": 0,
+        "device_steps": 18
+      },
+      "intent": {
+        "contract": {
+          "steps": [
+            {
+              "target": "okay",
+              "role": "button"
+            }
+          ],
+          "forbidden": []
+        },
+        "decision": "clarify",
+        "reason": "ambiguous_target",
+        "question": "Which visible control should be used for \u201cokay\u201d?"
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "8595661d8437345922054994125bb432453b0adf3147545591eb1d7cc31a4b96"
+      },
+      "progress": {
+        "observed_after_actions": [],
+        "replay_after_actions": [],
+        "stable": true,
+        "first_confirmed_action": null,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 0.0,
+        "device_steps": 8.0
+      },
+      "elapsed_seconds": 0.5537195000069914
+    }
+  ],
+  "device": "miniwob-duplicate"
+}

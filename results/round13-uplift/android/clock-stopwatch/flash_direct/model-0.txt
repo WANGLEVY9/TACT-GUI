@@ -1,0 +1,7 @@
+Action: Click on the "Stopwatch" tab in the bottom navigation bar.
+
+</thinking>
+
+<tool_call>
+{"name": "computer_use", "arguments": {"action": "left_click", "coordinate": [696, 926]}}
+</tool_call>

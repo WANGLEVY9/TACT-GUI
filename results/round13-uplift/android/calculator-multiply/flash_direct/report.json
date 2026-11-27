@@ -1,0 +1,111 @@
+{
+  "checkpoint": "calculator-multiply",
+  "group": "calculator",
+  "arm": "flash_direct",
+  "scope_id": "d9a8e9c1afc74c159b4e3aa1556af4f1",
+  "calls": [
+    {
+      "reservation_id": "e5dd160cd92d453ab61d92a5fc42b28b",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2872,
+        "total_tokens": 2917,
+        "completion_tokens": 45,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 320
+        },
+        "completion_tokens_details": {
+          "text_tokens": 45
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 3.5601122909865808,
+      "estimated_list_cny": 0.0006104,
+      "role": "execute",
+      "frame": 0,
+      "screen_sha256": "168ed9486ce1007ce17d1d0793e22c76eb0becedb29bc1a42d9ba21c7dc8399e"
+    },
+    {
+      "reservation_id": "7f8daba8a5da4d4588841aa2ac349ccc",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2892,
+        "total_tokens": 2947,
+        "completion_tokens": 55,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 340
+        },
+        "completion_tokens_details": {
+          "text_tokens": 55
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.5610445829952369,
+      "estimated_list_cny": 0.0006224,
+      "role": "execute",
+      "frame": 1,
+      "screen_sha256": "c6b9bf5c2d886ad2c91b814e8aaad594cdd52595b99eec60a7debf46236eb495"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        875,
+        915
+      ]
+    }
+  ],
+  "success": 1,
+  "variant": {
+    "mode": "direct",
+    "execute_model": "qwen3.7-flash-2026-07-15",
+    "max_tokens": 512
+  },
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0,
+    "decision_observation_sha256": "679fd27da385ee02ca5698c0f201de8874fbd95e854d8278ba7361e952d19dfd"
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 28
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+    "replay_observation_sha256": "679fd27da385ee02ca5698c0f201de8874fbd95e854d8278ba7361e952d19dfd"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true
+    ],
+    "replay_after_actions": [
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 24.0
+  },
+  "elapsed_seconds": 32.87206254199555
+}

@@ -1,0 +1,92 @@
+{
+  "checkpoint": "click-color-seed-17",
+  "order": [
+    "intent_gate"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "click-color-seed-17",
+      "group": "miniwob-color",
+      "arm": "intent_gate",
+      "scope_id": "6e45b79d88b84c99bf2d2b73ab4545e5",
+      "calls": [
+        {
+          "reservation_id": "fe5d023901054011a7848ea9208c49ee",
+          "requested_model": "qwen-flash-2025-07-28",
+          "returned_model": "qwen-flash-2025-07-28",
+          "usage": {
+            "prompt_tokens": 106,
+            "total_tokens": 188,
+            "completion_tokens": 82
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 256,
+          "input_view": "text",
+          "request_seconds": 1.3743724579981063,
+          "estimated_list_cny": 0.0001389,
+          "role": "interpret",
+          "frame": 0,
+          "screen_sha256": "5bec0ad187351c636d3472dcf34494fe25aa011cdd1c48bb7a6fc5f139814178"
+        }
+      ],
+      "actions": [],
+      "success": 0,
+      "variant": {
+        "mode": "intent",
+        "intent_model": "qwen-flash-2025-07-28",
+        "max_tokens": 256
+      },
+      "initial_hash": "a2a60c87a4da197f6d119375d3f0bd99eeefe44d63db92fb7e91874a0ebebd9e",
+      "state": {
+        "nodes": 22,
+        "labelled_nodes": 16,
+        "clickable_nodes": 0,
+        "duplicate_visible_labels": 3
+      },
+      "upper": {
+        "model_calls": 1,
+        "device_steps": 18
+      },
+      "intent": {
+        "contract": null,
+        "decision": "clarify",
+        "reason": "unsupported_or_conflicting_instruction",
+        "question": "Which controls should be clicked, in what order, and which actions are disallowed?",
+        "candidate": {
+          "steps": [
+            {
+              "meaning": "Identify the orange colored box in the interface.",
+              "evidence": "orange colored box"
+            },
+            {
+              "meaning": "Perform a click action on the identified orange colored box.",
+              "evidence": "Click on the orange colored box"
+            }
+          ],
+          "constraints": [],
+          "question": null
+        }
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "a2a60c87a4da197f6d119375d3f0bd99eeefe44d63db92fb7e91874a0ebebd9e"
+      },
+      "progress": {
+        "observed_after_actions": [],
+        "replay_after_actions": [],
+        "stable": true,
+        "first_confirmed_action": null,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 1.0,
+        "device_steps": 7.0
+      },
+      "elapsed_seconds": 1.8751571669999976
+    }
+  ],
+  "device": "miniwob-color"
+}

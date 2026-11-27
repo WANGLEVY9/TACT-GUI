@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "seed": 20261127,
+  "platform": "web",
+  "scope": "intent-routing engineering probe on pinned native MiniWoB++ development tasks",
+  "max_model_calls": 0,
+  "variants": {
+    "intent_gate": {"mode":"intent","intent_model":null,"max_tokens":256}
+  },
+  "apps": {
+    "miniwob-button": {"group":"miniwob-button","backend":"miniwob","task":"click-button","seed":1},
+    "miniwob-dialog": {"group":"miniwob-dialog","backend":"miniwob","task":"click-dialog","seed":3},
+    "miniwob-sequence": {"group":"miniwob-sequence","backend":"miniwob","task":"click-button-sequence","seed":4},
+    "miniwob-duplicate": {"group":"miniwob-duplicate","backend":"miniwob","task":"click-button","seed":0},
+    "miniwob-color": {"group":"miniwob-color","backend":"miniwob","task":"click-color","seed":17}
+  },
+  "checkpoints": [
+    {"id":"click-button-seed-1","app_group":"miniwob-button","slots":2,"measure_progress":true,"prefix":[],"start":{"utterance":"Click on the \"Ok\" button."},"goal":"Click on the \"Ok\" button.","oracle":{"native_raw_reward":1}},
+    {"id":"click-dialog-seed-3","app_group":"miniwob-dialog","slots":2,"measure_progress":true,"prefix":[],"start":{"utterance":"Close the dialog box by clicking the \"x\"."},"goal":"Close the dialog box by clicking the \"x\".","oracle":{"native_raw_reward":1}},
+    {"id":"click-sequence-seed-4","app_group":"miniwob-sequence","slots":3,"measure_progress":true,"prefix":[],"start":{"utterance":"Click button ONE, then click button TWO."},"goal":"Click button ONE, then click button TWO.","oracle":{"native_raw_reward":1}},
+    {"id":"click-button-seed-0","app_group":"miniwob-duplicate","slots":2,"measure_progress":true,"prefix":[],"start":{"utterance":"Click on the \"okay\" button."},"goal":"Click on the \"okay\" button.","oracle":{"native_raw_reward":1}},
+    {"id":"click-color-seed-17","app_group":"miniwob-color","slots":2,"measure_progress":true,"prefix":[],"start":{"utterance":"Click on the orange colored box."},"goal":"Click on the orange colored box.","oracle":{"native_raw_reward":1}}
+  ]
+}

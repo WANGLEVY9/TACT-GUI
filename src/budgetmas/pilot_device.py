@@ -1,12 +1,12 @@
 """Versioned Android task contract and bounded execution for the multi-app pilot."""
-import hashlib
-import re
 import shlex
 import time
 import xml.etree.ElementTree as ET
 
 from .gui_team import device_call
 from .runtime import RoleResult
+from .ui_nodes import find_target as locate_target
+from .ui_nodes import labels, matches, state_hash
 
 
 MODES = ('single', 'collaborative')
@@ -34,50 +34,8 @@ def quotas(task, mode, canonical_tab=False):
     }
 
 
-def labels(node):
-    return (node.get('text', ''), node.get('content-desc', ''))
-
-
-def tap_location(node):
-    match = re.fullmatch(r'\[(\d+),(\d+)\]\[(\d+),(\d+)\]', node.get('bounds',''))
-    if not match:
-        return None
-    left, top, right, bottom = map(int, match.groups())
-    if not left < right or not top < bottom:
-        return None
-    return (left+right)//2, (top+bottom)//2
-
-
 def find_target(nodes, phrases):
-    for phrase in phrases:
-        eligible = [node for node in nodes
-                    if phrase.casefold() in {label.casefold() for label in labels(node)}
-                    and tap_location(node) and node.get('enabled') == 'true']
-        if eligible:
-            return tap_location(max(eligible, key=lambda node: node.get('clickable') == 'true'))
-    return None
-
-
-def matches(nodes, oracle):
-    fields = {'text': 'text', 'description': 'content-desc', 'selected': 'selected'}
-    for node in nodes:
-        if 'resource' in oracle and node.get('resource-id','').split('/')[-1] != oracle['resource']:
-            continue
-        if all(node.get(attr) == (str(oracle[field]).lower() if field == 'selected' else oracle[field])
-               for field, attr in fields.items() if field in oracle):
-            return True
-    return False
-
-
-def state_hash(nodes, package):
-    # Time, battery, arbitrary filesystem filenames and other dynamic text are
-    # omitted. Track structure and active tab/selection, not byte-identical state.
-    structure = [(n.get('resource-id'), n.get('class'), n.get('selected'),
-                  n.get('checked'), n.get('bounds'))
-                 for n in nodes if n.get('package') == package]
-    if not structure:
-        raise RuntimeError('configured application has no visible nodes')
-    return hashlib.sha256(repr(structure).encode()).hexdigest()
+    return locate_target(nodes, phrases)
 
 
 class Device:

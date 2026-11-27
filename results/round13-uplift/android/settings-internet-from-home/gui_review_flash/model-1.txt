@@ -1,0 +1,7 @@
+Action: Click on the "Network & internet" option.
+
+</thinking>
+
+<tool_call>
+{"name": "computer_use", "arguments": {"action": "left_click", "coordinate": [366, 365]}}
+</tool_call>

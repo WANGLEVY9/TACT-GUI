@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "seed": 20261127,
+  "platform": "web",
+  "scope": "MiniWoB++ native Web development screening with registered Alibaba routing variants",
+  "max_model_calls": 56,
+  "apps": {
+    "miniwob-button": {"group":"miniwob-button","backend":"miniwob","task":"click-button","seed":1},
+    "miniwob-dialog": {"group":"miniwob-dialog","backend":"miniwob","task":"click-dialog","seed":3},
+    "miniwob-sequence": {"group":"miniwob-sequence","backend":"miniwob","task":"click-button-sequence","seed":4}
+  },
+  "checkpoints": [
+    {"id":"click-button-seed-1","app_group":"miniwob-button","slots":2,"measure_progress":true,"prefix":[],"start":{"utterance":"Click on the \"Ok\" button."},"goal":"Click on the \"Ok\" button.","oracle":{"native_raw_reward":1}},
+    {"id":"click-dialog-seed-3","app_group":"miniwob-dialog","slots":2,"measure_progress":true,"prefix":[],"start":{"utterance":"Close the dialog box by clicking the \"x\"."},"goal":"Close the dialog box by clicking the \"x\".","oracle":{"native_raw_reward":1}},
+    {"id":"click-sequence-seed-4","app_group":"miniwob-sequence","slots":3,"measure_progress":true,"prefix":[],"start":{"utterance":"Click button ONE, then click button TWO."},"goal":"Click button ONE, then click button TWO.","oracle":{"native_raw_reward":1}}
+  ]
+}

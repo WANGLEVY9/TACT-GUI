@@ -24,6 +24,7 @@ PROFILES={
     'smoke': ('Checkpoint smoke', 'android-mechanism-smoke.json'),
     'development': ('Four-app development', 'android-mechanism-development.json'),
     'crossover': ('Stop × budget crossover', 'android-stop-crossover.json'),
+    'web-smoke': ('Web adaptation smoke', 'web-mechanism-smoke.json'),
 }
 SERIAL=re.compile(r'emulator-[0-9]{4,5}')
 
@@ -50,6 +51,7 @@ class Workspace:
 
     def profiles(self):
         return [{'id':key,'name':name,'seed':proto['seed'],
+                 'platform':proto.get('platform','android'),
                  'guard':GUARDED_DIRECT in proto.get('arms',()),
                  'progress':any(x.get('measure_progress',False) for x in proto['checkpoints']),
                  'cases':[{k:case[k] for k in ('id','app_group','goal','base_checkpoint') if k in case} |
@@ -94,18 +96,26 @@ class Workspace:
         seed=integer(payload.get('seed'),0,2**32-1,'Random seed')
         timeout=integer(payload.get('timeout'),5,90,'ADB timeout')
         serial=payload.get('serial','')
-        if not isinstance(serial,str) or (serial and not SERIAL.fullmatch(serial)):
+        platform=chosen[1].get('platform','android')
+        if platform == 'web' and serial not in ('','fixture'):
+            raise ValueError('Web runs use the local fixture backend, not an emulator.')
+        if not isinstance(serial,str) or (serial and serial != 'fixture' and not SERIAL.fullmatch(serial)):
             raise ValueError('Select an emulator serial such as emulator-5582.')
         config={'schema':1,'seed':seed,'arms':arms,'checkpoints':cases,'scope':'console development run'}
+        if platform == 'web':
+            config = {**config, 'platform':'web', 'apps':chosen[1]['apps']}
         return {'title':name,'totals':totals,'serial':serial,'timeout':timeout,
-                'model':'gui-plus-2026-02-26','config':config,'call_limit':ceiling}
+                'model':'gui-plus-2026-02-26','config':config,'call_limit':ceiling,
+                'platform':platform,'fixture':platform=='web'}
 
     def start(self,payload):
         plan=self.plan(payload)
-        if not plan['serial']:
-            raise ValueError('Connect and select a dedicated emulator first.')
         if payload.get('confirmed') is not True:
             raise ValueError('Confirm the run and its model call limit.')
+        if plan['fixture']:
+            return self.start_fixture(plan, payload)
+        if not plan['serial']:
+            raise ValueError('Connect and select a dedicated emulator first.')
         with self.lock:
             if any(proc.poll() is None for proc in self.jobs.values()):
                 raise ValueError('A console run is active. Stop it or wait for it to finish.')
@@ -135,6 +145,30 @@ class Workspace:
                 env['PYTHONPATH']=os.pathsep.join(filter(None,(module_dir,env.get('PYTHONPATH'))))
                 self.jobs[job]=subprocess.Popen(args,cwd=self.root,stdout=output,stderr=subprocess.STDOUT,
                                                 start_new_session=True,env=env)
+            return {'job':job,'run':f'console/{job}/run'}
+
+    def start_fixture(self, plan, payload):
+        from .mechanism import run, web_protocol
+        from .offline import provider_factory
+
+        with self.lock:
+            if any(proc.poll() is None for proc in self.jobs.values()):
+                raise ValueError('A console run is active. Stop it or wait for it to finish.')
+            job = uuid.uuid4().hex[:12]
+            folder = self.results / 'console' / job
+            folder.mkdir(parents=True)
+            plan['created'] = datetime.now(timezone.utc).isoformat()
+            write(folder/'launch.json', plan)
+            write(folder/'requested.json', plan['config'])
+            config = plan['config']
+            apps = web_protocol(config)
+            with (folder/'console.log').open('w') as output:
+                try:
+                    run(config, apps, 'fixture', folder/'run', provider_factory=provider_factory,
+                        platform='web')
+                    output.write('Offline Web fixture run completed.\n')
+                except Exception as error:
+                    output.write('Offline Web fixture run failed: '+type(error).__name__+'\n')
             return {'job':job,'run':f'console/{job}/run'}
 
     def is_active(self, run_id):
@@ -230,7 +264,7 @@ class Handler(BaseHTTPRequestHandler):
                              if row.endswith('\tdevice') and SERIAL.fullmatch(row.split()[0])]
                 except (OSError,subprocess.SubprocessError):
                     serials=[]
-                self.json(serials)
+                self.json([*serials, 'fixture'])
             elif url.path=='/api/run':
                 self.json(data.run_detail(ws.results,get('run'),active=ws.is_active(get('run'))))
             elif url.path=='/api/trace':

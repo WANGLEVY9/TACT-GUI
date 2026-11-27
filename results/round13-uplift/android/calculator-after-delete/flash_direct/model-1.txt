@@ -1,0 +1,5 @@
+Action: Click the 'C' button to clear the current display.
+
+<tool_call>
+{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [646, 917]}}
+</tool_call>

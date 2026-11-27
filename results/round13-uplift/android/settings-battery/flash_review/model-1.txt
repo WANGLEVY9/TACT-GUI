@@ -1,0 +1,3 @@
+Action: Click on the "Battery" option in the settings menu.
+
+</tool_call>

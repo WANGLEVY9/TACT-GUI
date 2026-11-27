@@ -1,0 +1,113 @@
+{
+  "checkpoint": "calculator-multiply",
+  "group": "calculator",
+  "arm": "flash_review",
+  "scope_id": "6cfb7143db0942b5a6a0694e4f4827e8",
+  "calls": [
+    {
+      "reservation_id": "773e3496005f4928b8d6faeb617c13b2",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2665,
+        "total_tokens": 2675,
+        "completion_tokens": 10,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 113
+        },
+        "completion_tokens_details": {
+          "text_tokens": 10
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.1872660420049215,
+      "estimated_list_cny": 0.000541,
+      "role": "review",
+      "frame": 0,
+      "screen_sha256": "362827069a148bb88fe898cade9e7bbad07f28e066e4997d2890ce42d9fc8ccc"
+    },
+    {
+      "reservation_id": "bfff9f2ba51541739de18716de42fb72",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2891,
+        "total_tokens": 2937,
+        "completion_tokens": 46,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 339
+        },
+        "completion_tokens_details": {
+          "text_tokens": 46
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.343261166010052,
+      "estimated_list_cny": 0.000615,
+      "role": "execute",
+      "frame": 1,
+      "screen_sha256": "362827069a148bb88fe898cade9e7bbad07f28e066e4997d2890ce42d9fc8ccc"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        874,
+        907
+      ]
+    }
+  ],
+  "success": 1,
+  "variant": {
+    "mode": "independent_review",
+    "execute_model": "qwen3.7-flash-2026-07-15",
+    "review_model": "qwen3.7-flash-2026-07-15",
+    "review_view": "screen",
+    "max_tokens": 512
+  },
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0,
+    "decision_observation_sha256": "679fd27da385ee02ca5698c0f201de8874fbd95e854d8278ba7361e952d19dfd"
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 28
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+    "replay_observation_sha256": "679fd27da385ee02ca5698c0f201de8874fbd95e854d8278ba7361e952d19dfd"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true
+    ],
+    "replay_after_actions": [
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 24.0
+  },
+  "elapsed_seconds": 30.052584250006475
+}

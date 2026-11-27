@@ -1,0 +1,67 @@
+{
+  "checkpoint": "click-button-seed-1",
+  "group": "miniwob-button",
+  "arm": "intent_gate",
+  "scope_id": "6a17a10c94514d88b6e65d2e032a11e2",
+  "calls": [],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        57.8125,
+        264.0625
+      ]
+    }
+  ],
+  "success": 1,
+  "variant": {
+    "mode": "intent",
+    "intent_model": null,
+    "max_tokens": 256
+  },
+  "initial_hash": "f2e3a3b833a48f38c37b36d6205d237281fd20fd81bde9b39446f07f3d4eb6cf",
+  "state": {
+    "nodes": 23,
+    "labelled_nodes": 22,
+    "clickable_nodes": 1,
+    "duplicate_visible_labels": 4
+  },
+  "upper": {
+    "model_calls": 0,
+    "device_steps": 18
+  },
+  "intent": {
+    "contract": {
+      "steps": [
+        {
+          "target": "Ok",
+          "role": "button"
+        }
+      ],
+      "forbidden": []
+    },
+    "decision": "verify",
+    "reason": "ordered_steps_exhausted"
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "f2e3a3b833a48f38c37b36d6205d237281fd20fd81bde9b39446f07f3d4eb6cf"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true
+    ],
+    "replay_after_actions": [
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 0.0,
+    "device_steps": 12.0
+  },
+  "elapsed_seconds": 1.071333958010655
+}

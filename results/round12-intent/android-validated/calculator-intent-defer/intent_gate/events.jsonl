@@ -1,0 +1,1 @@
+{"data": {"decision": "defer", "index": 0, "reason": "insufficient_action_slots"}, "event": "intent_decision", "hash": "210277e7fca17bcc89b4838e492bbb115c5a8521ef75e284c9e98b0d1388a945", "previous": "0000000000000000000000000000000000000000000000000000000000000000", "sequence": 0, "time_ns": 1795772149590821000}

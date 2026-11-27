@@ -1,0 +1,4 @@
+Action: Click on the orange box located in the top-left position among the four colored boxes.
+
+<tool_call>{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [138, 325]}}
+</tool_call>

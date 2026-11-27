@@ -1,0 +1,3 @@
+Action: Click on the "next" button located in the upper left portion of the form area.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [69, 231]}}</tool_call>

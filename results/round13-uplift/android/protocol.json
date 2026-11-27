@@ -1,0 +1,217 @@
+{
+  "schema": 1,
+  "seed": 20261128,
+  "checkpoints": [
+    {
+      "id": "calculator-multiply",
+      "app_group": "calculator",
+      "slots": 2,
+      "prefix": [
+        "3",
+        "\u00d7",
+        "4"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "3\u00d74"
+      },
+      "goal": "Finish the current calculation by pressing equals. Leave the numeric answer on screen.",
+      "oracle": {
+        "resource": "result",
+        "text": "12"
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "settings-battery",
+      "app_group": "settings",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "Open the Battery settings page. Leave its settings unchanged.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Battery"
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "clock-timer",
+      "app_group": "clock",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Navigate to the countdown timer tab. Do not start a timer.",
+      "oracle": {
+        "resource": "tab_menu_timer",
+        "selected": true
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "files-search",
+      "app_group": "files",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "resource": "header_title",
+        "text": "Files in Downloads"
+      },
+      "goal": "Open the file search input for Downloads. Do not enter any text.",
+      "oracle": {
+        "resource": "search_src_text"
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "calculator-clear-entry",
+      "app_group": "calculator",
+      "slots": 3,
+      "prefix": [
+        "9",
+        "+",
+        "2"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "9+2"
+      },
+      "goal": "Clear the mistaken expression, then enter the single digit 6. Leave exactly 6 visible.",
+      "oracle": {
+        "resource": "result",
+        "text": "6"
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "settings-internet-from-home",
+      "app_group": "settings",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "homepage_title",
+        "text": "Settings"
+      },
+      "goal": "From the Settings homepage, open Network & internet and then the Internet page. Do not change any settings.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Internet"
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "clock-stopwatch",
+      "app_group": "clock",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "tab_menu_clock",
+        "selected": true
+      },
+      "goal": "Open the stopwatch tab without starting the stopwatch.",
+      "oracle": {
+        "resource": "tab_menu_stopwatch",
+        "selected": true
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "files-menu",
+      "app_group": "files",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "resource": "header_title",
+        "text": "Files in Downloads"
+      },
+      "goal": "Open the More options menu in Downloads. Leave the menu open without changing or creating anything.",
+      "oracle": {
+        "text": "New folder"
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "calculator-after-delete",
+      "app_group": "calculator",
+      "slots": 3,
+      "prefix": [
+        "7",
+        "+",
+        "3",
+        "C"
+      ],
+      "start": {
+        "resource": "result",
+        "text": "7+"
+      },
+      "goal": "A mistaken input was partially erased. Leave exactly the single digit 8 on the display.",
+      "oracle": {
+        "resource": "result",
+        "text": "8"
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "settings-internet-after-navigation",
+      "app_group": "settings",
+      "slots": 2,
+      "prefix": [
+        "Network & internet"
+      ],
+      "start": {
+        "resource": "collapsing_toolbar",
+        "description": "Network & internet"
+      },
+      "goal": "Open the Internet page. Do not change any settings.",
+      "oracle": {
+        "resource": "collapsing_toolbar",
+        "description": "Internet"
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    }
+  ],
+  "scope": "paired Android development continuations with common restored histories",
+  "arms": [
+    "flash_direct",
+    "flash_review",
+    "gui_review_flash"
+  ],
+  "variants": {
+    "flash_direct": {
+      "mode": "direct",
+      "execute_model": "qwen3.7-flash-2026-07-15",
+      "max_tokens": 512
+    },
+    "flash_review": {
+      "mode": "independent_review",
+      "execute_model": "qwen3.7-flash-2026-07-15",
+      "review_model": "qwen3.7-flash-2026-07-15",
+      "review_view": "screen",
+      "max_tokens": 512
+    },
+    "gui_review_flash": {
+      "mode": "independent_review",
+      "execute_model": "qwen3.7-flash-2026-07-15",
+      "review_model": "gui-plus-2026-02-26",
+      "review_view": "screen",
+      "max_tokens": 512
+    }
+  },
+  "max_model_calls": 75
+}

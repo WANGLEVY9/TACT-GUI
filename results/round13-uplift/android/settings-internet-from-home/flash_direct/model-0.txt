@@ -1,0 +1,3 @@
+Action: Click on "Network & internet".
+
+</tool_call>

@@ -1,0 +1,2 @@
+Click on the link "donec" in the text under Tab #1.
+The reason is that the target link "donec" is visible and clickable within the content area of the currently active Tab #1, so no tab switching is necessary.

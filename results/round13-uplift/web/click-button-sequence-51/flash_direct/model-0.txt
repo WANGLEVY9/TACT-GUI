@@ -1,0 +1,3 @@
+Action: Click on the button labeled "ONE".
+
+<tool_call>{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [270, 548]}}</tool_call>

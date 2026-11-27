@@ -8,6 +8,7 @@ requires-python = ">=3.11"
 dependencies = []
 [project.optional-dependencies]
 pilot = ["catboost==1.2.10"]
+web = ["playwright>=1.49"]
 [project.scripts]
 budgetmas = "budgetmas.cli:main"
 budgetmas-console = "budgetmas.console:main"

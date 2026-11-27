@@ -1,0 +1,5 @@
+Action: Tap on the 'Internet' option at the top of the screen.
+
+<tool_call>
+{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [275, 295]}}
+</tool_call>

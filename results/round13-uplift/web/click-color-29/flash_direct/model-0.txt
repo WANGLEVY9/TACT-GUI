@@ -1,0 +1,3 @@
+Action: Click on the yellow box in the bottom right corner of the grid.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [315, 500]}}</tool_call>

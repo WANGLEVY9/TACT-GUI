@@ -73,6 +73,7 @@ p { color: var(--muted); }
 .breadcrumbs b { font-weight: 650; color: var(--text); }
 .status-banner { padding: 11px 30px; border-bottom: 1px solid var(--line); background: #203353; color: #d9e5ff; overflow-wrap: anywhere; }
 .status-banner b { margin-right: 8px; }
+.status-banner .follow-live { margin-left: 14px; }
 .pill { display: inline-flex; align-items: center; gap: 6px; font: 600 10px/1.4 var(--mono); border: 1px solid var(--edge); background: var(--well); border-radius: 20px; color: var(--muted); padding: 5px 8px; width: fit-content; }
 .pill.ok { color: var(--mint); border-color: #49796e; }
 .pill.warn { color: var(--warn); border-color: #785d54; }

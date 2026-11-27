@@ -1,0 +1,1759 @@
+{
+  "platform": "android",
+  "protocol_sha256": "76d7b68680e2ae417e8f7223a1a97daa2cbe861573258318ac0eff07d92b5451",
+  "report_sha256": "b12c2ea44668d7a4637dfd5ce85c80dee8c6104a8039b2ea36b913af3963db43",
+  "registered_checkpoints": 10,
+  "audited_screens": 67,
+  "recorded_list_cny": 0.0776914,
+  "budget": {
+    "limits": {
+      "model_calls": 75.0,
+      "device_steps": 687.0
+    },
+    "spent": {
+      "model_calls": 65.0,
+      "device_steps": 479.0
+    },
+    "reserved": {
+      "model_calls": 9.0,
+      "device_steps": 63.0
+    },
+    "available": {
+      "model_calls": 1.0,
+      "device_steps": 145.0
+    },
+    "pending_reservations": [
+      "238a31a1f49749d2a111dae7d3f5195d",
+      "aad2e7ae3fad44539af17bfe59246f4f",
+      "e5bb44378e744c6ea0ee345727da6ae0"
+    ]
+  },
+  "excluded": [
+    {
+      "id": "settings-battery",
+      "family": "settings",
+      "reasons": [
+        "unresolved arm or mismatched initial structure",
+        "missing or different decision observation"
+      ],
+      "unresolved_arms": [
+        {
+          "arm": "flash_review",
+          "error_type": null,
+          "phase": null
+        },
+        {
+          "arm": "flash_direct",
+          "error_type": null,
+          "phase": null
+        }
+      ]
+    },
+    {
+      "id": "clock-timer",
+      "family": "clock",
+      "reasons": [
+        "unresolved arm or mismatched initial structure"
+      ],
+      "unresolved_arms": [
+        {
+          "arm": "flash_direct",
+          "error_type": null,
+          "phase": null
+        }
+      ]
+    },
+    {
+      "id": "files-menu",
+      "family": "files",
+      "reasons": [
+        "unresolved arm or mismatched initial structure"
+      ],
+      "unresolved_arms": [
+        {
+          "arm": "gui_review_flash",
+          "error_type": "URLError",
+          "phase": "model_request"
+        },
+        {
+          "arm": "flash_review",
+          "error_type": "URLError",
+          "phase": "model_request"
+        },
+        {
+          "arm": "flash_direct",
+          "error_type": "URLError",
+          "phase": "model_request"
+        }
+      ]
+    }
+  ],
+  "scope": "family-split development replay, no deployment claim",
+  "paired_checkpoints": 7,
+  "split_seed": 20261128,
+  "features": [
+    "bias",
+    "slots",
+    "prefix_steps",
+    "goal_words",
+    "sequential_connectives",
+    "ui_nodes",
+    "label_fraction",
+    "clickable_fraction",
+    "duplicate_label_fraction"
+  ],
+  "thresholds": [
+    0.4,
+    0.6,
+    0.8
+  ],
+  "target_family_failure_risk": 0.2,
+  "calibration_delta": 0.1,
+  "cny_price": 8.0,
+  "active_calibrated_folds": 0,
+  "group_mean_uplift_mae": {
+    "learned": 0.0,
+    "zero": 0,
+    "training_mean": 0
+  },
+  "totals": {
+    "tight": {
+      "flash_direct": {
+        "admitted": 4,
+        "verified": 3,
+        "list_cny": 0.0048996
+      },
+      "flash_review": {
+        "admitted": 4,
+        "verified": 4,
+        "list_cny": 0.005304
+      },
+      "gui_review_flash": {
+        "admitted": 4,
+        "verified": 4,
+        "list_cny": 0.0201737
+      },
+      "gain_frontier": {
+        "admitted": 4,
+        "verified": 3,
+        "list_cny": 0.0054016
+      },
+      "calibrated_frontier": {
+        "admitted": 0,
+        "verified": 0,
+        "list_cny": 0
+      }
+    },
+    "full": {
+      "flash_direct": {
+        "admitted": 7,
+        "verified": 3,
+        "list_cny": 0.0103832
+      },
+      "flash_review": {
+        "admitted": 7,
+        "verified": 5,
+        "list_cny": 0.010709
+      },
+      "gui_review_flash": {
+        "admitted": 7,
+        "verified": 5,
+        "list_cny": 0.0372463
+      },
+      "gain_frontier": {
+        "admitted": 7,
+        "verified": 3,
+        "list_cny": 0.0108852
+      },
+      "calibrated_frontier": {
+        "admitted": 0,
+        "verified": 0,
+        "list_cny": 0
+      }
+    }
+  },
+  "folds": [
+    {
+      "held_family": "calculator",
+      "train_families": [
+        "clock",
+        "files"
+      ],
+      "calibration_families": [
+        "settings"
+      ],
+      "test_ids": [
+        "calculator-multiply",
+        "calculator-clear-entry",
+        "calculator-after-delete"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.4369279970824011,
+            0.2440548410887365,
+            0.0,
+            0.14524754621457964,
+            0.0,
+            0.3316440581418072,
+            0.11179108352535401,
+            0.0858627066887908,
+            -0.004144766108253281
+          ],
+          "review_gain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "upgrade_gain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            3.1096105664311255,
+            1.736612530036147,
+            0.0,
+            1.0338215242047155,
+            0.0,
+            2.360286254334114,
+            0.795583366289845,
+            0.6111395942801974,
+            -0.029592822704123393
+          ],
+          "flash_review": [
+            3.0237082114095633,
+            2.120737099558062,
+            0.0,
+            0.8756329758373742,
+            0.0,
+            2.321835259588534,
+            0.8168153522377292,
+            0.5193599780900803,
+            0.09797345922603615
+          ],
+          "gui_review_flash": [
+            3.6622724966753446,
+            2.238071853239776,
+            0.0,
+            1.1597146923657526,
+            0.0,
+            2.791710341906749,
+            0.956261684659048,
+            0.686334144463214,
+            0.021707177526600365
+          ]
+        }
+      },
+      "predictions": {
+        "calculator-multiply": {
+          "probability": {
+            "flash_direct": 1.0,
+            "flash_review": 1.0,
+            "gui_review_flash": 1.0
+          },
+          "upgrade_gain": 0.0,
+          "cost_cny": {
+            "flash_direct": 0.0013295504948842086,
+            "flash_review": 0.0013988699648700453,
+            "gui_review_flash": 0.005339829500701952
+          }
+        },
+        "calculator-clear-entry": {
+          "probability": {
+            "flash_direct": 1.0,
+            "flash_review": 1.0,
+            "gui_review_flash": 1.0
+          },
+          "upgrade_gain": 0.0,
+          "cost_cny": {
+            "flash_direct": 0.002434882573328738,
+            "flash_review": 0.0029003685544035807,
+            "gui_review_flash": 0.011591957440081853
+          }
+        },
+        "calculator-after-delete": {
+          "probability": {
+            "flash_direct": 1.0,
+            "flash_review": 1.0,
+            "gui_review_flash": 1.0
+          },
+          "upgrade_gain": 0.0,
+          "cost_cny": {
+            "flash_direct": 0.002498659898655065,
+            "flash_review": 0.002964582184296171,
+            "gui_review_flash": 0.011932990389756011
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.0,
+        "zero": 0,
+        "training_mean": 0
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 6,
+            "verified_options": 4,
+            "candidate_options": 6,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 6,
+            "verified_options": 4,
+            "candidate_options": 6,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 6,
+            "verified_options": 4,
+            "candidate_options": 6,
+            "family_risk_upper": 1.0
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 9,
+          "verified_options": 3,
+          "candidate_options": 9
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 9,
+          "verified_options": 3,
+          "candidate_options": 9
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 9,
+          "verified_options": 3,
+          "candidate_options": 9
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 4,
+          "device_steps": 49
+        },
+        "full": {
+          "model_calls": 8,
+          "device_steps": 98
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 2,
+            "list_cny": 0.0012328,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "calculator-multiply",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0013295504948842086,
+                "list_cny": 0.0012328,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 2,
+            "list_cny": 0.001156,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "calculator-multiply",
+                "mode": "flash_review",
+                "p": 1.0,
+                "predicted_cny": 0.0013988699648700453,
+                "list_cny": 0.001156,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 2,
+            "list_cny": 0.0049118,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "calculator-multiply",
+                "mode": "gui_review_flash",
+                "p": 1.0,
+                "predicted_cny": 0.005339829500701952,
+                "list_cny": 0.004911799999999999,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 2,
+            "list_cny": 0.0012328,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "calculator-multiply",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0013295504948842086,
+                "list_cny": 0.0012328,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 3,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 3,
+            "not_admitted": 0,
+            "list_cny": 0.0049296,
+            "actual": {
+              "model_calls": 8,
+              "device_steps": 86
+            },
+            "decisions": [
+              {
+                "task": "calculator-multiply",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0013295504948842086,
+                "list_cny": 0.0012328,
+                "verified": 1
+              },
+              {
+                "task": "calculator-clear-entry",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.002434882573328738,
+                "list_cny": 0.0018433999999999998,
+                "verified": 0
+              },
+              {
+                "task": "calculator-after-delete",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.002498659898655065,
+                "list_cny": 0.0018533999999999998,
+                "verified": 0
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 3,
+            "not_admitted": 0,
+            "list_cny": 0.0047716,
+            "actual": {
+              "model_calls": 8,
+              "device_steps": 86
+            },
+            "decisions": [
+              {
+                "task": "calculator-multiply",
+                "mode": "flash_review",
+                "p": 1.0,
+                "predicted_cny": 0.0013988699648700453,
+                "list_cny": 0.001156,
+                "verified": 1
+              },
+              {
+                "task": "calculator-clear-entry",
+                "mode": "flash_review",
+                "p": 1.0,
+                "predicted_cny": 0.0029003685544035807,
+                "list_cny": 0.0018224,
+                "verified": 0
+              },
+              {
+                "task": "calculator-after-delete",
+                "mode": "flash_review",
+                "p": 1.0,
+                "predicted_cny": 0.002964582184296171,
+                "list_cny": 0.0017932,
+                "verified": 0
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 3,
+            "not_admitted": 0,
+            "list_cny": 0.0162524,
+            "actual": {
+              "model_calls": 8,
+              "device_steps": 82
+            },
+            "decisions": [
+              {
+                "task": "calculator-multiply",
+                "mode": "gui_review_flash",
+                "p": 1.0,
+                "predicted_cny": 0.005339829500701952,
+                "list_cny": 0.004911799999999999,
+                "verified": 1
+              },
+              {
+                "task": "calculator-clear-entry",
+                "mode": "gui_review_flash",
+                "p": 1.0,
+                "predicted_cny": 0.011591957440081853,
+                "list_cny": 0.0054899,
+                "verified": 0
+              },
+              {
+                "task": "calculator-after-delete",
+                "mode": "gui_review_flash",
+                "p": 1.0,
+                "predicted_cny": 0.011932990389756011,
+                "list_cny": 0.0058507,
+                "verified": 0
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 3,
+            "not_admitted": 0,
+            "list_cny": 0.0049296,
+            "actual": {
+              "model_calls": 8,
+              "device_steps": 86
+            },
+            "decisions": [
+              {
+                "task": "calculator-multiply",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0013295504948842086,
+                "list_cny": 0.0012328,
+                "verified": 1
+              },
+              {
+                "task": "calculator-clear-entry",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.002434882573328738,
+                "list_cny": 0.0018433999999999998,
+                "verified": 0
+              },
+              {
+                "task": "calculator-after-delete",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.002498659898655065,
+                "list_cny": 0.0018533999999999998,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 3,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "clock",
+      "train_families": [
+        "calculator",
+        "files"
+      ],
+      "calibration_families": [
+        "settings"
+      ],
+      "test_ids": [
+        "clock-stopwatch"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.7857109283961956,
+            -0.5600041544438287,
+            -0.5869758004850855,
+            0.10971541207628108,
+            -0.4356663536813423,
+            0.6041278104606318,
+            0.12148970380074545,
+            0.033290410999151386,
+            0.023676052457262297
+          ],
+          "review_gain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "upgrade_gain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            3.252636135718037,
+            1.8272611919864452,
+            -0.40048531894409045,
+            0.9306366982943781,
+            -0.16261095782972246,
+            2.494277245486135,
+            0.7384466534738351,
+            0.4224380246528014,
+            0.08138373939831563
+          ],
+          "flash_review": [
+            3.213302321458315,
+            1.8480676106669585,
+            -0.3867374706441487,
+            0.9230602677119745,
+            -0.1309134362620589,
+            2.46403763514352,
+            0.7322268884137015,
+            0.42060490243703,
+            0.08020821319321553
+          ],
+          "gui_review_flash": [
+            3.9619440042982363,
+            1.9079476172893315,
+            -0.58998678965441,
+            1.1008632281970756,
+            -0.3542220213964938,
+            3.0384453049917406,
+            0.8910980457159448,
+            0.5044287180110201,
+            0.09972312666940619
+          ]
+        }
+      },
+      "predictions": {
+        "clock-stopwatch": {
+          "probability": {
+            "flash_direct": 0.7659977852447635,
+            "flash_review": 0.7659977852447635,
+            "gui_review_flash": 0.7659977852447635
+          },
+          "upgrade_gain": 0.0,
+          "cost_cny": {
+            "flash_direct": 0.0018241727459941607,
+            "flash_review": 0.0017420311081534495,
+            "gui_review_flash": 0.0067619828996946805
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.0,
+        "zero": 0,
+        "training_mean": 0
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 6,
+            "verified_options": 4,
+            "candidate_options": 6,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 3,
+            "verified_options": 2,
+            "candidate_options": 6,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 3,
+            "verified_options": 2,
+            "candidate_options": 6,
+            "family_risk_upper": 1.0
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 0,
+          "selected_options": 3,
+          "verified_options": 3,
+          "candidate_options": 3
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 0,
+          "selected_options": 3,
+          "verified_options": 3,
+          "candidate_options": 3
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 3
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 3,
+          "device_steps": 21
+        },
+        "full": {
+          "model_calls": 3,
+          "device_steps": 21
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0012312,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "clock-stopwatch",
+                "mode": "flash_direct",
+                "p": 0.7659977852447635,
+                "predicted_cny": 0.0018241727459941607,
+                "list_cny": 0.0012312,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0017998,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "clock-stopwatch",
+                "mode": "flash_review",
+                "p": 0.7659977852447635,
+                "predicted_cny": 0.0017420311081534495,
+                "list_cny": 0.0017998,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0056433,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "clock-stopwatch",
+                "mode": "gui_review_flash",
+                "p": 0.7659977852447635,
+                "predicted_cny": 0.0067619828996946805,
+                "list_cny": 0.0056433,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0017998,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "clock-stopwatch",
+                "mode": "flash_review",
+                "p": 0.7659977852447635,
+                "predicted_cny": 0.0017420311081534495,
+                "list_cny": 0.0017998,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 1,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0012312,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "clock-stopwatch",
+                "mode": "flash_direct",
+                "p": 0.7659977852447635,
+                "predicted_cny": 0.0018241727459941607,
+                "list_cny": 0.0012312,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0017998,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "clock-stopwatch",
+                "mode": "flash_review",
+                "p": 0.7659977852447635,
+                "predicted_cny": 0.0017420311081534495,
+                "list_cny": 0.0017998,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0056433,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "clock-stopwatch",
+                "mode": "gui_review_flash",
+                "p": 0.7659977852447635,
+                "predicted_cny": 0.0067619828996946805,
+                "list_cny": 0.0056433,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0017998,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "clock-stopwatch",
+                "mode": "flash_review",
+                "p": 0.7659977852447635,
+                "predicted_cny": 0.0017420311081534495,
+                "list_cny": 0.0017998,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 1,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "files",
+      "train_families": [
+        "calculator",
+        "settings"
+      ],
+      "calibration_families": [
+        "clock"
+      ],
+      "test_ids": [
+        "files-search"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.2761919845773056,
+            -0.7070576103061548,
+            -0.030785779894859228,
+            0.20998582560197743,
+            -0.015263829955812113,
+            0.12195770924079048,
+            0.4029995038847939,
+            0.48052711654642977,
+            -0.048610725792659196
+          ],
+          "review_gain": [
+            0.29888388150824174,
+            0.16803071450706553,
+            -0.35152289909078094,
+            0.057136058971762986,
+            0.0990201034141495,
+            0.30654627184343325,
+            -0.10815620973688499,
+            -0.19643564927405777,
+            0.016820981389715134
+          ],
+          "upgrade_gain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            3.0630115062344845,
+            1.6681718165920896,
+            0.13772893127102023,
+            0.6449485177257076,
+            0.041038962712021704,
+            2.6550351921222113,
+            0.6504325710423361,
+            0.24165147009077065,
+            0.0953585096229809
+          ],
+          "flash_review": [
+            3.0449453491581555,
+            1.6986883567635054,
+            0.12224366534231851,
+            0.637176914228521,
+            0.06268191004110103,
+            2.6438466715322755,
+            0.6327078857647591,
+            0.22193125815672757,
+            0.09659945764321476
+          ],
+          "gui_review_flash": [
+            3.8092585294491457,
+            1.6398954006957842,
+            0.06146958655906758,
+            0.6891649689981282,
+            -0.24205163057605225,
+            3.319791822882476,
+            0.7661027767137418,
+            0.24093527336496368,
+            0.13198135053189922
+          ]
+        }
+      },
+      "predictions": {
+        "files-search": {
+          "probability": {
+            "flash_direct": 0.15301579785776778,
+            "flash_review": 0.7524023731117409,
+            "gui_review_flash": 0.7524023731117409
+          },
+          "upgrade_gain": 0.0,
+          "cost_cny": {
+            "flash_direct": 0.0007490757189528656,
+            "flash_review": 0.0007365609241616753,
+            "gui_review_flash": 0.002700034241228192
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.0,
+        "zero": 0,
+        "training_mean": 0
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 1,
+            "families_with_error": 0,
+            "selected_options": 2,
+            "verified_options": 2,
+            "candidate_options": 3,
+            "family_risk_upper": 0.9666666666666667
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 0,
+            "families_with_error": 0,
+            "selected_options": 0,
+            "verified_options": 0,
+            "candidate_options": 3,
+            "family_risk_upper": null
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 0,
+            "families_with_error": 0,
+            "selected_options": 0,
+            "verified_options": 0,
+            "candidate_options": 3,
+            "family_risk_upper": null
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 0,
+          "selected_options": 2,
+          "verified_options": 2,
+          "candidate_options": 3
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 0,
+          "selected_options": 2,
+          "verified_options": 2,
+          "candidate_options": 3
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 3
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 2,
+          "device_steps": 16
+        },
+        "full": {
+          "model_calls": 2,
+          "device_steps": 16
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0012316,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "files-search",
+                "mode": "flash_direct",
+                "p": 0.15301579785776778,
+                "predicted_cny": 0.0007490757189528656,
+                "list_cny": 0.0012316,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.001165,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "files-search",
+                "mode": "flash_review",
+                "p": 0.7524023731117409,
+                "predicted_cny": 0.0007365609241616753,
+                "list_cny": 0.001165,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0046493,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "files-search",
+                "mode": "gui_review_flash",
+                "p": 0.7524023731117409,
+                "predicted_cny": 0.002700034241228192,
+                "list_cny": 0.0046493,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.001165,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "files-search",
+                "mode": "flash_review",
+                "p": 0.7524023731117409,
+                "predicted_cny": 0.0007365609241616753,
+                "list_cny": 0.001165,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 1,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0012316,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "files-search",
+                "mode": "flash_direct",
+                "p": 0.15301579785776778,
+                "predicted_cny": 0.0007490757189528656,
+                "list_cny": 0.0012316,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.001165,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "files-search",
+                "mode": "flash_review",
+                "p": 0.7524023731117409,
+                "predicted_cny": 0.0007365609241616753,
+                "list_cny": 0.001165,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.0046493,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "files-search",
+                "mode": "gui_review_flash",
+                "p": 0.7524023731117409,
+                "predicted_cny": 0.002700034241228192,
+                "list_cny": 0.0046493,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 0,
+            "list_cny": 0.001165,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "files-search",
+                "mode": "flash_review",
+                "p": 0.7524023731117409,
+                "predicted_cny": 0.0007365609241616753,
+                "list_cny": 0.001165,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 1,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "settings",
+      "train_families": [
+        "clock",
+        "files"
+      ],
+      "calibration_families": [
+        "calculator"
+      ],
+      "test_ids": [
+        "settings-internet-from-home",
+        "settings-internet-after-navigation"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.4369279970824011,
+            0.2440548410887365,
+            0.0,
+            0.14524754621457964,
+            0.0,
+            0.3316440581418072,
+            0.11179108352535401,
+            0.0858627066887908,
+            -0.004144766108253281
+          ],
+          "review_gain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "upgrade_gain": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            3.1096105664311255,
+            1.736612530036147,
+            0.0,
+            1.0338215242047155,
+            0.0,
+            2.360286254334114,
+            0.795583366289845,
+            0.6111395942801974,
+            -0.029592822704123393
+          ],
+          "flash_review": [
+            3.0237082114095633,
+            2.120737099558062,
+            0.0,
+            0.8756329758373742,
+            0.0,
+            2.321835259588534,
+            0.8168153522377292,
+            0.5193599780900803,
+            0.09797345922603615
+          ],
+          "gui_review_flash": [
+            3.6622724966753446,
+            2.238071853239776,
+            0.0,
+            1.1597146923657526,
+            0.0,
+            2.791710341906749,
+            0.956261684659048,
+            0.686334144463214,
+            0.021707177526600365
+          ]
+        }
+      },
+      "predictions": {
+        "settings-internet-from-home": {
+          "probability": {
+            "flash_direct": 1.0,
+            "flash_review": 1.0,
+            "gui_review_flash": 1.0
+          },
+          "upgrade_gain": 0.0,
+          "cost_cny": {
+            "flash_direct": 0.0019293396860454645,
+            "flash_review": 0.002333743029596926,
+            "gui_review_flash": 0.008848999370306735
+          }
+        },
+        "settings-internet-after-navigation": {
+          "probability": {
+            "flash_direct": 0.9584607344122995,
+            "flash_review": 0.9584607344122995,
+            "gui_review_flash": 0.9584607344122995
+          },
+          "upgrade_gain": 0.0,
+          "cost_cny": {
+            "flash_direct": 0.0009160289565219587,
+            "flash_review": 0.0010092651223487582,
+            "gui_review_flash": 0.0034997518625434986
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.0,
+        "zero": 0,
+        "training_mean": 0
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 9,
+            "verified_options": 3,
+            "candidate_options": 9,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 9,
+            "verified_options": 3,
+            "candidate_options": 9,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 9,
+            "verified_options": 3,
+            "candidate_options": 9,
+            "family_risk_upper": 1.0
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 4,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 4,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 4,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 2,
+          "device_steps": 20
+        },
+        "full": {
+          "model_calls": 5,
+          "device_steps": 41
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.001204,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "settings-internet-after-navigation",
+                "mode": "flash_direct",
+                "p": 0.9584607344122995,
+                "predicted_cny": 0.0009160289565219587,
+                "list_cny": 0.001204,
+                "verified": 0
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0011832,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 16
+            },
+            "decisions": [
+              {
+                "task": "settings-internet-after-navigation",
+                "mode": "flash_review",
+                "p": 0.9584607344122995,
+                "predicted_cny": 0.0010092651223487582,
+                "list_cny": 0.0011832000000000001,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0049693,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 16
+            },
+            "decisions": [
+              {
+                "task": "settings-internet-after-navigation",
+                "mode": "gui_review_flash",
+                "p": 0.9584607344122995,
+                "predicted_cny": 0.0034997518625434986,
+                "list_cny": 0.004969299999999999,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.001204,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "settings-internet-after-navigation",
+                "mode": "flash_direct",
+                "p": 0.9584607344122995,
+                "predicted_cny": 0.0009160289565219587,
+                "list_cny": 0.001204,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0029908,
+            "actual": {
+              "model_calls": 5,
+              "device_steps": 21
+            },
+            "decisions": [
+              {
+                "task": "settings-internet-from-home",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0019293396860454645,
+                "list_cny": 0.0017868,
+                "verified": 0
+              },
+              {
+                "task": "settings-internet-after-navigation",
+                "mode": "flash_direct",
+                "p": 0.9584607344122995,
+                "predicted_cny": 0.0009160289565219587,
+                "list_cny": 0.001204,
+                "verified": 0
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0029726,
+            "actual": {
+              "model_calls": 5,
+              "device_steps": 33
+            },
+            "decisions": [
+              {
+                "task": "settings-internet-from-home",
+                "mode": "flash_review",
+                "p": 1.0,
+                "predicted_cny": 0.002333743029596926,
+                "list_cny": 0.0017894,
+                "verified": 1
+              },
+              {
+                "task": "settings-internet-after-navigation",
+                "mode": "flash_review",
+                "p": 0.9584607344122995,
+                "predicted_cny": 0.0010092651223487582,
+                "list_cny": 0.0011832000000000001,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0107013,
+            "actual": {
+              "model_calls": 5,
+              "device_steps": 33
+            },
+            "decisions": [
+              {
+                "task": "settings-internet-from-home",
+                "mode": "gui_review_flash",
+                "p": 1.0,
+                "predicted_cny": 0.008848999370306735,
+                "list_cny": 0.005732,
+                "verified": 1
+              },
+              {
+                "task": "settings-internet-after-navigation",
+                "mode": "gui_review_flash",
+                "p": 0.9584607344122995,
+                "predicted_cny": 0.0034997518625434986,
+                "list_cny": 0.004969299999999999,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0029908,
+            "actual": {
+              "model_calls": 5,
+              "device_steps": 21
+            },
+            "decisions": [
+              {
+                "task": "settings-internet-from-home",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0019293396860454645,
+                "list_cny": 0.0017868,
+                "verified": 0
+              },
+              {
+                "task": "settings-internet-after-navigation",
+                "mode": "flash_direct",
+                "p": 0.9584607344122995,
+                "predicted_cny": 0.0009160289565219587,
+                "list_cny": 0.001204,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    }
+  ]
+}

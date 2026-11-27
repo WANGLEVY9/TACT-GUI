@@ -1,0 +1,2 @@
+Recommendation: Click on the yellow box in the bottom right.
+Reason: The instruction asks to click the colored box matching the small reference square at the top, which is yellow. The bottom-right box is the only yellow option among the four choices.

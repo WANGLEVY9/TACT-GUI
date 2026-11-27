@@ -1,0 +1,140 @@
+{
+  "checkpoint": "clock-stopwatch",
+  "group": "clock",
+  "arm": "flash_review",
+  "scope_id": "55759f7cba5c40978eadee9aa9a493d4",
+  "calls": [
+    {
+      "reservation_id": "ec71782b0c0146b7ad4ac4ed41f62197",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2647,
+        "total_tokens": 2690,
+        "completion_tokens": 43,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 95
+        },
+        "completion_tokens_details": {
+          "text_tokens": 43
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.3708159999951022,
+      "estimated_list_cny": 0.0005638,
+      "role": "review",
+      "frame": 0,
+      "screen_sha256": "978724b72566b97989254459ba6e3b892e8d71f5bd25271b8ed8bfd01f2c0cd0"
+    },
+    {
+      "reservation_id": "e7d8663fb7a64268b88b19453aaeecf7",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2906,
+        "total_tokens": 2943,
+        "completion_tokens": 37,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 354
+        },
+        "completion_tokens_details": {
+          "text_tokens": 37
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.2175579169997945,
+      "estimated_list_cny": 0.0006108,
+      "role": "execute",
+      "frame": 1,
+      "screen_sha256": "978724b72566b97989254459ba6e3b892e8d71f5bd25271b8ed8bfd01f2c0cd0"
+    },
+    {
+      "reservation_id": "6089dd1a8b6343598ed82a4d5dcfd995",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2926,
+        "total_tokens": 2976,
+        "completion_tokens": 50,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 374
+        },
+        "completion_tokens_details": {
+          "text_tokens": 50
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.5160150000010617,
+      "estimated_list_cny": 0.0006252,
+      "role": "execute",
+      "frame": 2,
+      "screen_sha256": "34b10145bbff70ac0f93b0bf599e9608008aaed8ac17d7954adeef74ce06feca"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        698,
+        929
+      ]
+    }
+  ],
+  "success": 1,
+  "variant": {
+    "mode": "independent_review",
+    "execute_model": "qwen3.7-flash-2026-07-15",
+    "review_model": "qwen3.7-flash-2026-07-15",
+    "review_view": "screen",
+    "max_tokens": 512
+  },
+  "initial_hash": "d4a2041ac17b1782e9afe924e2cba4a932ab4bf28b6d251f6e07aea2cd4ded25",
+  "state": {
+    "nodes": 50,
+    "labelled_nodes": 15,
+    "clickable_nodes": 6,
+    "duplicate_visible_labels": 6,
+    "decision_observation_sha256": "4fe31a80583636d96dcfd1b3ef97148c5d8b232052d6b0bc13930e7391ebe433"
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 21
+  },
+  "verification": {
+    "observed": true,
+    "replay": true,
+    "replay_initial_hash": "d4a2041ac17b1782e9afe924e2cba4a932ab4bf28b6d251f6e07aea2cd4ded25",
+    "replay_observation_sha256": "4fe31a80583636d96dcfd1b3ef97148c5d8b232052d6b0bc13930e7391ebe433"
+  },
+  "progress": {
+    "observed_after_actions": [
+      true
+    ],
+    "replay_after_actions": [
+      true
+    ],
+    "stable": true,
+    "first_confirmed_action": 1,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 13.0
+  },
+  "elapsed_seconds": 18.302475707998383
+}

@@ -147,3 +147,19 @@ class ConsoleTests(TestCase):
             proc.poll.return_value = -signal.SIGTERM
             self.assertFalse(ws.is_active(result['run']))
             self.assertEqual(ws.snapshot()['jobs'][0]['exit'], -signal.SIGTERM)
+
+    def test_web_fixture_profile_runs_without_emulator_or_manifest(self):
+        from budgetmas import console
+        protocol = json.loads((Path(__file__).resolve().parents[1] / 'configs' /
+                               'web-mechanism-smoke.json').read_text())
+        self.write_json(self.root / 'configs' / 'web-mechanism-smoke.json', protocol)
+        ids = [case['id'] for case in protocol['checkpoints']]
+        payload = {'profile': 'web-smoke', 'cases': ids, 'seed': 5, 'timeout': 20,
+                   'call_limit': 18, 'serial': 'fixture', 'confirmed': True}
+        result = self.workspace.start(payload)
+        self.assertFalse(self.workspace.is_active(result['run']))
+        report = json.loads((self.results / result['run'] / 'report.json').read_text())
+        self.assertEqual(report['platform'], 'web')
+        self.assertEqual(len(report['blocks']), 3)
+        self.assertTrue(all(block['valid_pair'] for block in report['blocks']))
+        self.assertNotIn('gui-plus', str(report).lower())

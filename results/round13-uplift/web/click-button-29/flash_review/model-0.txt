@@ -1,0 +1,3 @@
+Based on the instruction "Click on the 'next' button" and the visible interface, the best next action is to click the button labeled "next" located below the text "suspendisse quam aenean".
+
+Reason: The explicit task is to click the "next" button, and one is clearly visible on the screen matching that label.

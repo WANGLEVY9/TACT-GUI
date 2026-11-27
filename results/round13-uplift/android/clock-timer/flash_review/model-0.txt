@@ -1,0 +1,1 @@
+Click the "Timer" tab in the bottom navigation bar to switch to the countdown timer screen.

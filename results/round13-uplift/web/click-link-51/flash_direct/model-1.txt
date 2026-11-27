@@ -1,0 +1,4 @@
+Action: Click on the link "donec" located in the text block.
+
+<tool_call>{"name":"computer_use", "arguments": {"action": "left_click", "coordinate": [138, 289]}}
+</tool_call>

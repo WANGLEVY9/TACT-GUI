@@ -1,0 +1,156 @@
+{
+  "checkpoint": "click-tab-2-easy-29",
+  "group": "click-tab-2-easy-29",
+  "arm": "flash_direct",
+  "scope_id": "15625692fefe4b2b885cceb5a7a312f5",
+  "calls": [
+    {
+      "reservation_id": "b51bcbb5885947fdb77eb501f5c92197",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 409,
+        "total_tokens": 467,
+        "completion_tokens": 58,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 102,
+          "text_tokens": 307
+        },
+        "completion_tokens_details": {
+          "text_tokens": 58
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.0495395830075722,
+      "estimated_list_cny": 0.0001282,
+      "role": "execute",
+      "frame": 0,
+      "screen_sha256": "8cb3a1107bd0c296445209508d7c4b891d9de3e31b0f99362952196294c748ff"
+    },
+    {
+      "reservation_id": "bb72b8f10a59424db988dd260dd8ea8c",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 429,
+        "total_tokens": 486,
+        "completion_tokens": 57,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 102,
+          "text_tokens": 327
+        },
+        "completion_tokens_details": {
+          "text_tokens": 57
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 0.8992217079940019,
+      "estimated_list_cny": 0.0001314,
+      "role": "execute",
+      "frame": 1,
+      "screen_sha256": "9f2288f11c409c63109c6f5db486da8c1ad7761f5020300d71cf1fef95508f13"
+    },
+    {
+      "reservation_id": "75807d57f8334f2e922538c3c4542b15",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 449,
+        "total_tokens": 507,
+        "completion_tokens": 58,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 102,
+          "text_tokens": 347
+        },
+        "completion_tokens_details": {
+          "text_tokens": 58
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.064637417002814,
+      "estimated_list_cny": 0.0001362,
+      "role": "execute",
+      "frame": 2,
+      "screen_sha256": "5b67dc5600a3040b5cdd9326eb2c7f1a41b4487e6e80f98c7201858a50154afd"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        276,
+        485
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        276,
+        485
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        276,
+        485
+      ]
+    }
+  ],
+  "success": 0,
+  "variant": {
+    "mode": "direct",
+    "execute_model": "qwen3.7-flash-2026-07-15",
+    "max_tokens": 512
+  },
+  "initial_hash": "85d3c6a8049d7e9c00b5e0bbf88a235d10a0dc91938d500fd5305eea58edcbda",
+  "state": {
+    "nodes": 26,
+    "labelled_nodes": 25,
+    "clickable_nodes": 1,
+    "duplicate_visible_labels": 7,
+    "decision_observation_sha256": "85d3c6a8049d7e9c00b5e0bbf88a235d10a0dc91938d500fd5305eea58edcbda"
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 21
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "85d3c6a8049d7e9c00b5e0bbf88a235d10a0dc91938d500fd5305eea58edcbda",
+    "replay_observation_sha256": "85d3c6a8049d7e9c00b5e0bbf88a235d10a0dc91938d500fd5305eea58edcbda"
+  },
+  "progress": {
+    "observed_after_actions": [
+      false,
+      false,
+      false
+    ],
+    "replay_after_actions": [
+      false,
+      false,
+      false
+    ],
+    "stable": true,
+    "first_confirmed_action": null,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 21.0
+  },
+  "elapsed_seconds": 4.937176708001061
+}

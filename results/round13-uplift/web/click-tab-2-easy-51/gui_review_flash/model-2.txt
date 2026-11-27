@@ -1,0 +1,3 @@
+Action: Click on the "donec" link located in the text content of Tab #1, specifically within the sentence "Lorem donec feugiat dignissim."
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [259, 483]}}</tool_call>

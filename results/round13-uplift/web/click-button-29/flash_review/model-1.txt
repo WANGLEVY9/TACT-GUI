@@ -1,0 +1,4 @@
+Action: Click on the "next" button located below the text "suspendisse quam aenean".
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [68, 240]}}
+</tool_call>

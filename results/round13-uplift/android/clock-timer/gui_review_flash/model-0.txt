@@ -1,0 +1,2 @@
+The global task objective is to navigate to the countdown timer tab without starting a timer. Currently, the screen shows the Clock application with the "Clock" tab selected. The bottom navigation bar includes tabs for Alarm, Clock, Timer, Stopwatch, and Bedtime. To achieve the goal, the next logical step is to select the "Timer" tab from the bottom navigation bar.
+</think>

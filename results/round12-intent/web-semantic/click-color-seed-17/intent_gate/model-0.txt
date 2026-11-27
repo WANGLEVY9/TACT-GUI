@@ -1,0 +1,14 @@
+{
+  "steps": [
+    {
+      "meaning": "Identify the orange colored box in the interface.",
+      "evidence": "orange colored box"
+    },
+    {
+      "meaning": "Perform a click action on the identified orange colored box.",
+      "evidence": "Click on the orange colored box"
+    }
+  ],
+  "constraints": [],
+  "question": null
+}

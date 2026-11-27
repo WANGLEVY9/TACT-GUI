@@ -1,0 +1,3 @@
+Action: Tap on the "Battery" option to open the Battery settings page.
+
+</tool_call>

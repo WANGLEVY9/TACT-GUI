@@ -1,0 +1,4 @@
+Action: Click the button labeled "TWO" to complete the sequence.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [395, 572]}}
+</tool_call>

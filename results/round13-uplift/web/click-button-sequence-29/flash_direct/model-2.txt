@@ -1,0 +1,3 @@
+Action: Terminate the task as the required sequence of clicks has been completed.
+
+<tool_call>{"name":"computer_use","arguments":{"action": "terminate", "status": "success"}}</tool_call>

@@ -1,0 +1,2 @@
+Tap the "Stopwatch" tab in the bottom navigation bar.
+Reason: This will switch the view to the stopwatch interface without initiating a timer, satisfying the requirement to open the tab without starting the stopwatch.

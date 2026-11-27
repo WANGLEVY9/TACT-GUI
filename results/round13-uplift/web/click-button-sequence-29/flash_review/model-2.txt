@@ -1,0 +1,4 @@
+Action: Click the "TWO" button as it is the second step in the task sequence.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [385, 571]}}
+</tool_call>

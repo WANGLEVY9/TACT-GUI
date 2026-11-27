@@ -1,0 +1,1 @@
+Click the 'C' button to clear the current "7+" input, then click '8' to display exactly that digit.

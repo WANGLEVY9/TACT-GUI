@@ -1,0 +1,29 @@
+{
+  "checkpoint": "files-menu",
+  "group": "files",
+  "arm": "flash_direct",
+  "scope_id": "e5bb44378e744c6ea0ee345727da6ae0",
+  "calls": [],
+  "actions": [],
+  "success": null,
+  "variant": {
+    "mode": "direct",
+    "execute_model": "qwen3.7-flash-2026-07-15",
+    "max_tokens": 512
+  },
+  "initial_hash": "819f55755ffc9918b75e7911193646bd56711528ca7d20572fc0b6dc85642486",
+  "state": {
+    "nodes": 45,
+    "labelled_nodes": 12,
+    "clickable_nodes": 8,
+    "duplicate_visible_labels": 1,
+    "decision_observation_sha256": "a1e0f594725e272d7f3f23321004479bface1903db92560feca9d85ac3293fd4"
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 21
+  },
+  "error_type": "URLError",
+  "error_phase": "model_request",
+  "elapsed_seconds": 32.673673625002266
+}

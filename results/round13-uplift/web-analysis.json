@@ -1,0 +1,3402 @@
+{
+  "platform": "web",
+  "protocol_sha256": "246a8f8d2622f485374c54e911ad4bf4172ee0d17882bd6a33e65f3d730adaf5",
+  "report_sha256": "45b3e9748319aa127f551d9ccc0a2dc69bdc5ece68e5455e2c97e35223674d86",
+  "registered_checkpoints": 16,
+  "audited_screens": 117,
+  "recorded_list_cny": 0.0192397,
+  "budget": {
+    "limits": {
+      "model_calls": 120.0,
+      "device_steps": 888.0
+    },
+    "spent": {
+      "model_calls": 117.0,
+      "device_steps": 665.0
+    },
+    "reserved": {
+      "model_calls": 0.0,
+      "device_steps": 0.0
+    },
+    "available": {
+      "model_calls": 3.0,
+      "device_steps": 223.0
+    },
+    "pending_reservations": []
+  },
+  "excluded": [],
+  "scope": "family-split development replay, no deployment claim",
+  "paired_checkpoints": 16,
+  "split_seed": 20261128,
+  "features": [
+    "bias",
+    "slots",
+    "prefix_steps",
+    "goal_words",
+    "sequential_connectives",
+    "ui_nodes",
+    "label_fraction",
+    "clickable_fraction",
+    "duplicate_label_fraction"
+  ],
+  "thresholds": [
+    0.4,
+    0.6,
+    0.8
+  ],
+  "target_family_failure_risk": 0.2,
+  "calibration_delta": 0.1,
+  "cny_price": 8.0,
+  "active_calibrated_folds": 0,
+  "group_mean_uplift_mae": {
+    "learned": 0.3778930208257009,
+    "zero": 0.3125,
+    "training_mean": 0.375
+  },
+  "totals": {
+    "tight": {
+      "flash_direct": {
+        "admitted": 8,
+        "verified": 5,
+        "list_cny": 0.0022544
+      },
+      "flash_review": {
+        "admitted": 8,
+        "verified": 5,
+        "list_cny": 0.0022608
+      },
+      "gui_review_flash": {
+        "admitted": 8,
+        "verified": 5,
+        "list_cny": 0.0048787
+      },
+      "gain_frontier": {
+        "admitted": 8,
+        "verified": 4,
+        "list_cny": 0.0023112
+      },
+      "calibrated_frontier": {
+        "admitted": 0,
+        "verified": 0,
+        "list_cny": 0
+      }
+    },
+    "full": {
+      "flash_direct": {
+        "admitted": 16,
+        "verified": 11,
+        "list_cny": 0.00463
+      },
+      "flash_review": {
+        "admitted": 16,
+        "verified": 10,
+        "list_cny": 0.0045642
+      },
+      "gui_review_flash": {
+        "admitted": 16,
+        "verified": 9,
+        "list_cny": 0.0100455
+      },
+      "gain_frontier": {
+        "admitted": 16,
+        "verified": 9,
+        "list_cny": 0.0047312
+      },
+      "calibrated_frontier": {
+        "admitted": 0,
+        "verified": 0,
+        "list_cny": 0
+      }
+    }
+  },
+  "folds": [
+    {
+      "held_family": "click-button",
+      "train_families": [
+        "click-button-sequence",
+        "click-dialog-2",
+        "click-link",
+        "click-shape"
+      ],
+      "calibration_families": [
+        "click-color",
+        "click-dialog",
+        "click-tab-2-easy"
+      ],
+      "test_ids": [
+        "click-button-29",
+        "click-button-51"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            -0.22874642131843098,
+            0.5886253351740544,
+            0.0,
+            0.22275516635831552,
+            0.2058219837228167,
+            -0.06964427089783155,
+            0.38976838328671,
+            0.45261475548300734,
+            0.6334041449081514
+          ],
+          "review_gain": [
+            -0.025272463385089965,
+            0.17116856051250304,
+            0.0,
+            -0.04765489276139127,
+            0.06999973746179083,
+            -0.03504475717659811,
+            -0.26127792977088127,
+            -0.03914604236145303,
+            -0.10645634613234525
+          ],
+          "upgrade_gain": [
+            0.04093584610119858,
+            0.020024740889666482,
+            0.0,
+            0.052882775284647306,
+            -0.21094683578233792,
+            0.1310021348464097,
+            -0.1823535428634588,
+            -0.012963110619373717,
+            0.00022025335634805228
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            1.9863612086344544,
+            1.6236472296988063,
+            0.0,
+            0.38741102906770997,
+            -0.05881014560280049,
+            1.3915983186971739,
+            1.4444601952427638,
+            0.07172475333972787,
+            0.3024062219515108
+          ],
+          "flash_review": [
+            2.210027636637253,
+            1.750378092702023,
+            0.0,
+            0.23163660709379627,
+            -0.4947627360355105,
+            1.5939617112923126,
+            1.070897120025144,
+            -0.18420672982161315,
+            0.16847014299579158
+          ],
+          "gui_review_flash": [
+            2.539394988310954,
+            1.7315663141840536,
+            0.0,
+            0.1475289577029014,
+            -0.6254506116042584,
+            1.7230233015816059,
+            1.4887901120485314,
+            -0.30270924952618494,
+            0.11698794115407672
+          ]
+        }
+      },
+      "predictions": {
+        "click-button-29": {
+          "probability": {
+            "flash_direct": 0.6919965488488201,
+            "flash_review": 0.48872450827635283,
+            "gui_review_flash": 0.46417403369592125
+          },
+          "upgrade_gain": -0.024550474580431608,
+          "cost_cny": {
+            "flash_direct": 0.0002172530489451093,
+            "flash_review": 0.00021909934200722283,
+            "gui_review_flash": 0.0004604697736037045
+          }
+        },
+        "click-button-51": {
+          "probability": {
+            "flash_direct": 0.6260979093719528,
+            "flash_review": 0.4488570219313456,
+            "gui_review_flash": 0.4399946906889814
+          },
+          "upgrade_gain": -0.008862331242364177,
+          "cost_cny": {
+            "flash_direct": 0.00019274972397739318,
+            "flash_review": 0.00020232909368777868,
+            "gui_review_flash": 0.00041317294941693955
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.5167064029113979,
+        "zero": 0.5,
+        "training_mean": 0.5
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 3,
+            "families_with_error": 2,
+            "selected_options": 14,
+            "verified_options": 8,
+            "candidate_options": 18,
+            "family_risk_upper": 0.9887630937816503
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 6,
+            "verified_options": 1,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 4,
+            "verified_options": 1,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 5,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 0,
+          "selected_options": 2,
+          "verified_options": 2,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 2,
+          "device_steps": 16
+        },
+        "full": {
+          "model_calls": 4,
+          "device_steps": 32
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002338,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-button-29",
+                "mode": "flash_direct",
+                "p": 0.6919965488488201,
+                "predicted_cny": 0.0002172530489451093,
+                "list_cny": 0.0002338,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002426,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-button-29",
+                "mode": "flash_review",
+                "p": 0.48872450827635283,
+                "predicted_cny": 0.00021909934200722283,
+                "list_cny": 0.0002426,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0005535,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-button-29",
+                "mode": "gui_review_flash",
+                "p": 0.46417403369592125,
+                "predicted_cny": 0.0004604697736037045,
+                "list_cny": 0.0005535,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002338,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-button-29",
+                "mode": "flash_direct",
+                "p": 0.6919965488488201,
+                "predicted_cny": 0.0002172530489451093,
+                "list_cny": 0.0002338,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004828,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-button-29",
+                "mode": "flash_direct",
+                "p": 0.6919965488488201,
+                "predicted_cny": 0.0002172530489451093,
+                "list_cny": 0.0002338,
+                "verified": 1
+              },
+              {
+                "task": "click-button-51",
+                "mode": "flash_direct",
+                "p": 0.6260979093719528,
+                "predicted_cny": 0.00019274972397739318,
+                "list_cny": 0.000249,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.000449,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-button-29",
+                "mode": "flash_review",
+                "p": 0.48872450827635283,
+                "predicted_cny": 0.00021909934200722283,
+                "list_cny": 0.0002426,
+                "verified": 1
+              },
+              {
+                "task": "click-button-51",
+                "mode": "flash_review",
+                "p": 0.4488570219313456,
+                "predicted_cny": 0.00020232909368777868,
+                "list_cny": 0.0002064,
+                "verified": 0
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0012047,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-button-29",
+                "mode": "gui_review_flash",
+                "p": 0.46417403369592125,
+                "predicted_cny": 0.0004604697736037045,
+                "list_cny": 0.0005535,
+                "verified": 1
+              },
+              {
+                "task": "click-button-51",
+                "mode": "gui_review_flash",
+                "p": 0.4399946906889814,
+                "predicted_cny": 0.00041317294941693955,
+                "list_cny": 0.0006512,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004828,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-button-29",
+                "mode": "flash_direct",
+                "p": 0.6919965488488201,
+                "predicted_cny": 0.0002172530489451093,
+                "list_cny": 0.0002338,
+                "verified": 1
+              },
+              {
+                "task": "click-button-51",
+                "mode": "flash_direct",
+                "p": 0.6260979093719528,
+                "predicted_cny": 0.00019274972397739318,
+                "list_cny": 0.000249,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "click-button-sequence",
+      "train_families": [
+        "click-button",
+        "click-color",
+        "click-dialog",
+        "click-dialog-2"
+      ],
+      "calibration_families": [
+        "click-link",
+        "click-shape",
+        "click-tab-2-easy"
+      ],
+      "test_ids": [
+        "click-button-sequence-29",
+        "click-button-sequence-51"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.1281324451903644,
+            0.25383792617856626,
+            0.0,
+            0.3096517880864482,
+            0.0,
+            0.3872031341611657,
+            0.2407088129956498,
+            0.460292816251832,
+            0.22954375863879534
+          ],
+          "review_gain": [
+            -0.028394974679298673,
+            -0.16148470675359844,
+            0.0,
+            -0.01298719295682036,
+            0.0,
+            -0.036636927904651936,
+            -0.0912958338672445,
+            -0.10112975479967008,
+            0.012259758640022263
+          ],
+          "upgrade_gain": [
+            -0.06508707000726878,
+            0.17090688941945756,
+            0.0,
+            0.03976334239932112,
+            0.0,
+            0.017660994068300774,
+            0.05530623327566425,
+            0.165085924458418,
+            0.002075461143077375
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            2.590653423209199,
+            1.1467435590043185,
+            0.0,
+            0.30352796441485047,
+            0.0,
+            1.595620293612321,
+            1.3305610711563738,
+            -0.33513757085557955,
+            0.2968916822817582
+          ],
+          "flash_review": [
+            2.2991645810653645,
+            1.5024395019586365,
+            0.0,
+            0.4098486996940583,
+            0.0,
+            1.542565722210502,
+            1.2630732630615107,
+            -0.15367596088473612,
+            0.3956753574325402
+          ],
+          "gui_review_flash": [
+            2.8495167204606853,
+            1.1831383781202134,
+            0.0,
+            0.3364383067285981,
+            0.0,
+            1.7856817154705662,
+            1.7504318107301262,
+            -0.07003561576744066,
+            0.32577454473112594
+          ]
+        }
+      },
+      "predictions": {
+        "click-button-sequence-29": {
+          "probability": {
+            "flash_direct": 0.9929676246843964,
+            "flash_review": 0.684309273510612,
+            "gui_review_flash": 0.8778789836385887
+          },
+          "upgrade_gain": 0.19356971012797672,
+          "cost_cny": {
+            "flash_direct": 0.0004164989511557429,
+            "flash_review": 0.0004279197207532001,
+            "gui_review_flash": 0.0009725336951737198
+          }
+        },
+        "click-button-sequence-51": {
+          "probability": {
+            "flash_direct": 0.9929676246843964,
+            "flash_review": 0.684309273510612,
+            "gui_review_flash": 0.8778789836385887
+          },
+          "upgrade_gain": 0.19356971012797672,
+          "cost_cny": {
+            "flash_direct": 0.0004164989511557429,
+            "flash_review": 0.0004279197207532001,
+            "gui_review_flash": 0.0009725336951737198
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.6935697101279767,
+        "zero": 0.5,
+        "training_mean": 0.625
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 3,
+            "families_with_error": 3,
+            "selected_options": 18,
+            "verified_options": 7,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 3,
+            "families_with_error": 3,
+            "selected_options": 15,
+            "verified_options": 5,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 3,
+            "families_with_error": 3,
+            "selected_options": 8,
+            "verified_options": 2,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 5,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 5,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 4,
+          "verified_options": 3,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 3,
+          "device_steps": 21
+        },
+        "full": {
+          "model_calls": 6,
+          "device_steps": 42
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0003704,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 17
+            },
+            "decisions": [
+              {
+                "task": "click-button-sequence-29",
+                "mode": "flash_direct",
+                "p": 0.9929676246843964,
+                "predicted_cny": 0.0004164989511557429,
+                "list_cny": 0.0003704,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.000319,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 17
+            },
+            "decisions": [
+              {
+                "task": "click-button-sequence-29",
+                "mode": "flash_review",
+                "p": 0.684309273510612,
+                "predicted_cny": 0.0004279197207532001,
+                "list_cny": 0.000319,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0006003,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 17
+            },
+            "decisions": [
+              {
+                "task": "click-button-sequence-29",
+                "mode": "gui_review_flash",
+                "p": 0.8778789836385887,
+                "predicted_cny": 0.0009725336951737198,
+                "list_cny": 0.0006003,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0003704,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 17
+            },
+            "decisions": [
+              {
+                "task": "click-button-sequence-29",
+                "mode": "flash_direct",
+                "p": 0.9929676246843964,
+                "predicted_cny": 0.0004164989511557429,
+                "list_cny": 0.0003704,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0007464,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 34
+            },
+            "decisions": [
+              {
+                "task": "click-button-sequence-29",
+                "mode": "flash_direct",
+                "p": 0.9929676246843964,
+                "predicted_cny": 0.0004164989511557429,
+                "list_cny": 0.0003704,
+                "verified": 1
+              },
+              {
+                "task": "click-button-sequence-51",
+                "mode": "flash_direct",
+                "p": 0.9929676246843964,
+                "predicted_cny": 0.0004164989511557429,
+                "list_cny": 0.000376,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0006352,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 34
+            },
+            "decisions": [
+              {
+                "task": "click-button-sequence-29",
+                "mode": "flash_review",
+                "p": 0.684309273510612,
+                "predicted_cny": 0.0004279197207532001,
+                "list_cny": 0.000319,
+                "verified": 1
+              },
+              {
+                "task": "click-button-sequence-51",
+                "mode": "flash_review",
+                "p": 0.684309273510612,
+                "predicted_cny": 0.0004279197207532001,
+                "list_cny": 0.0003162,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0012662,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 34
+            },
+            "decisions": [
+              {
+                "task": "click-button-sequence-29",
+                "mode": "gui_review_flash",
+                "p": 0.8778789836385887,
+                "predicted_cny": 0.0009725336951737198,
+                "list_cny": 0.0006003,
+                "verified": 1
+              },
+              {
+                "task": "click-button-sequence-51",
+                "mode": "gui_review_flash",
+                "p": 0.8778789836385887,
+                "predicted_cny": 0.0009725336951737198,
+                "list_cny": 0.0006659000000000001,
+                "verified": 0
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0007464,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 34
+            },
+            "decisions": [
+              {
+                "task": "click-button-sequence-29",
+                "mode": "flash_direct",
+                "p": 0.9929676246843964,
+                "predicted_cny": 0.0004164989511557429,
+                "list_cny": 0.0003704,
+                "verified": 1
+              },
+              {
+                "task": "click-button-sequence-51",
+                "mode": "flash_direct",
+                "p": 0.9929676246843964,
+                "predicted_cny": 0.0004164989511557429,
+                "list_cny": 0.000376,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "click-color",
+      "train_families": [
+        "click-button",
+        "click-button-sequence",
+        "click-link",
+        "click-tab-2-easy"
+      ],
+      "calibration_families": [
+        "click-dialog",
+        "click-dialog-2",
+        "click-shape"
+      ],
+      "test_ids": [
+        "click-color-29",
+        "click-color-51"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.6065226437602869,
+            0.08684075473417023,
+            0.0,
+            -0.9973641690535888,
+            -0.23813075582952037,
+            -0.009461024682820151,
+            0.15611876949179107,
+            1.1246017350251076,
+            -0.3918738167085031
+          ],
+          "review_gain": [
+            -0.20546174492230332,
+            0.2190548004755944,
+            0.0,
+            0.15401067413160316,
+            0.2670219728178477,
+            -0.10439811360444573,
+            -0.09717760592683772,
+            -0.06031601451875289,
+            0.11767382698432606
+          ],
+          "upgrade_gain": [
+            0.11921277733112902,
+            -0.277886367051546,
+            0.0,
+            -0.10280546203960052,
+            -0.26802116395422404,
+            0.08553298491053672,
+            -0.013944895736521825,
+            0.10180563177513789,
+            -0.12089393289025054
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            2.06890473223665,
+            1.3298121233812148,
+            0.0,
+            0.1678884799621043,
+            -0.037093273582434735,
+            1.2849979468083004,
+            1.725424494867995,
+            0.3544571833556135,
+            0.18149152923009432
+          ],
+          "flash_review": [
+            2.0612009420501614,
+            1.1198148494284155,
+            0.0,
+            0.1345814929836316,
+            -0.19073933395383538,
+            1.291708074954884,
+            1.8555265726211683,
+            0.1989779509093133,
+            0.2778224967918455
+          ],
+          "gui_review_flash": [
+            2.5020818724740623,
+            1.0973207401302811,
+            0.0,
+            0.3273952868446404,
+            -0.428050381139272,
+            1.7261617669847418,
+            2.004540075304143,
+            0.3364812194724819,
+            0.2764986133996569
+          ]
+        }
+      },
+      "predictions": {
+        "click-color-29": {
+          "probability": {
+            "flash_direct": 0.5868202384046022,
+            "flash_review": 0.43096739749294255,
+            "gui_review_flash": 0.3797161301664507
+          },
+          "upgrade_gain": -0.051251267326491816,
+          "cost_cny": {
+            "flash_direct": 0.00014497386087975958,
+            "flash_review": 0.0001384368960914566,
+            "gui_review_flash": 0.0003168131770365595
+          }
+        },
+        "click-color-51": {
+          "probability": {
+            "flash_direct": 0.5868202384046022,
+            "flash_review": 0.43096739749294255,
+            "gui_review_flash": 0.3797161301664507
+          },
+          "upgrade_gain": -0.051251267326491816,
+          "cost_cny": {
+            "flash_direct": 0.00014497386087975958,
+            "flash_review": 0.0001384368960914566,
+            "gui_review_flash": 0.0003168131770365595
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.5,
+        "zero": 0.5,
+        "training_mean": 0.5
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 3,
+            "families_with_error": 2,
+            "selected_options": 11,
+            "verified_options": 9,
+            "candidate_options": 18,
+            "family_risk_upper": 0.9887630937816503
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 1,
+            "families_with_error": 0,
+            "selected_options": 1,
+            "verified_options": 1,
+            "candidate_options": 18,
+            "family_risk_upper": 0.9666666666666667
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 0,
+            "families_with_error": 0,
+            "selected_options": 0,
+            "verified_options": 0,
+            "candidate_options": 18,
+            "family_risk_upper": null
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 4,
+          "verified_options": 2,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 2,
+          "device_steps": 16
+        },
+        "full": {
+          "model_calls": 4,
+          "device_steps": 32
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.000244,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-color-29",
+                "mode": "flash_direct",
+                "p": 0.5868202384046022,
+                "predicted_cny": 0.00014497386087975958,
+                "list_cny": 0.00024399999999999997,
+                "verified": 0
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.000218,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-color-29",
+                "mode": "flash_review",
+                "p": 0.43096739749294255,
+                "predicted_cny": 0.0001384368960914566,
+                "list_cny": 0.00021799999999999999,
+                "verified": 0
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0004889,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-color-29",
+                "mode": "gui_review_flash",
+                "p": 0.3797161301664507,
+                "predicted_cny": 0.0003168131770365595,
+                "list_cny": 0.0004889,
+                "verified": 0
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.000244,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-color-29",
+                "mode": "flash_direct",
+                "p": 0.5868202384046022,
+                "predicted_cny": 0.00014497386087975958,
+                "list_cny": 0.00024399999999999997,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0005016,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 28
+            },
+            "decisions": [
+              {
+                "task": "click-color-29",
+                "mode": "flash_direct",
+                "p": 0.5868202384046022,
+                "predicted_cny": 0.00014497386087975958,
+                "list_cny": 0.00024399999999999997,
+                "verified": 0
+              },
+              {
+                "task": "click-color-51",
+                "mode": "flash_direct",
+                "p": 0.5868202384046022,
+                "predicted_cny": 0.00014497386087975958,
+                "list_cny": 0.0002576,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.00041,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-color-29",
+                "mode": "flash_review",
+                "p": 0.43096739749294255,
+                "predicted_cny": 0.0001384368960914566,
+                "list_cny": 0.00021799999999999999,
+                "verified": 0
+              },
+              {
+                "task": "click-color-51",
+                "mode": "flash_review",
+                "p": 0.43096739749294255,
+                "predicted_cny": 0.0001384368960914566,
+                "list_cny": 0.00019199999999999998,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0009332,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-color-29",
+                "mode": "gui_review_flash",
+                "p": 0.3797161301664507,
+                "predicted_cny": 0.0003168131770365595,
+                "list_cny": 0.0004889,
+                "verified": 0
+              },
+              {
+                "task": "click-color-51",
+                "mode": "gui_review_flash",
+                "p": 0.3797161301664507,
+                "predicted_cny": 0.0003168131770365595,
+                "list_cny": 0.0004443,
+                "verified": 0
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0005016,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 28
+            },
+            "decisions": [
+              {
+                "task": "click-color-29",
+                "mode": "flash_direct",
+                "p": 0.5868202384046022,
+                "predicted_cny": 0.00014497386087975958,
+                "list_cny": 0.00024399999999999997,
+                "verified": 0
+              },
+              {
+                "task": "click-color-51",
+                "mode": "flash_direct",
+                "p": 0.5868202384046022,
+                "predicted_cny": 0.00014497386087975958,
+                "list_cny": 0.0002576,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "click-dialog",
+      "train_families": [
+        "click-dialog-2",
+        "click-link",
+        "click-shape",
+        "click-tab-2-easy"
+      ],
+      "calibration_families": [
+        "click-button",
+        "click-button-sequence",
+        "click-color"
+      ],
+      "test_ids": [
+        "click-dialog-29",
+        "click-dialog-51"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.2760164113391239,
+            0.21092916630038439,
+            0.0,
+            -0.35060300400678956,
+            -1.21722838357624,
+            0.3504437858754926,
+            -0.13380985769528278,
+            0.4181039788390819,
+            0.16511325877809568
+          ],
+          "review_gain": [
+            -0.06183648658550153,
+            0.21451235410388447,
+            0.0,
+            0.0686393643049583,
+            0.22550930467551722,
+            -0.04191736958263455,
+            -0.1559642717773145,
+            -0.05479462044729899,
+            -0.0026008192336648317
+          ],
+          "upgrade_gain": [
+            0.06501841422052683,
+            0.0425455972181035,
+            0.0,
+            -0.04577525679591778,
+            -0.20805398703498681,
+            0.0905761187893236,
+            -0.17485560905087522,
+            0.04650423881694776,
+            -0.06805954512031517
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            2.048590072922594,
+            1.5905088505337448,
+            0.0,
+            0.29169601123619293,
+            -0.2099765311284534,
+            1.4234595561607628,
+            1.3912492387558437,
+            0.09323132583960791,
+            0.23106634960189545
+          ],
+          "flash_review": [
+            2.275893109593035,
+            1.780394639387938,
+            0.0,
+            -0.0035846721503666073,
+            -0.537360375894136,
+            1.531556459813321,
+            1.067956466599687,
+            -0.03166230242188911,
+            0.044096542195889016
+          ],
+          "gui_review_flash": [
+            2.4976605744746316,
+            1.8529254192638143,
+            0.0,
+            0.004589982263085406,
+            -0.3453351986514645,
+            1.555376598674928,
+            1.6053716559872948,
+            -0.11823976680994701,
+            0.0947464327286144
+          ]
+        }
+      },
+      "predictions": {
+        "click-dialog-29": {
+          "probability": {
+            "flash_direct": 0.5519744484746048,
+            "flash_review": 0.517883535522746,
+            "gui_review_flash": 0.5448579838060297
+          },
+          "upgrade_gain": 0.026974448283283665,
+          "cost_cny": {
+            "flash_direct": 0.0001595274767907463,
+            "flash_review": 0.00018170578550941716,
+            "gui_review_flash": 0.00034242427627150787
+          }
+        },
+        "click-dialog-51": {
+          "probability": {
+            "flash_direct": 0.5519744484746048,
+            "flash_review": 0.517883535522746,
+            "gui_review_flash": 0.5448579838060297
+          },
+          "upgrade_gain": 0.026974448283283665,
+          "cost_cny": {
+            "flash_direct": 0.0001595274767907463,
+            "flash_review": 0.00018170578550941716,
+            "gui_review_flash": 0.00034242427627150787
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.026974448283283665,
+        "zero": 0,
+        "training_mean": 0.0
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 2,
+            "families_with_error": 2,
+            "selected_options": 12,
+            "verified_options": 7,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 0,
+            "families_with_error": 0,
+            "selected_options": 0,
+            "verified_options": 0,
+            "candidate_options": 18,
+            "family_risk_upper": null
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 0,
+            "families_with_error": 0,
+            "selected_options": 0,
+            "verified_options": 0,
+            "candidate_options": 18,
+            "family_risk_upper": null
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 0,
+          "selected_options": 6,
+          "verified_options": 6,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 2,
+          "device_steps": 16
+        },
+        "full": {
+          "model_calls": 4,
+          "device_steps": 32
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002468,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-29",
+                "mode": "flash_direct",
+                "p": 0.5519744484746048,
+                "predicted_cny": 0.0001595274767907463,
+                "list_cny": 0.0002468,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002194,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-29",
+                "mode": "flash_review",
+                "p": 0.517883535522746,
+                "predicted_cny": 0.00018170578550941716,
+                "list_cny": 0.00021940000000000002,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0005105,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-29",
+                "mode": "gui_review_flash",
+                "p": 0.5448579838060297,
+                "predicted_cny": 0.00034242427627150787,
+                "list_cny": 0.0005105,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002468,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-29",
+                "mode": "flash_direct",
+                "p": 0.5519744484746048,
+                "predicted_cny": 0.0001595274767907463,
+                "list_cny": 0.0002468,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004928,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-29",
+                "mode": "flash_direct",
+                "p": 0.5519744484746048,
+                "predicted_cny": 0.0001595274767907463,
+                "list_cny": 0.0002468,
+                "verified": 1
+              },
+              {
+                "task": "click-dialog-51",
+                "mode": "flash_direct",
+                "p": 0.5519744484746048,
+                "predicted_cny": 0.0001595274767907463,
+                "list_cny": 0.000246,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004444,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-29",
+                "mode": "flash_review",
+                "p": 0.517883535522746,
+                "predicted_cny": 0.00018170578550941716,
+                "list_cny": 0.00021940000000000002,
+                "verified": 1
+              },
+              {
+                "task": "click-dialog-51",
+                "mode": "flash_review",
+                "p": 0.517883535522746,
+                "predicted_cny": 0.00018170578550941716,
+                "list_cny": 0.000225,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.001021,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-29",
+                "mode": "gui_review_flash",
+                "p": 0.5448579838060297,
+                "predicted_cny": 0.00034242427627150787,
+                "list_cny": 0.0005105,
+                "verified": 1
+              },
+              {
+                "task": "click-dialog-51",
+                "mode": "gui_review_flash",
+                "p": 0.5448579838060297,
+                "predicted_cny": 0.00034242427627150787,
+                "list_cny": 0.0005105,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004928,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-29",
+                "mode": "flash_direct",
+                "p": 0.5519744484746048,
+                "predicted_cny": 0.0001595274767907463,
+                "list_cny": 0.0002468,
+                "verified": 1
+              },
+              {
+                "task": "click-dialog-51",
+                "mode": "flash_direct",
+                "p": 0.5519744484746048,
+                "predicted_cny": 0.0001595274767907463,
+                "list_cny": 0.000246,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "click-dialog-2",
+      "train_families": [
+        "click-button",
+        "click-button-sequence",
+        "click-color",
+        "click-shape"
+      ],
+      "calibration_families": [
+        "click-dialog",
+        "click-link",
+        "click-tab-2-easy"
+      ],
+      "test_ids": [
+        "click-dialog-2-29",
+        "click-dialog-2-51"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            -0.026590038308805467,
+            0.00308747247417507,
+            0.0,
+            -0.17941098937636618,
+            0.07976993932838143,
+            -0.22526801252064424,
+            1.139670057660721,
+            0.39041665457013003,
+            0.15764126310295976
+          ],
+          "review_gain": [
+            -0.014919223317903631,
+            0.25969732380250193,
+            0.0,
+            0.022511381444020907,
+            0.003431502740686491,
+            0.03244854333985032,
+            -0.27128534561353934,
+            -0.13733637734745444,
+            -0.020977295820971645
+          ],
+          "upgrade_gain": [
+            -0.011699808605376802,
+            -0.1300211787350893,
+            0.0,
+            -0.03363288162022865,
+            -0.1601450973731524,
+            0.03928596573390729,
+            -0.016199386911003952,
+            0.1263964563671416,
+            -0.06442395986891966
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            2.534206367009419,
+            1.0594908000662921,
+            0.0,
+            0.3287131553885301,
+            -0.09661074345303744,
+            1.5771053910506834,
+            1.406872334036707,
+            -0.18122829902418983,
+            0.27715499999395393
+          ],
+          "flash_review": [
+            2.3923375542351866,
+            1.616625141583901,
+            0.0,
+            0.223812406035397,
+            -0.47820675302324056,
+            1.6501020389027394,
+            0.9789468410536659,
+            -0.15953683592233964,
+            0.1506089923728399
+          ],
+          "gui_review_flash": [
+            2.8963923635779802,
+            1.3638929074467754,
+            0.0,
+            0.2020861516941223,
+            -0.7612715308790062,
+            1.9778745085596452,
+            1.3619027705042017,
+            0.0025462081170756785,
+            0.1057382597968083
+          ]
+        }
+      },
+      "predictions": {
+        "click-dialog-2-29": {
+          "probability": {
+            "flash_direct": 0.5964123287246094,
+            "flash_review": 0.6733087814912916,
+            "gui_review_flash": 0.5395986409340618
+          },
+          "upgrade_gain": -0.1337101405572297,
+          "cost_cny": {
+            "flash_direct": 0.0003238361916186526,
+            "flash_review": 0.000371269726235672,
+            "gui_review_flash": 0.0007817792557200234
+          }
+        },
+        "click-dialog-2-51": {
+          "probability": {
+            "flash_direct": 0.5964123287246094,
+            "flash_review": 0.6733087814912916,
+            "gui_review_flash": 0.5395986409340618
+          },
+          "upgrade_gain": -0.1337101405572297,
+          "cost_cny": {
+            "flash_direct": 0.0003238361916186526,
+            "flash_review": 0.000371269726235672,
+            "gui_review_flash": 0.0007817792557200234
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.6337101405572296,
+        "zero": 0.5,
+        "training_mean": 0.625
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 3,
+            "families_with_error": 2,
+            "selected_options": 18,
+            "verified_options": 8,
+            "candidate_options": 18,
+            "family_risk_upper": 0.9887630937816503
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 2,
+            "families_with_error": 2,
+            "selected_options": 12,
+            "verified_options": 2,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 2,
+            "families_with_error": 2,
+            "selected_options": 8,
+            "verified_options": 2,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 5,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 2,
+          "verified_options": 1,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 3,
+          "device_steps": 21
+        },
+        "full": {
+          "model_calls": 6,
+          "device_steps": 42
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.000272,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-2-29",
+                "mode": "flash_direct",
+                "p": 0.5964123287246094,
+                "predicted_cny": 0.0003238361916186526,
+                "list_cny": 0.000272,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0003594,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-2-29",
+                "mode": "flash_review",
+                "p": 0.6733087814912916,
+                "predicted_cny": 0.000371269726235672,
+                "list_cny": 0.00035939999999999995,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0006342,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-2-29",
+                "mode": "gui_review_flash",
+                "p": 0.5395986409340618,
+                "predicted_cny": 0.0007817792557200234,
+                "list_cny": 0.0006342,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0003594,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-2-29",
+                "mode": "flash_review",
+                "p": 0.6733087814912916,
+                "predicted_cny": 0.000371269726235672,
+                "list_cny": 0.00035939999999999995,
+                "verified": 1
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.000661,
+            "actual": {
+              "model_calls": 5,
+              "device_steps": 29
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-2-29",
+                "mode": "flash_direct",
+                "p": 0.5964123287246094,
+                "predicted_cny": 0.0003238361916186526,
+                "list_cny": 0.000272,
+                "verified": 1
+              },
+              {
+                "task": "click-dialog-2-51",
+                "mode": "flash_direct",
+                "p": 0.5964123287246094,
+                "predicted_cny": 0.0003238361916186526,
+                "list_cny": 0.000389,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0007352,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 30
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-2-29",
+                "mode": "flash_review",
+                "p": 0.6733087814912916,
+                "predicted_cny": 0.000371269726235672,
+                "list_cny": 0.00035939999999999995,
+                "verified": 1
+              },
+              {
+                "task": "click-dialog-2-51",
+                "mode": "flash_review",
+                "p": 0.6733087814912916,
+                "predicted_cny": 0.000371269726235672,
+                "list_cny": 0.00037580000000000003,
+                "verified": 0
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0013508,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 26
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-2-29",
+                "mode": "gui_review_flash",
+                "p": 0.5395986409340618,
+                "predicted_cny": 0.0007817792557200234,
+                "list_cny": 0.0006342,
+                "verified": 1
+              },
+              {
+                "task": "click-dialog-2-51",
+                "mode": "gui_review_flash",
+                "p": 0.5395986409340618,
+                "predicted_cny": 0.0007817792557200234,
+                "list_cny": 0.0007166,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0007352,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 30
+            },
+            "decisions": [
+              {
+                "task": "click-dialog-2-29",
+                "mode": "flash_review",
+                "p": 0.6733087814912916,
+                "predicted_cny": 0.000371269726235672,
+                "list_cny": 0.00035939999999999995,
+                "verified": 1
+              },
+              {
+                "task": "click-dialog-2-51",
+                "mode": "flash_review",
+                "p": 0.6733087814912916,
+                "predicted_cny": 0.000371269726235672,
+                "list_cny": 0.00037580000000000003,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "click-link",
+      "train_families": [
+        "click-button",
+        "click-color",
+        "click-shape",
+        "click-tab-2-easy"
+      ],
+      "calibration_families": [
+        "click-button-sequence",
+        "click-dialog",
+        "click-dialog-2"
+      ],
+      "test_ids": [
+        "click-link-29",
+        "click-link-51"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.5120354475265038,
+            -0.3831947283233964,
+            0.0,
+            -0.8497274809392918,
+            -0.9992807078631636,
+            0.0544763600019357,
+            0.6462261737181442,
+            0.5614054155561677,
+            -0.3655972278156928
+          ],
+          "review_gain": [
+            -0.06284654133014513,
+            0.3434441034599338,
+            0.0,
+            0.11716606690460696,
+            0.1441491906412078,
+            0.01678929323384955,
+            -0.1719227279077561,
+            -0.15432183233703856,
+            0.070897517347161
+          ],
+          "upgrade_gain": [
+            0.004018000855125954,
+            -0.10896398003083771,
+            0.0,
+            -0.10391633336619276,
+            -0.14916538667051468,
+            0.0058054216157834675,
+            -0.006031042419962367,
+            0.16926391627386758,
+            -0.11561277145819046
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            2.6182993857781915,
+            1.0179605160915233,
+            0.0,
+            0.19245320888275902,
+            -0.23406288068517173,
+            1.5945567014615805,
+            1.342822217826773,
+            -0.13424931727197081,
+            0.1788424702808523
+          ],
+          "flash_review": [
+            2.4633502640434495,
+            1.6466302619569322,
+            0.0,
+            -0.010802659776078628,
+            -0.48794508090230976,
+            1.5752884728661796,
+            0.9671574330766054,
+            -0.04632808325925168,
+            0.025697924657398948
+          ],
+          "gui_review_flash": [
+            2.8565474970406655,
+            1.5158274543161736,
+            0.0,
+            0.02316161124971703,
+            -0.48009561489504016,
+            1.7876762764702114,
+            1.4780747532404097,
+            0.12990863480128145,
+            0.06799851151566831
+          ]
+        }
+      },
+      "predictions": {
+        "click-link-29": {
+          "probability": {
+            "flash_direct": 0.7472594318645206,
+            "flash_review": 0.7847929535901094,
+            "gui_review_flash": 0.684507760223289
+          },
+          "upgrade_gain": -0.1002851933668204,
+          "cost_cny": {
+            "flash_direct": 0.00027247004732033995,
+            "flash_review": 0.0002337177193872611,
+            "gui_review_flash": 0.0005963811199593324
+          }
+        },
+        "click-link-51": {
+          "probability": {
+            "flash_direct": 0.7348984560234223,
+            "flash_review": 0.7749713543032439,
+            "gui_review_flash": 0.6702203252835327
+          },
+          "upgrade_gain": -0.10475102901971119,
+          "cost_cny": {
+            "flash_direct": 0.00027912689611000725,
+            "flash_review": 0.00023776578684168187,
+            "gui_review_flash": 0.00060951139752251
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.10251811119326579,
+        "zero": 0,
+        "training_mean": 0.125
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 3,
+            "families_with_error": 1,
+            "selected_options": 12,
+            "verified_options": 11,
+            "candidate_options": 18,
+            "family_risk_upper": 0.8905197464531673
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 0,
+            "families_with_error": 0,
+            "selected_options": 0,
+            "verified_options": 0,
+            "candidate_options": 18,
+            "family_risk_upper": null
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 0,
+            "families_with_error": 0,
+            "selected_options": 0,
+            "verified_options": 0,
+            "candidate_options": 18,
+            "family_risk_upper": null
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 1,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 1,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 0,
+          "families_with_error": 0,
+          "selected_options": 0,
+          "verified_options": 0,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 2,
+          "device_steps": 16
+        },
+        "full": {
+          "model_calls": 4,
+          "device_steps": 32
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002464,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-link-29",
+                "mode": "flash_direct",
+                "p": 0.7472594318645206,
+                "predicted_cny": 0.00027247004732033995,
+                "list_cny": 0.00024639999999999997,
+                "verified": 0
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002232,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-link-29",
+                "mode": "flash_review",
+                "p": 0.7847929535901094,
+                "predicted_cny": 0.0002337177193872611,
+                "list_cny": 0.0002232,
+                "verified": 0
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0005726,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-link-29",
+                "mode": "gui_review_flash",
+                "p": 0.684507760223289,
+                "predicted_cny": 0.0005963811199593324,
+                "list_cny": 0.0005725999999999999,
+                "verified": 0
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002232,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-link-29",
+                "mode": "flash_review",
+                "p": 0.7847929535901094,
+                "predicted_cny": 0.0002337177193872611,
+                "list_cny": 0.0002232,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004708,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-link-29",
+                "mode": "flash_direct",
+                "p": 0.7472594318645206,
+                "predicted_cny": 0.00027247004732033995,
+                "list_cny": 0.00024639999999999997,
+                "verified": 0
+              },
+              {
+                "task": "click-link-51",
+                "mode": "flash_direct",
+                "p": 0.7348984560234223,
+                "predicted_cny": 0.00027912689611000725,
+                "list_cny": 0.0002244,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004978,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-link-29",
+                "mode": "flash_review",
+                "p": 0.7847929535901094,
+                "predicted_cny": 0.0002337177193872611,
+                "list_cny": 0.0002232,
+                "verified": 0
+              },
+              {
+                "task": "click-link-51",
+                "mode": "flash_review",
+                "p": 0.7749713543032439,
+                "predicted_cny": 0.00023776578684168187,
+                "list_cny": 0.0002746,
+                "verified": 0
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.001137,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-link-29",
+                "mode": "gui_review_flash",
+                "p": 0.684507760223289,
+                "predicted_cny": 0.0005963811199593324,
+                "list_cny": 0.0005725999999999999,
+                "verified": 0
+              },
+              {
+                "task": "click-link-51",
+                "mode": "gui_review_flash",
+                "p": 0.6702203252835327,
+                "predicted_cny": 0.00060951139752251,
+                "list_cny": 0.0005644,
+                "verified": 0
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004978,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-link-29",
+                "mode": "flash_review",
+                "p": 0.7847929535901094,
+                "predicted_cny": 0.0002337177193872611,
+                "list_cny": 0.0002232,
+                "verified": 0
+              },
+              {
+                "task": "click-link-51",
+                "mode": "flash_review",
+                "p": 0.7749713543032439,
+                "predicted_cny": 0.00023776578684168187,
+                "list_cny": 0.0002746,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "click-shape",
+      "train_families": [
+        "click-color",
+        "click-dialog-2",
+        "click-link",
+        "click-tab-2-easy"
+      ],
+      "calibration_families": [
+        "click-button",
+        "click-button-sequence",
+        "click-dialog"
+      ],
+      "test_ids": [
+        "click-shape-29",
+        "click-shape-51"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.4084980410997717,
+            0.37322360615760203,
+            0.0,
+            -0.25886553678565,
+            -1.1339842185014688,
+            0.5910927335406515,
+            -0.5916652103323384,
+            0.23199448621632077,
+            -0.08832522963179261
+          ],
+          "review_gain": [
+            -0.12691239650229105,
+            0.02560597624550941,
+            0.0,
+            0.0974676304607031,
+            0.2675580261645947,
+            -0.10923938553510401,
+            0.0240514771947191,
+            -0.021943345160598607,
+            0.07125983808506915
+          ],
+          "upgrade_gain": [
+            -0.06538755490546592,
+            0.10293793765115788,
+            0.0,
+            -0.014952319412026112,
+            -0.16912589108427767,
+            0.03602735125063137,
+            -0.17162703253560432,
+            0.06818143031311348,
+            -0.04893161242100527
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            2.6206526612035197,
+            1.2766156445156833,
+            0.0,
+            0.1230777918079189,
+            -0.21119317318844744,
+            1.5608476002742737,
+            1.1167354688050177,
+            -0.07899095912233538,
+            0.1340048505919406
+          ],
+          "flash_review": [
+            2.4182585976781117,
+            1.4417463134281308,
+            0.0,
+            0.09888431528037922,
+            -0.507567279740552,
+            1.5978721800591158,
+            1.1390808304143005,
+            0.049427908009351644,
+            0.17381746774688853
+          ],
+          "gui_review_flash": [
+            2.8273226577306416,
+            1.3671346403105153,
+            0.0,
+            0.1089843580036232,
+            -0.2970227825324715,
+            1.7017809804596744,
+            1.576904934444439,
+            -0.07671624553863819,
+            0.2074094947759928
+          ]
+        }
+      },
+      "predictions": {
+        "click-shape-29": {
+          "probability": {
+            "flash_direct": 0.7084261268404544,
+            "flash_review": 0.5734589639904876,
+            "gui_review_flash": 0.5066383846083843
+          },
+          "upgrade_gain": -0.06682057938210324,
+          "cost_cny": {
+            "flash_direct": 0.00029667609741259785,
+            "flash_review": 0.00029804498172948587,
+            "gui_review_flash": 0.0006075364454641351
+          }
+        },
+        "click-shape-51": {
+          "probability": {
+            "flash_direct": 0.838682883145513,
+            "flash_review": 0.6955874143800371,
+            "gui_review_flash": 0.6625501946133533
+          },
+          "upgrade_gain": -0.03303721976668385,
+          "cost_cny": {
+            "flash_direct": 0.0002659269154580277,
+            "flash_review": 0.0002659688238117518,
+            "gui_review_flash": 0.0005038937164485284
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.049928899574393545,
+        "zero": 0,
+        "training_mean": 0.125
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 2,
+            "families_with_error": 0,
+            "selected_options": 8,
+            "verified_options": 8,
+            "candidate_options": 18,
+            "family_risk_upper": 0.8174258141649446
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 1,
+            "families_with_error": 0,
+            "selected_options": 2,
+            "verified_options": 2,
+            "candidate_options": 18,
+            "family_risk_upper": 0.9666666666666667
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 0,
+            "families_with_error": 0,
+            "selected_options": 0,
+            "verified_options": 0,
+            "candidate_options": 18,
+            "family_risk_upper": null
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 5,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 4,
+          "verified_options": 3,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 1,
+          "verified_options": 0,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 3,
+          "device_steps": 21
+        },
+        "full": {
+          "model_calls": 6,
+          "device_steps": 42
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0002452,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-shape-29",
+                "mode": "flash_direct",
+                "p": 0.7084261268404544,
+                "predicted_cny": 0.00029667609741259785,
+                "list_cny": 0.0002452,
+                "verified": 1
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0003424,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "click-shape-29",
+                "mode": "flash_review",
+                "p": 0.5734589639904876,
+                "predicted_cny": 0.00029804498172948587,
+                "list_cny": 0.00034240000000000003,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 1,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0007206,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 13
+            },
+            "decisions": [
+              {
+                "task": "click-shape-29",
+                "mode": "gui_review_flash",
+                "p": 0.5066383846083843,
+                "predicted_cny": 0.0006075364454641351,
+                "list_cny": 0.0007206,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.000238,
+            "actual": {
+              "model_calls": 2,
+              "device_steps": 12
+            },
+            "decisions": [
+              {
+                "task": "click-shape-51",
+                "mode": "flash_direct",
+                "p": 0.838682883145513,
+                "predicted_cny": 0.0002659269154580277,
+                "list_cny": 0.00023799999999999998,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004832,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-shape-29",
+                "mode": "flash_direct",
+                "p": 0.7084261268404544,
+                "predicted_cny": 0.00029667609741259785,
+                "list_cny": 0.0002452,
+                "verified": 1
+              },
+              {
+                "task": "click-shape-51",
+                "mode": "flash_direct",
+                "p": 0.838682883145513,
+                "predicted_cny": 0.0002659269154580277,
+                "list_cny": 0.00023799999999999998,
+                "verified": 0
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0006872,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 26
+            },
+            "decisions": [
+              {
+                "task": "click-shape-29",
+                "mode": "flash_review",
+                "p": 0.5734589639904876,
+                "predicted_cny": 0.00029804498172948587,
+                "list_cny": 0.00034240000000000003,
+                "verified": 1
+              },
+              {
+                "task": "click-shape-51",
+                "mode": "flash_review",
+                "p": 0.6955874143800371,
+                "predicted_cny": 0.0002659688238117518,
+                "list_cny": 0.00034480000000000003,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 2,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0013376,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 26
+            },
+            "decisions": [
+              {
+                "task": "click-shape-29",
+                "mode": "gui_review_flash",
+                "p": 0.5066383846083843,
+                "predicted_cny": 0.0006075364454641351,
+                "list_cny": 0.0007206,
+                "verified": 1
+              },
+              {
+                "task": "click-shape-51",
+                "mode": "gui_review_flash",
+                "p": 0.6625501946133533,
+                "predicted_cny": 0.0005038937164485284,
+                "list_cny": 0.000617,
+                "verified": 1
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0004832,
+            "actual": {
+              "model_calls": 4,
+              "device_steps": 24
+            },
+            "decisions": [
+              {
+                "task": "click-shape-29",
+                "mode": "flash_direct",
+                "p": 0.7084261268404544,
+                "predicted_cny": 0.00029667609741259785,
+                "list_cny": 0.0002452,
+                "verified": 1
+              },
+              {
+                "task": "click-shape-51",
+                "mode": "flash_direct",
+                "p": 0.838682883145513,
+                "predicted_cny": 0.0002659269154580277,
+                "list_cny": 0.00023799999999999998,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    },
+    {
+      "held_family": "click-tab-2-easy",
+      "train_families": [
+        "click-button-sequence",
+        "click-dialog",
+        "click-link",
+        "click-shape"
+      ],
+      "calibration_families": [
+        "click-button",
+        "click-color",
+        "click-dialog-2"
+      ],
+      "test_ids": [
+        "click-tab-2-easy-29",
+        "click-tab-2-easy-51"
+      ],
+      "fitted_heads": {
+        "reward": {
+          "direct": [
+            0.2743432099588851,
+            -0.02801627873669092,
+            0.0,
+            0.2887764966265675,
+            0.44927041654057626,
+            0.2073939309323231,
+            0.1939523255706787,
+            0.35846351691875533,
+            0.7373370173693012
+          ],
+          "review_gain": [
+            0.00786496010836982,
+            0.2757571910291103,
+            0.0,
+            0.024353349805385716,
+            0.007521717872081289,
+            0.057709321179664014,
+            -0.3427618373841686,
+            0.0025742772052562302,
+            -0.07093376220616746
+          ],
+          "upgrade_gain": [
+            0.026484368494973636,
+            -0.10707906930571798,
+            0.0,
+            -0.014817553345444125,
+            -0.15029766233862457,
+            0.0522218271393851,
+            -0.1026593332122075,
+            -0.05808531186973377,
+            -0.031162640594856274
+          ]
+        },
+        "log_cost": {
+          "flash_direct": [
+            2.3301458617312574,
+            1.212992963763997,
+            0.0,
+            0.6133864870778883,
+            0.0008884811656509157,
+            1.7334489737101815,
+            1.1800384526490815,
+            0.127393269667834,
+            0.49376416429089337
+          ],
+          "flash_review": [
+            2.34228030652953,
+            1.593309057242656,
+            0.0,
+            0.3338814976378653,
+            -0.4808276311054711,
+            1.7383853599640426,
+            0.9581165077191786,
+            -0.15263060427609024,
+            0.25227336387002647
+          ],
+          "gui_review_flash": [
+            2.7709638584106786,
+            1.462242569561922,
+            0.0,
+            0.42262853368856634,
+            -0.657709324166207,
+            2.056931166934348,
+            1.2219350079708113,
+            -0.1836731932453016,
+            0.3276463707086908
+          ]
+        }
+      },
+      "predictions": {
+        "click-tab-2-easy-29": {
+          "probability": {
+            "flash_direct": 0.980778288468494,
+            "flash_review": 0.9630497451728863,
+            "gui_review_flash": 0.7655233979184971
+          },
+          "upgrade_gain": -0.19752634725438922,
+          "cost_cny": {
+            "flash_direct": 0.00046421446006978854,
+            "flash_review": 0.00042089186342328405,
+            "gui_review_flash": 0.000903620220439002
+          }
+        },
+        "click-tab-2-easy-51": {
+          "probability": {
+            "flash_direct": 1.0,
+            "flash_review": 0.9822882584467434,
+            "gui_review_flash": 0.7842348191084743
+          },
+          "upgrade_gain": -0.19805343933826908,
+          "cost_cny": {
+            "flash_direct": 0.0004771718930431371,
+            "flash_review": 0.0004298686993572446,
+            "gui_review_flash": 0.0009272922153516947
+          }
+        }
+      },
+      "upgrade_gain_mae": {
+        "learned": 0.49973645395806005,
+        "zero": 0.5,
+        "training_mean": 0.5
+      },
+      "calibration": {
+        "threshold": null,
+        "candidates": [
+          {
+            "threshold": 0.4,
+            "active_families": 3,
+            "families_with_error": 3,
+            "selected_options": 18,
+            "verified_options": 12,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.6,
+            "active_families": 3,
+            "families_with_error": 3,
+            "selected_options": 14,
+            "verified_options": 10,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          },
+          {
+            "threshold": 0.8,
+            "active_families": 1,
+            "families_with_error": 1,
+            "selected_options": 2,
+            "verified_options": 1,
+            "candidate_options": 18,
+            "family_risk_upper": 1.0
+          }
+        ]
+      },
+      "held_risk_coverage": [
+        {
+          "threshold": 0.4,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 1,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.6,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 6,
+          "verified_options": 1,
+          "candidate_options": 6
+        },
+        {
+          "threshold": 0.8,
+          "active_families": 1,
+          "families_with_error": 1,
+          "selected_options": 4,
+          "verified_options": 1,
+          "candidate_options": 6
+        }
+      ],
+      "limits": {
+        "tight": {
+          "model_calls": 3,
+          "device_steps": 21
+        },
+        "full": {
+          "model_calls": 6,
+          "device_steps": 42
+        }
+      },
+      "replay": {
+        "tight": {
+          "flash_direct": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0003958,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 21
+            },
+            "decisions": [
+              {
+                "task": "click-tab-2-easy-29",
+                "mode": "flash_direct",
+                "p": 0.980778288468494,
+                "predicted_cny": 0.00046421446006978854,
+                "list_cny": 0.00039579999999999997,
+                "verified": 0
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0003368,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 17
+            },
+            "decisions": [
+              {
+                "task": "click-tab-2-easy-29",
+                "mode": "flash_review",
+                "p": 0.9630497451728863,
+                "predicted_cny": 0.00042089186342328405,
+                "list_cny": 0.0003368,
+                "verified": 0
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0007981,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 17
+            },
+            "decisions": [
+              {
+                "task": "click-tab-2-easy-29",
+                "mode": "gui_review_flash",
+                "p": 0.7655233979184971,
+                "predicted_cny": 0.000903620220439002,
+                "list_cny": 0.0007980999999999999,
+                "verified": 0
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 0,
+            "admitted": 1,
+            "not_admitted": 1,
+            "list_cny": 0.0003956,
+            "actual": {
+              "model_calls": 3,
+              "device_steps": 21
+            },
+            "decisions": [
+              {
+                "task": "click-tab-2-easy-51",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0004771718930431371,
+                "list_cny": 0.00039559999999999997,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        },
+        "full": {
+          "flash_direct": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0007914,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 42
+            },
+            "decisions": [
+              {
+                "task": "click-tab-2-easy-29",
+                "mode": "flash_direct",
+                "p": 0.980778288468494,
+                "predicted_cny": 0.00046421446006978854,
+                "list_cny": 0.00039579999999999997,
+                "verified": 0
+              },
+              {
+                "task": "click-tab-2-easy-51",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0004771718930431371,
+                "list_cny": 0.00039559999999999997,
+                "verified": 0
+              }
+            ]
+          },
+          "flash_review": {
+            "verified": 1,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0007054,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 34
+            },
+            "decisions": [
+              {
+                "task": "click-tab-2-easy-29",
+                "mode": "flash_review",
+                "p": 0.9630497451728863,
+                "predicted_cny": 0.00042089186342328405,
+                "list_cny": 0.0003368,
+                "verified": 0
+              },
+              {
+                "task": "click-tab-2-easy-51",
+                "mode": "flash_review",
+                "p": 0.9822882584467434,
+                "predicted_cny": 0.0004298686993572446,
+                "list_cny": 0.0003686,
+                "verified": 1
+              }
+            ]
+          },
+          "gui_review_flash": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.001795,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 34
+            },
+            "decisions": [
+              {
+                "task": "click-tab-2-easy-29",
+                "mode": "gui_review_flash",
+                "p": 0.7655233979184971,
+                "predicted_cny": 0.000903620220439002,
+                "list_cny": 0.0007980999999999999,
+                "verified": 0
+              },
+              {
+                "task": "click-tab-2-easy-51",
+                "mode": "gui_review_flash",
+                "p": 0.7842348191084743,
+                "predicted_cny": 0.0009272922153516947,
+                "list_cny": 0.0009969,
+                "verified": 0
+              }
+            ]
+          },
+          "gain_frontier": {
+            "verified": 0,
+            "admitted": 2,
+            "not_admitted": 0,
+            "list_cny": 0.0007914,
+            "actual": {
+              "model_calls": 6,
+              "device_steps": 42
+            },
+            "decisions": [
+              {
+                "task": "click-tab-2-easy-29",
+                "mode": "flash_direct",
+                "p": 0.980778288468494,
+                "predicted_cny": 0.00046421446006978854,
+                "list_cny": 0.00039579999999999997,
+                "verified": 0
+              },
+              {
+                "task": "click-tab-2-easy-51",
+                "mode": "flash_direct",
+                "p": 1.0,
+                "predicted_cny": 0.0004771718930431371,
+                "list_cny": 0.00039559999999999997,
+                "verified": 0
+              }
+            ]
+          },
+          "calibrated_frontier": {
+            "verified": 0,
+            "admitted": 0,
+            "not_admitted": 2,
+            "list_cny": 0,
+            "actual": {
+              "model_calls": 0,
+              "device_steps": 0
+            },
+            "decisions": []
+          }
+        }
+      }
+    }
+  ]
+}

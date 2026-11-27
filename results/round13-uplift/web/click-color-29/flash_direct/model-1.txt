@@ -1,0 +1,3 @@
+Action: Terminate the task as the colored box has been clicked.
+
+<tool_call>{"name":"computer_use","arguments":{"action": "terminate", "status": "success"}}</tool_call>

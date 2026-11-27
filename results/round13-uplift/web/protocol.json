@@ -1,0 +1,401 @@
+{
+  "schema": 1,
+  "seed": 20261128,
+  "checkpoints": [
+    {
+      "id": "click-button-29",
+      "app_group": "click-button-29",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "utterance": "Click on the \"next\" button."
+      },
+      "goal": "Click on the \"next\" button.",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-button-51",
+      "app_group": "click-button-51",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "utterance": "Click on the \"ok\" button."
+      },
+      "goal": "Click on the \"ok\" button.",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-dialog-29",
+      "app_group": "click-dialog-29",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "utterance": "Close the dialog box by clicking the \"x\"."
+      },
+      "goal": "Close the dialog box by clicking the \"x\".",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-dialog-51",
+      "app_group": "click-dialog-51",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "utterance": "Close the dialog box by clicking the \"x\"."
+      },
+      "goal": "Close the dialog box by clicking the \"x\".",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-button-sequence-29",
+      "app_group": "click-button-sequence-29",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "utterance": "Click button ONE, then click button TWO."
+      },
+      "goal": "Click button ONE, then click button TWO.",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-button-sequence-51",
+      "app_group": "click-button-sequence-51",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "utterance": "Click button ONE, then click button TWO."
+      },
+      "goal": "Click button ONE, then click button TWO.",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-link-29",
+      "app_group": "click-link-29",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "utterance": "Click on the link \"a.\"."
+      },
+      "goal": "Click on the link \"a.\".",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-link-51",
+      "app_group": "click-link-51",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "utterance": "Click on the link \"donec\"."
+      },
+      "goal": "Click on the link \"donec\".",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-color-29",
+      "app_group": "click-color-29",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "utterance": "Click on the  colored box."
+      },
+      "goal": "Click on the  colored box.",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-color-51",
+      "app_group": "click-color-51",
+      "slots": 2,
+      "prefix": [],
+      "start": {
+        "utterance": "Click on the  colored box."
+      },
+      "goal": "Click on the  colored box.",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-tab-2-easy-29",
+      "app_group": "click-tab-2-easy-29",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "utterance": "Switch between the tabs to find and click on the link \"a.\"."
+      },
+      "goal": "Switch between the tabs to find and click on the link \"a.\".",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-tab-2-easy-51",
+      "app_group": "click-tab-2-easy-51",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "utterance": "Switch between the tabs to find and click on the link \"donec\"."
+      },
+      "goal": "Switch between the tabs to find and click on the link \"donec\".",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-dialog-2-29",
+      "app_group": "click-dialog-2-29",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "utterance": "Click the button in the dialog box labeled \"x\"."
+      },
+      "goal": "Click the button in the dialog box labeled \"x\".",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-dialog-2-51",
+      "app_group": "click-dialog-2-51",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "utterance": "Click the button in the dialog box labeled \"x\"."
+      },
+      "goal": "Click the button in the dialog box labeled \"x\".",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-shape-29",
+      "app_group": "click-shape-29",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "utterance": "Click on a letter"
+      },
+      "goal": "Click on a letter",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    },
+    {
+      "id": "click-shape-51",
+      "app_group": "click-shape-51",
+      "slots": 3,
+      "prefix": [],
+      "start": {
+        "utterance": "Click on a large red item"
+      },
+      "goal": "Click on a large red item",
+      "oracle": {
+        "native_raw_reward": 1
+      },
+      "measure_progress": true,
+      "match_visible_state": true
+    }
+  ],
+  "scope": "paired Web development continuations grouped by native MiniWoB++ task template",
+  "arms": [
+    "flash_direct",
+    "flash_review",
+    "gui_review_flash"
+  ],
+  "variants": {
+    "flash_direct": {
+      "mode": "direct",
+      "execute_model": "qwen3.7-flash-2026-07-15",
+      "max_tokens": 512
+    },
+    "flash_review": {
+      "mode": "independent_review",
+      "execute_model": "qwen3.7-flash-2026-07-15",
+      "review_model": "qwen3.7-flash-2026-07-15",
+      "review_view": "screen",
+      "max_tokens": 512
+    },
+    "gui_review_flash": {
+      "mode": "independent_review",
+      "execute_model": "qwen3.7-flash-2026-07-15",
+      "review_model": "gui-plus-2026-02-26",
+      "review_view": "screen",
+      "max_tokens": 512
+    }
+  },
+  "max_model_calls": 120,
+  "platform": "web",
+  "apps": {
+    "click-button-29": {
+      "group": "click-button-29",
+      "task": "click-button",
+      "seed": 29,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-button-51": {
+      "group": "click-button-51",
+      "task": "click-button",
+      "seed": 51,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-dialog-29": {
+      "group": "click-dialog-29",
+      "task": "click-dialog",
+      "seed": 29,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-dialog-51": {
+      "group": "click-dialog-51",
+      "task": "click-dialog",
+      "seed": 51,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-button-sequence-29": {
+      "group": "click-button-sequence-29",
+      "task": "click-button-sequence",
+      "seed": 29,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-button-sequence-51": {
+      "group": "click-button-sequence-51",
+      "task": "click-button-sequence",
+      "seed": 51,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-link-29": {
+      "group": "click-link-29",
+      "task": "click-link",
+      "seed": 29,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-link-51": {
+      "group": "click-link-51",
+      "task": "click-link",
+      "seed": 51,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-color-29": {
+      "group": "click-color-29",
+      "task": "click-color",
+      "seed": 29,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-color-51": {
+      "group": "click-color-51",
+      "task": "click-color",
+      "seed": 51,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-tab-2-easy-29": {
+      "group": "click-tab-2-easy-29",
+      "task": "click-tab-2-easy",
+      "seed": 29,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-tab-2-easy-51": {
+      "group": "click-tab-2-easy-51",
+      "task": "click-tab-2-easy",
+      "seed": 51,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-dialog-2-29": {
+      "group": "click-dialog-2-29",
+      "task": "click-dialog-2",
+      "seed": 29,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-dialog-2-51": {
+      "group": "click-dialog-2-51",
+      "task": "click-dialog-2",
+      "seed": 51,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-shape-29": {
+      "group": "click-shape-29",
+      "task": "click-shape",
+      "seed": 29,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    },
+    "click-shape-51": {
+      "group": "click-shape-51",
+      "task": "click-shape",
+      "seed": 51,
+      "backend": "miniwob",
+      "entry": "http://127.0.0.1:62316"
+    }
+  },
+  "environment": {
+    "source_revision": "a7658beb68e1d3572329e06734c5822bd284ddc8",
+    "playwright": "1.49.1",
+    "browser": "131.0.6778.33",
+    "viewport": [
+      320,
+      320
+    ],
+    "locale": "en-US",
+    "timezone": "UTC",
+    "network": "local benchmark origin"
+  }
+}

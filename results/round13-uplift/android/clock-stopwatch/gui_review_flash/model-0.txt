@@ -1,0 +1,2 @@
+The global task objective is to open the stopwatch tab without starting the stopwatch. Currently, the screenshot shows the Clock app with the bottom navigation bar visible. The navigation bar includes a "Stopwatch" tab, which is the target for the next action. Since the task requires opening the stopwatch tab, the logical next step is to click on the "Stopwatch" tab in the bottom navigation bar. This action will fulfill the requirement to access the stopwatch feature without initiating it.
+</think>

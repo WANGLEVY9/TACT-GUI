@@ -1,0 +1,3 @@
+Click the 'C' button to clear the current expression.
+
+Reason: The 'C' (Clear) button will reset the calculator display, removing the mistaken "9+2" so that the screen is empty and ready for the new input.

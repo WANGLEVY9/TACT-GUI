@@ -6,6 +6,31 @@ aggregate). Row-wise dependence invalidates the usual coverage interpretation.
 import math
 
 
+def binomial_upper(failures, trials, delta):
+    """One-sided exact upper endpoint for independent Bernoulli groups."""
+    if (type(failures) is not int or type(trials) is not int or not 0 <= failures <= trials
+            or not 0 < delta < 1):
+        raise ValueError('invalid binomial calibration sample')
+    if trials == 0:
+        return None
+    if failures == trials:
+        return 1.
+    if failures == 0:
+        return -math.expm1(math.log(delta)/trials)
+    terms = [math.lgamma(trials+1)-math.lgamma(i+1)-math.lgamma(trials-i+1)
+             for i in range(failures+1)]
+    lo,hi = 0.,1.
+    for _ in range(52):
+        mid = (lo+hi)/2
+        tail = sum(math.exp(base+i*math.log(mid)+(trials-i)*math.log1p(-mid))
+                   for i,base in enumerate(terms))
+        if tail > delta:
+            lo = mid
+        else:
+            hi = mid
+    return hi
+
+
 def residual_radius(residuals, alpha=0.1):
     if not residuals or not 0 < alpha < 1 or any(not math.isfinite(r) or r < 0 for r in residuals):
         raise ValueError('invalid calibration sample')

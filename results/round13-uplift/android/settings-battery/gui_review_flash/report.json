@@ -1,0 +1,100 @@
+{
+  "checkpoint": "settings-battery",
+  "group": "settings",
+  "arm": "gui_review_flash",
+  "scope_id": "23a960265e874f75a59f2354cd3cf4ac",
+  "calls": [
+    {
+      "reservation_id": "63d13a0f54f84152822222842c6e3f4d",
+      "requested_model": "gui-plus-2026-02-26",
+      "returned_model": "gui-plus-2026-02-26",
+      "usage": {
+        "prompt_tokens": 2642,
+        "completion_tokens": 60,
+        "total_tokens": 2702,
+        "completion_tokens_details": {
+          "text_tokens": 60
+        },
+        "prompt_tokens_details": {
+          "image_tokens": 2552,
+          "text_tokens": 90
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.9048605829884764,
+      "estimated_list_cny": 0.004233,
+      "role": "review",
+      "frame": 0,
+      "screen_sha256": "3f69ba052eedbc4e03221e4dc9cc5be24ca5fdcfb82b7bd0df5c1a93f9bc9de3"
+    },
+    {
+      "reservation_id": "9917dd91c9d247d2913e3544f7a49768",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2925,
+        "total_tokens": 2947,
+        "completion_tokens": 22,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 373
+        },
+        "completion_tokens_details": {
+          "text_tokens": 22
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.2134907919971738,
+      "estimated_list_cny": 0.0006026,
+      "role": "execute",
+      "frame": 1,
+      "screen_sha256": "3f69ba052eedbc4e03221e4dc9cc5be24ca5fdcfb82b7bd0df5c1a93f9bc9de3"
+    }
+  ],
+  "actions": [],
+  "success": 0,
+  "variant": {
+    "mode": "independent_review",
+    "execute_model": "qwen3.7-flash-2026-07-15",
+    "review_model": "gui-plus-2026-02-26",
+    "review_view": "screen",
+    "max_tokens": 512
+  },
+  "initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+  "state": {
+    "nodes": 65,
+    "labelled_nodes": 17,
+    "clickable_nodes": 10,
+    "duplicate_visible_labels": 0,
+    "decision_observation_sha256": "266995c52462494cd8bb0f08e335b146db2009488388c2d54433e942a67d7a7c"
+  },
+  "upper": {
+    "model_calls": 2,
+    "device_steps": 16
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "d2800a7b9e92bf7d842dc211f407705b369bc51feb28ded1bbd58ec6f81c7233",
+    "replay_observation_sha256": "266995c52462494cd8bb0f08e335b146db2009488388c2d54433e942a67d7a7c"
+  },
+  "progress": {
+    "observed_after_actions": [],
+    "replay_after_actions": [],
+    "stable": true,
+    "first_confirmed_action": null,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 2.0,
+    "device_steps": 8.0
+  },
+  "elapsed_seconds": 12.771975582989398
+}

@@ -1,0 +1,58 @@
+{
+  "checkpoint": "click-color-seed-17",
+  "order": [
+    "intent_gate"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "click-color-seed-17",
+      "group": "miniwob-color",
+      "arm": "intent_gate",
+      "scope_id": "8fbc3ffc9b284b7b8587c6af227b5f84",
+      "calls": [],
+      "actions": [],
+      "success": 0,
+      "variant": {
+        "mode": "intent",
+        "intent_model": null,
+        "max_tokens": 256
+      },
+      "initial_hash": "a2a60c87a4da197f6d119375d3f0bd99eeefe44d63db92fb7e91874a0ebebd9e",
+      "state": {
+        "nodes": 22,
+        "labelled_nodes": 16,
+        "clickable_nodes": 0,
+        "duplicate_visible_labels": 3
+      },
+      "upper": {
+        "model_calls": 0,
+        "device_steps": 18
+      },
+      "intent": {
+        "contract": null,
+        "decision": "clarify",
+        "reason": "unsupported_or_conflicting_instruction",
+        "question": "Which controls should be clicked, in what order, and which actions are disallowed?"
+      },
+      "verification": {
+        "observed": false,
+        "replay": false,
+        "replay_initial_hash": "a2a60c87a4da197f6d119375d3f0bd99eeefe44d63db92fb7e91874a0ebebd9e"
+      },
+      "progress": {
+        "observed_after_actions": [],
+        "replay_after_actions": [],
+        "stable": true,
+        "first_confirmed_action": null,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 0.0,
+        "device_steps": 6.0
+      },
+      "elapsed_seconds": 0.4948043750046054
+    }
+  ],
+  "device": "miniwob-color"
+}

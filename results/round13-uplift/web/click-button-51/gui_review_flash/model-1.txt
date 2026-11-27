@@ -1,0 +1,3 @@
+Action: Click the "ok" button located at the bottom left of the text input area.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [47, 483]}}</tool_call>

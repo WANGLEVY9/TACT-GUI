@@ -1,0 +1,7 @@
+Action: Click on the "Internet" option.
+
+</thinking>
+
+<tool_call>
+{"name": "computer_use", "arguments": {"action": "left_click", "coordinate": [275, 298]}}
+</tool_call>

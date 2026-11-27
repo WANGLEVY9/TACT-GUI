@@ -10,8 +10,14 @@ These files document the engineering and development experiments. The original R
 | Round 7 | [Four-app mechanism recording](round7-mechanism/live-development/), [cross-fitted analysis](round7-mechanism/development-fit-audited.json), and [selected trajectory audit](round7-mechanism/trajectory-audit/report.json) |
 | Round 8 | [Original crossover recording](round8-crossover/live/), [primary analysis](round8-crossover/primary-interaction.json), and [technical-retry sensitivity analysis](round8-crossover/recovery/sensitivity.json) |
 | Console | [Browser validation screenshot](console-validation/tact-console.png) |
+| Round 9 | [Cross-platform adaptation record](../docs/ROUND9-CROSS-PLATFORM-ADAPTATION.md) and [offline Web smoke protocol](../configs/web-mechanism-smoke.json) |
+| Round 11 | [Android model contrasts](round11-routing/android/routing-summary.json), [Web development contrasts](round11-routing/web/routing-summary.json), and [Web template holdout](round11-routing/web-holdout/routing-summary.json) |
+| Round 12 | [Android intent traces](round12-intent/android-validated/), [Web intent traces](round12-intent/web-validated/), and [semantic interpretation probe](round12-intent/web-semantic/) |
+| Round 13 | [Android paired trajectories](round13-uplift/android/) and [analysis](round13-uplift/android-analysis.json), [Web paired trajectories](round13-uplift/web/) and [analysis](round13-uplift/web-analysis.json) |
 
-The mechanism recording directories contain the frozen protocol, reports, pre-call Android PNGs, raw model replies, and available event journals. Final reports include budget limits, settled spend, and pending reservations. The repository excludes raw SQLite files, emulator disk images, APKs, and host logs. Live setup instructions are in the [repository README](../README.md#android-experiments).
+The mechanism recording directories contain the frozen protocol, reports, available pre-call PNGs, raw model replies, and event journals. Final reports include budget limits, settled spend, and pending reservations. The repository excludes raw SQLite files, emulator disk images, APKs, and host logs. Live setup instructions are in the [repository README](../README.md#android-experiments).
+
+The offline Web fixture is generated on demand and is not archived as a research run. Cross-platform scope and remaining gates are in the [research note](../research/跨平台研究范畴与范围限定-2026-11-25.md).
 
 ## Offline verification
 

@@ -1,0 +1,3 @@
+Action: Click on the button labeled "TWO" to continue following the task instructions.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [250, 381]}}</tool_call>

@@ -1,0 +1,1 @@
+<tool_call>{"name":"computer_use","arguments":{"action":"left_click", "coordinate": [698, 929]}}</tool_call>

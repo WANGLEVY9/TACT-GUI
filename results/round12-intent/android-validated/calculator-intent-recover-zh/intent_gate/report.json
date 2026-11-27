@@ -1,0 +1,82 @@
+{
+  "checkpoint": "calculator-intent-recover-zh",
+  "group": "calculator",
+  "arm": "intent_gate",
+  "scope_id": "d6ff2514071d424bb52b2e41e1c9b38b",
+  "calls": [],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        625.4629629629629,
+        916.0416666666666
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        375.462962962963,
+        567.2916666666666
+      ]
+    }
+  ],
+  "success": 0,
+  "variant": {
+    "mode": "intent",
+    "intent_model": null,
+    "max_tokens": 256
+  },
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0
+  },
+  "upper": {
+    "model_calls": 0,
+    "device_steps": 30
+  },
+  "intent": {
+    "contract": {
+      "steps": [
+        {
+          "target": "C",
+          "role": null
+        },
+        {
+          "target": "8",
+          "role": null
+        }
+      ],
+      "forbidden": [
+        "="
+      ]
+    },
+    "decision": "verify",
+    "reason": "ordered_steps_exhausted"
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10"
+  },
+  "progress": {
+    "observed_after_actions": [
+      false,
+      false
+    ],
+    "replay_after_actions": [
+      false,
+      false
+    ],
+    "stable": true,
+    "first_confirmed_action": null,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 0.0,
+    "device_steps": 30.0
+  },
+  "elapsed_seconds": 35.56349620799301
+}

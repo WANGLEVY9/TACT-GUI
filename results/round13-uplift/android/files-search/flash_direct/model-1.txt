@@ -1,0 +1,3 @@
+Action: Tap the search icon to open the file search input for Downloads.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [827, 79]}}</tool_call>

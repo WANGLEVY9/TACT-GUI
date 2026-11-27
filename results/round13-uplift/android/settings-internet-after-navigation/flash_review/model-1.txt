@@ -1,0 +1,4 @@
+Action: Click on the "Internet" option at the top of the list.
+
+<tool_call>{"name":"computer_use","arguments": {"action": "left_click", "coordinate": [275, 298]}}
+</tool_call>

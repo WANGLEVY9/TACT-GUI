@@ -8,9 +8,10 @@ const label = {
   direct: 'Direct', guarded_direct: 'Stop-aware', self_review: 'Self-review',
   independent_review: 'Independent diagnosis', verified: 'Verified', incomplete: 'Incomplete',
   unresolved: 'Unresolved', queued: 'Queued', running: 'Running',
-  interrupted: 'Partial', unrecorded: 'Unrecorded',
+  interrupted: 'Partial', unrecorded: 'Unrecorded', clarification: 'Clarification needed', deferred: 'Deferred',
 };
 const fmt = value => value == null ? '—' : Number(value).toLocaleString('en-US');
+const strategyName = role => label[role] || role.replaceAll('_',' ');
 const caseName = id => id.replace(/-h([23])$/, ' · $1 calls').replace(/-/g, ' ');
 const endpoint = (path, values={}) => path + '?' + new URLSearchParams(values);
 const node = (tag, text, css) => {
@@ -23,8 +24,9 @@ const button = (text, click, css='button') => {
   const element = node('button',text,css); element.type='button';
   element.addEventListener('click',click); return element;
 };
-const cls = status => status==='verified' ? 'ok' : ['incomplete','unresolved'].includes(status) ? 'warn' : '';
+const cls = status => status==='verified' ? 'ok' : ['incomplete','unresolved','clarification','deferred'].includes(status) ? 'warn' : '';
 const query = new URLSearchParams(location.search);
+state.follow = query.get('live') === '1';
 state.run = query.get('run');
 state.caseId = query.get('case');
 state.role = query.get('role');
@@ -59,6 +61,7 @@ function toast(text) {
 function persist() {
   if (!state.run) return;
   const params = {run:state.run};
+  if (state.follow) params.live='1';
   if (state.caseId) params.case=state.caseId;
   if (state.role) params.role=state.role;
   params.frame=String(state.index);
@@ -111,6 +114,18 @@ function renderJob() {
   banner.replaceChildren(node('b',message),document.createTextNode(last+' '),button('View process output',()=>{
     openPreview('Process output',job.log || 'No process output yet.');
   },'link-btn'));
+  if (active) {
+    const follow=button(state.follow?'Pause live follow':'Follow live batches',()=>{
+      state.follow=!state.follow;
+      if (state.follow) {
+        switchView('explorer');
+        selectRun(active.run,true);
+      } else persist();
+      renderJob();
+    },'link-btn follow-live');
+    follow.setAttribute('aria-pressed',String(state.follow));
+    banner.append(follow);
+  }
   updateStart();
 }
 function metric(title,value,detail,fraction) {
@@ -137,23 +152,29 @@ function renderDetail() {
   $('run-caption').textContent=(entry?.name || d.id)+'  ·  '+date+'  ·  '+status;
   const count=d.counts;
   const total=Object.values(count).reduce((a,b)=>a+b,0);
-  const terminal=(count.verified||0)+(count.incomplete||0)+(count.unresolved||0);
+  const abstained=(count.clarification||0)+(count.deferred||0);
+  const terminal=(count.verified||0)+(count.incomplete||0)+(count.unresolved||0)+abstained;
   const limit=d.budget.limits?.model_calls, spent=d.budget.spent?.model_calls;
   const reserved=d.budget.reserved?.model_calls || 0;
   $('metrics').replaceChildren(
     metric('Branches recorded',fmt(terminal)+' / '+fmt(total),d.cases.length+' checkpoint conditions',terminal/(total||1)),
-    metric('Verified endpoints',fmt(count.verified||0),(count.incomplete||0)+' incomplete · '+(count.unresolved||0)+' unresolved',(count.verified||0)/(total||1)),
+    metric('Verified endpoints',fmt(count.verified||0),(count.incomplete||0)+' incomplete · '+(count.unresolved||0)+' unresolved'+
+           (abstained?' · '+abstained+' abstained':''),(count.verified||0)/(total||1)),
     metric('Settled model calls',fmt(spent)+' / '+fmt(limit),reserved+' calls held · '+(d.activity.responses||0)+' responses',limit?(spent||0)/limit:null),
     metric('Captured frames',fmt(d.activity.frames||0),fmt(d.activity.tokens||0)+' recorded tokens',null),
   );
   if (!d.cases.some(c=>c.id===state.caseId)) {
     state.caseId=(d.cases.find(c=>c.id==='calculator-multiply-h2') || d.cases.find(c=>c.arms.some(a=>a.frames)) || d.cases[0])?.id;
   }
+  const liveCase=state.follow && d.active && d.cases.find(c=>c.arms.some(a=>a.state==='running' && a.frames));
+  if (liveCase) state.caseId=liveCase.id;
   const selected=d.cases.find(c=>c.id===state.caseId);
   options($('case-select'),d.cases.map(c=>[c.id,caseName(c.id)]),state.caseId);
   if (selected) {
-    if (!selected.arms.some(a=>a.role===state.role)) state.role=selected.arms.find(a=>a.frames)?.role || selected.arms[0]?.role;
-    options($('role-select'),selected.arms.map(a=>[a.role,label[a.role] || a.role]),state.role);
+    const liveArm=liveCase && selected.arms.find(a=>a.state==='running' && a.frames);
+    if (liveArm) state.role=liveArm.role;
+    else if (!selected.arms.some(a=>a.role===state.role)) state.role=selected.arms.find(a=>a.frames)?.role || selected.arms[0]?.role;
+    options($('role-select'),selected.arms.map(a=>[a.role,strategyName(a.role)]),state.role);
   }
   renderMatrix();
   renderArtifacts();
@@ -164,7 +185,7 @@ function renderMatrix() {
   const roles=Object.keys(d.roles);
   $('matrix-total').textContent=d.cases.length+' CONDITIONS';
   const head=node('thead'); const row=node('tr');
-  for (const title of ['Checkpoint',...roles.map(role=>label[role])]) {
+  for (const title of ['Checkpoint',...roles.map(strategyName)]) {
     const th=node('th',title); th.scope='col'; row.append(th);
   }
   head.append(row);
@@ -177,7 +198,7 @@ function renderMatrix() {
       if (arm) {
         const text=label[arm.state]+(arm.lost_goal?' · Goal lost':'');
         const b=button(text,()=>chooseCase(c.id,role),cls(arm.state));
-        b.setAttribute('aria-label',caseName(c.id)+', '+label[role]+', '+text);
+        b.setAttribute('aria-label',caseName(c.id)+', '+strategyName(role)+', '+text);
         td.append(b);
       } else td.textContent='—';
       tr.append(td);
@@ -195,6 +216,8 @@ function actionField(name,value) {
 }
 const booleanLabel = (value,yes,no) => value==null?'—':value?yes:no;
 function frameType(frame) {
+  if (frame.role==='interpret') return 'Interpret intent';
+  if (frame.intent_decision?.decision==='clarify') return 'Clarify';
   return frame.role==='review' ? 'Review' : frame.action?.action==='terminate' ? 'Stop' :
     frame.action?.action==='left_click' ? (frame.executed?'Tap':'Proposed tap') : frame.text?'Response':'Capture';
 }
@@ -239,21 +262,38 @@ function renderTrace() {
   }));
   const body=$('action-body');
   $('action-chip').textContent=f?.role || 'No frame';
-  if (!f) body.replaceChildren(node('p','Select a strategy with recorded frames.'));
+  const intent=t?.intent;
+  const decision=f?.intent_decision || intent;
+  const reason=decision?.reason?.replaceAll('_',' ');
+  if (!f) body.replaceChildren(node('p',reason || 'Select a strategy with recorded frames.'));
   else {
     const title=node('div',frameType(f),'action-name');
-    const desc=node('div',f.role==='review'?'Advice for the executor':f.executed?'Confirmed in the action log':
+    const desc=node('div',reason || (f.role==='review'?'Advice for the executor':f.executed?'Confirmed in the action log':
       f.action?.action==='terminate'?'Model requested termination':f.text?'No executed action matched this response':
-      t.active?'Waiting for model response':'No response recorded','action-meta');
+      t.active?'Waiting for model response':'No response recorded'),'action-meta');
     const fields=node('div',null,'fields');
-    fields.append(actionField('Coordinates',f.action?.coordinate?.join(', ') || '—'),actionField('Model tokens',fmt(f.tokens)),
-                  actionField('Call index',f.index+1),actionField('Action index',f.action_index ?? '—'));
+    fields.append(actionField('Coordinates',f.action?.coordinate?.join(', ') || '—'),
+                  actionField('Model tokens',fmt(f.tokens ?? (intent?0:null))),
+                  actionField('Frame',f.index+1),actionField('Action index',f.action_index ?? '—'));
+    if (decision?.target) fields.append(actionField('Intent target',decision.target));
+    if (f.model) fields.append(actionField('Model snapshot',f.model));
+    if (f.max_tokens!=null) fields.append(actionField('Output limit',fmt(f.max_tokens)));
+    if (f.input_view) fields.append(actionField('Model input',f.input_view));
+    if (f.estimated_list_cny!=null) fields.append(actionField('List estimate','¥'+f.estimated_list_cny.toFixed(6)));
     if (f.model) fields.title=f.model;
     const details=node('details',null,'response');
     details.open=Boolean(body.querySelector('details[open]'));
     details.append(node('summary','Model response'),node('pre',f.text || 'Response unavailable.'));
-    body.replaceChildren(title,desc,fields,details);
+    body.replaceChildren(title,desc,fields);
+    if (f.text || !intent) body.append(details);
   }
+  if (intent?.contract || intent?.candidate) {
+    const contract=node('details',null,'response');
+    contract.append(node('summary',intent.contract?'Task contract':'Candidate interpretation'),
+                    node('pre',JSON.stringify(intent.contract || intent.candidate,null,2)));
+    body.append(contract);
+  }
+  if (intent?.question) body.append(node('p',intent.question,'action-meta'));
   const verified=t?.verification || {};
   const progress=t?.progress || {};
   const v=$('verification-body');
@@ -292,7 +332,8 @@ async function loadTrace(force=false) {
     if (ticket!==state.traceTicket) return;
     if (!force && JSON.stringify(t)===JSON.stringify(state.trace)) return;
     state.trace=t;
-    state.index=Math.max(0,Math.min(state.index,t.frames.length-1));
+    state.index=state.follow && t.active ? Math.max(0,t.frames.length-1) :
+      Math.max(0,Math.min(state.index,t.frames.length-1));
     renderTrace(); persist();
   } catch (error) { if (force && ticket===state.traceTicket) toast(error.message); }
 }
@@ -315,14 +356,22 @@ async function loadDetail(force=false) {
 }
 function chooseCase(caseId,role) {
   stopPlay();
+  if (state.follow) {
+    state.follow=false;
+    renderJob();
+  }
   state.caseId=caseId; state.role=role; state.index=0; state.trace=null;
   renderDetail();renderTrace();loadTrace(true);
 }
-function selectRun(id) {
+function selectRun(id, follow=false) {
   stopPlay();
+  const followChanged=state.follow!==follow;
+  state.follow=follow;
   state.run=id;state.caseId=null;state.role=null;state.index=0;state.detail=null;state.trace=null;
   state.traceTicket++;
-  renderRuns();renderDetail();persist();loadDetail(true);
+  if (followChanged) renderJob();
+  renderRuns();renderDetail();persist();
+  return loadDetail(true);
 }
 async function refresh() {
   try {
@@ -335,6 +384,11 @@ async function refresh() {
       state.jobs=data.jobs; renderJob(); $('connection').dataset.ready='true';
     }
     updateStart();
+    const active=state.jobs.find(j=>j.exit===null);
+    if (state.follow && active && state.run!==active.run) {
+      await selectRun(active.run,true);
+      return;
+    }
     if (!state.run) state.run=state.archive[0]?.id;
     if (changed || jobsChanged) renderRuns();
     const pending=state.jobs.some(j=>j.run===state.run && j.exit===null);

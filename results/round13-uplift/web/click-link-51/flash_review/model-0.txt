@@ -1,0 +1,4 @@
+Based on the text in the image, the word "donec" appears as a hyperlink in the sentence "Lorem donec feugiat dignissim."
+
+Recommendation: Click on the word "donec" located in the last line of the text block ("Lorem donec feugiat dignissim").
+Reason: The task explicitly asks to click the link "donec", and this is the instance of that word formatted as a clickable link (blue and underlined) within the visible text.

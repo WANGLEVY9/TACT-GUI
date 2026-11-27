@@ -1,0 +1,348 @@
+{
+  "checkpoint": "click-dialog-51",
+  "order": [
+    "flash_direct",
+    "gui_review_flash",
+    "flash_review"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "click-dialog-51",
+      "group": "click-dialog-51",
+      "arm": "flash_direct",
+      "scope_id": "7897b18274f2448f9477096343b196d0",
+      "calls": [
+        {
+          "reservation_id": "d12715ad607d42d68011df4fb9cb47fc",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 405,
+            "total_tokens": 460,
+            "completion_tokens": 55,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 102,
+              "text_tokens": 303
+            },
+            "completion_tokens_details": {
+              "text_tokens": 55
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 0.9751778749923687,
+          "estimated_list_cny": 0.000125,
+          "role": "execute",
+          "frame": 0,
+          "screen_sha256": "f0c670bb860c966db129fd91f664d2de3b1b48874b42013503ac05114e05bd44"
+        },
+        {
+          "reservation_id": "3a1b62e65b704bbc877c7b0d82e31fd7",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 425,
+            "total_tokens": 470,
+            "completion_tokens": 45,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 102,
+              "text_tokens": 323
+            },
+            "completion_tokens_details": {
+              "text_tokens": 45
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 2.5157555410114583,
+          "estimated_list_cny": 0.000121,
+          "role": "execute",
+          "frame": 1,
+          "screen_sha256": "8e7ce1592544c8835607445dc11738e95acdaaca733859d086bea6de76066336"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            284,
+            296
+          ]
+        }
+      ],
+      "success": 1,
+      "variant": {
+        "mode": "direct",
+        "execute_model": "qwen3.7-flash-2026-07-15",
+        "max_tokens": 512
+      },
+      "initial_hash": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429",
+      "state": {
+        "nodes": 32,
+        "labelled_nodes": 20,
+        "clickable_nodes": 1,
+        "duplicate_visible_labels": 6,
+        "decision_observation_sha256": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429"
+      },
+      "upper": {
+        "model_calls": 2,
+        "device_steps": 16
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429",
+        "replay_observation_sha256": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true
+        ],
+        "replay_after_actions": [
+          true
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 2.0,
+        "device_steps": 12.0
+      },
+      "elapsed_seconds": 4.582007249991875
+    },
+    {
+      "checkpoint": "click-dialog-51",
+      "group": "click-dialog-51",
+      "arm": "gui_review_flash",
+      "scope_id": "b28a99a4a6af4e87bf23458b004f392b",
+      "calls": [
+        {
+          "reservation_id": "9f30ff5ae66d42dcb74f032d9964cd10",
+          "requested_model": "gui-plus-2026-02-26",
+          "returned_model": "gui-plus-2026-02-26",
+          "usage": {
+            "prompt_tokens": 191,
+            "completion_tokens": 20,
+            "total_tokens": 211,
+            "completion_tokens_details": {
+              "text_tokens": 20
+            },
+            "prompt_tokens_details": {
+              "image_tokens": 102,
+              "text_tokens": 89
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 0.9823743330052821,
+          "estimated_list_cny": 0.0003765,
+          "role": "review",
+          "frame": 0,
+          "screen_sha256": "f0c670bb860c966db129fd91f664d2de3b1b48874b42013503ac05114e05bd44"
+        },
+        {
+          "reservation_id": "a4835ddbc79b41098b231477bc02ca28",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 434,
+            "total_tokens": 493,
+            "completion_tokens": 59,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 102,
+              "text_tokens": 332
+            },
+            "completion_tokens_details": {
+              "text_tokens": 59
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 0.9158231250039535,
+          "estimated_list_cny": 0.000134,
+          "role": "execute",
+          "frame": 1,
+          "screen_sha256": "912d13085cc4bf95e996b5d043ad77e6a04bb48baffd189a5998ff05a96b1632"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            278,
+            296
+          ]
+        }
+      ],
+      "success": 1,
+      "variant": {
+        "mode": "independent_review",
+        "execute_model": "qwen3.7-flash-2026-07-15",
+        "review_model": "gui-plus-2026-02-26",
+        "review_view": "screen",
+        "max_tokens": 512
+      },
+      "initial_hash": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429",
+      "state": {
+        "nodes": 32,
+        "labelled_nodes": 20,
+        "clickable_nodes": 1,
+        "duplicate_visible_labels": 6,
+        "decision_observation_sha256": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429"
+      },
+      "upper": {
+        "model_calls": 2,
+        "device_steps": 16
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429",
+        "replay_observation_sha256": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true
+        ],
+        "replay_after_actions": [
+          true
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 2.0,
+        "device_steps": 12.0
+      },
+      "elapsed_seconds": 2.9880641250056215
+    },
+    {
+      "checkpoint": "click-dialog-51",
+      "group": "click-dialog-51",
+      "arm": "flash_review",
+      "scope_id": "32a00b6aff7b4f10b0f677bf77839797",
+      "calls": [
+        {
+          "reservation_id": "ab1754ec66a64197b5bc2b2d93eaa64a",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 198,
+            "total_tokens": 251,
+            "completion_tokens": 53,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 102,
+              "text_tokens": 96
+            },
+            "completion_tokens_details": {
+              "text_tokens": 53
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.0851467499887804,
+          "estimated_list_cny": 8.2e-05,
+          "role": "review",
+          "frame": 0,
+          "screen_sha256": "f0c670bb860c966db129fd91f664d2de3b1b48874b42013503ac05114e05bd44"
+        },
+        {
+          "reservation_id": "e934d5f0476744d999540fbf113112e9",
+          "requested_model": "qwen3.7-flash-2026-07-15",
+          "returned_model": "qwen3.7-flash-2026-07-15",
+          "usage": {
+            "prompt_tokens": 467,
+            "total_tokens": 529,
+            "completion_tokens": 62,
+            "prompt_tokens_details": {
+              "cached_tokens": 0,
+              "image_tokens": 102,
+              "text_tokens": 365
+            },
+            "completion_tokens_details": {
+              "text_tokens": 62
+            }
+          },
+          "usage_complete": true,
+          "finish_reason": "stop",
+          "max_tokens": 512,
+          "input_view": "screen",
+          "request_seconds": 1.4577052910026396,
+          "estimated_list_cny": 0.000143,
+          "role": "execute",
+          "frame": 1,
+          "screen_sha256": "912d13085cc4bf95e996b5d043ad77e6a04bb48baffd189a5998ff05a96b1632"
+        }
+      ],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            302,
+            284
+          ]
+        }
+      ],
+      "success": 1,
+      "variant": {
+        "mode": "independent_review",
+        "execute_model": "qwen3.7-flash-2026-07-15",
+        "review_model": "qwen3.7-flash-2026-07-15",
+        "review_view": "screen",
+        "max_tokens": 512
+      },
+      "initial_hash": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429",
+      "state": {
+        "nodes": 32,
+        "labelled_nodes": 20,
+        "clickable_nodes": 1,
+        "duplicate_visible_labels": 6,
+        "decision_observation_sha256": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429"
+      },
+      "upper": {
+        "model_calls": 2,
+        "device_steps": 16
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429",
+        "replay_observation_sha256": "5c33ec6e55db17d42e218ebc5e6bc94d23cb822d9f4c1ac328ca452ca65fc429"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true
+        ],
+        "replay_after_actions": [
+          true
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 2.0,
+        "device_steps": 12.0
+      },
+      "elapsed_seconds": 3.6058073339954717
+    }
+  ],
+  "device": "click-dialog"
+}

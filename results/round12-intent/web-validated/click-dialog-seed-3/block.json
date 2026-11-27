@@ -1,0 +1,77 @@
+{
+  "checkpoint": "click-dialog-seed-3",
+  "order": [
+    "intent_gate"
+  ],
+  "valid_pair": true,
+  "arms": [
+    {
+      "checkpoint": "click-dialog-seed-3",
+      "group": "miniwob-dialog",
+      "arm": "intent_gate",
+      "scope_id": "c0b67f531ca84b3ab54a5997b8fcfc0a",
+      "calls": [],
+      "actions": [
+        {
+          "action": "left_click",
+          "coordinate": [
+            332.8125,
+            254.6875
+          ]
+        }
+      ],
+      "success": 1,
+      "variant": {
+        "mode": "intent",
+        "intent_model": null,
+        "max_tokens": 256
+      },
+      "initial_hash": "a8d858c33c1bdac9aeb7f14cf2d1f483bd8de69c2b47c7aecd8c4e509eae579e",
+      "state": {
+        "nodes": 32,
+        "labelled_nodes": 20,
+        "clickable_nodes": 1,
+        "duplicate_visible_labels": 6
+      },
+      "upper": {
+        "model_calls": 0,
+        "device_steps": 18
+      },
+      "intent": {
+        "contract": {
+          "steps": [
+            {
+              "target": "Close",
+              "role": "button"
+            }
+          ],
+          "forbidden": []
+        },
+        "decision": "verify",
+        "reason": "ordered_steps_exhausted"
+      },
+      "verification": {
+        "observed": true,
+        "replay": true,
+        "replay_initial_hash": "a8d858c33c1bdac9aeb7f14cf2d1f483bd8de69c2b47c7aecd8c4e509eae579e"
+      },
+      "progress": {
+        "observed_after_actions": [
+          true
+        ],
+        "replay_after_actions": [
+          true
+        ],
+        "stable": true,
+        "first_confirmed_action": 1,
+        "lost_goal": false
+      },
+      "actual": {
+        "model_calls": 0.0,
+        "device_steps": 12.0
+      },
+      "elapsed_seconds": 1.047048333013663
+    }
+  ],
+  "device": "miniwob-dialog"
+}

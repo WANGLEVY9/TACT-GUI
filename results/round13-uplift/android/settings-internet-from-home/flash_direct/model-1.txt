@@ -1,0 +1,5 @@
+Action: Click on the "Network & internet" option in the Settings menu.
+
+</thinking>
+
+{"name": "mobile_click", "arguments": {"action": "left_click", "coordinate": [372, 365]}}

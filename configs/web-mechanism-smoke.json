@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "seed": 20261125,
+  "platform": "web",
+  "scope": "platform adaptation smoke; in-memory Web fixture, not a research benchmark",
+  "apps": {
+    "web-calculator": {
+      "group": "web-calculator",
+      "entry": "fixture://calculator",
+      "initial": {"text": "2+3"},
+      "steps": ["equals"],
+      "goal": "Press equals to leave the numeric answer on screen."
+    },
+    "web-navigation": {
+      "group": "web-navigation",
+      "entry": "fixture://navigation",
+      "initial": {"text": "Home"},
+      "steps": ["Settings"],
+      "goal": "Open the Settings page."
+    },
+    "web-form": {
+      "group": "web-form",
+      "entry": "fixture://form",
+      "initial": {"text": "Empty"},
+      "steps": ["Validate"],
+      "goal": "Validate the form and leave the confirmation visible."
+    }
+  },
+  "checkpoints": [
+    {
+      "id": "web-calculator-equals",
+      "app_group": "web-calculator",
+      "slots": 2,
+      "prefix": [],
+      "start": {"text": "2+3"},
+      "goal": "Press equals to leave the numeric answer on screen.",
+      "oracle": {"text": "equals"}
+    },
+    {
+      "id": "web-navigation-settings",
+      "app_group": "web-navigation",
+      "slots": 2,
+      "prefix": [],
+      "start": {"text": "Home"},
+      "goal": "Open the Settings page.",
+      "oracle": {"text": "Settings"}
+    },
+    {
+      "id": "web-form-validate",
+      "app_group": "web-form",
+      "slots": 2,
+      "prefix": [],
+      "start": {"text": "Empty"},
+      "goal": "Validate the form and leave the confirmation visible.",
+      "oracle": {"text": "Validate"}
+    }
+  ]
+}

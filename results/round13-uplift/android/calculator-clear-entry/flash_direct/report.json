@@ -1,0 +1,147 @@
+{
+  "checkpoint": "calculator-clear-entry",
+  "group": "calculator",
+  "arm": "flash_direct",
+  "scope_id": "9e4e62e41a144d0486aadd08d55f0acf",
+  "calls": [
+    {
+      "reservation_id": "8dc6e5beb7264d3d915bad1a063cf27c",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2871,
+        "total_tokens": 2926,
+        "completion_tokens": 55,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 319
+        },
+        "completion_tokens_details": {
+          "text_tokens": 55
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.4860533330065664,
+      "estimated_list_cny": 0.0006182,
+      "role": "execute",
+      "frame": 0,
+      "screen_sha256": "d51beb29e64894c1f1bfecbd7eb16450662e34b747796e06cd7a42322cb13b7f"
+    },
+    {
+      "reservation_id": "959bf30c48ee487b80493f6daa8f22f8",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2871,
+        "total_tokens": 2909,
+        "completion_tokens": 38,
+        "prompt_tokens_details": {
+          "cached_tokens": 1152,
+          "image_tokens": 2552,
+          "text_tokens": 319
+        },
+        "completion_tokens_details": {
+          "text_tokens": 38
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.099069874995621,
+      "estimated_list_cny": 0.0006046,
+      "role": "execute",
+      "frame": 1,
+      "screen_sha256": "d51beb29e64894c1f1bfecbd7eb16450662e34b747796e06cd7a42322cb13b7f"
+    },
+    {
+      "reservation_id": "e9e535480dff468dbce63b238626fcfc",
+      "requested_model": "qwen3.7-flash-2026-07-15",
+      "returned_model": "qwen3.7-flash-2026-07-15",
+      "usage": {
+        "prompt_tokens": 2891,
+        "total_tokens": 2944,
+        "completion_tokens": 53,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "image_tokens": 2552,
+          "text_tokens": 339
+        },
+        "completion_tokens_details": {
+          "text_tokens": 53
+        }
+      },
+      "usage_complete": true,
+      "finish_reason": "stop",
+      "max_tokens": 512,
+      "input_view": "screen",
+      "request_seconds": 1.1627739169925917,
+      "estimated_list_cny": 0.0006206,
+      "role": "execute",
+      "frame": 2,
+      "screen_sha256": "ffcb4b9a5297b49dd8ee73d2101032230f72d424132fd88885d115f07a81fa05"
+    }
+  ],
+  "actions": [
+    {
+      "action": "left_click",
+      "coordinate": [
+        620,
+        912
+      ]
+    },
+    {
+      "action": "left_click",
+      "coordinate": [
+        620,
+        912
+      ]
+    }
+  ],
+  "success": 0,
+  "variant": {
+    "mode": "direct",
+    "execute_model": "qwen3.7-flash-2026-07-15",
+    "max_tokens": 512
+  },
+  "initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+  "state": {
+    "nodes": 43,
+    "labelled_nodes": 25,
+    "clickable_nodes": 24,
+    "duplicate_visible_labels": 0,
+    "decision_observation_sha256": "4154240a0352812123077ade29cf3616021e2df068b7d2238f2f7ee471737eca"
+  },
+  "upper": {
+    "model_calls": 3,
+    "device_steps": 33
+  },
+  "verification": {
+    "observed": false,
+    "replay": false,
+    "replay_initial_hash": "9ea4551ff64940ea9a99f334127bf98d5b594494648af9bc46ef453033e0be10",
+    "replay_observation_sha256": "4154240a0352812123077ade29cf3616021e2df068b7d2238f2f7ee471737eca"
+  },
+  "progress": {
+    "observed_after_actions": [
+      false,
+      false
+    ],
+    "replay_after_actions": [
+      false,
+      false
+    ],
+    "stable": true,
+    "first_confirmed_action": null,
+    "lost_goal": false
+  },
+  "actual": {
+    "model_calls": 3.0,
+    "device_steps": 29.0
+  },
+  "elapsed_seconds": 35.740661457995884
+}

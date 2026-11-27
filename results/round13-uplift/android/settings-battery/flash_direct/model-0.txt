@@ -1,0 +1,4 @@
+Action: Tap on the 'Battery' option to open the Battery settings page.
+
+<tool_call>{"name":"computer_use","arguments":{"action": "left_click", "coordinate": [256, 749]}}
+</tool_call>
